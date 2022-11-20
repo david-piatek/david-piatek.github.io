@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  resume:
+    image: node:lts
+    working_dir: /usr/app
+    volumes:
+      - .:/usr/app
+    ports:
+      - 4000:4000
