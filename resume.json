@@ -1,0 +1,343 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+    "basics": {
+        "name": "David PIATEK",
+        "label": "Lead Developer - DevOps",
+        "picture": "https://en.gravatar.com/userimage/113796650/35be08ffcbe3f8bcfe28b520c08e9627.jpg?size=500",
+        "email": "dav.piatek@gmail.com",
+        "phone": "+33 611212739",
+        "summary": "Passionné par le développement et la tech en général je suis développeur web mais pas que... Mon expérience m'a conduit rapidement sur des problématiques d'architecture puis d'infrastructure, c'est donc tout naturellement que je me suis tourné vers la mouvance devops. La vision de mon métier est d'être au service et au contact du produit pour répondre au mieux à ses attentes et délivrer rapidement un code qui respecte les standards de qualité. J'ai su mener des équipes au sein de différents types de société pour résoudre des problèmatiques complexes quitte à utiliser des méthodes out of the box. Je suis motivé par le challenge technique. Bref, un profil de couteau suisse.",
+        "location": {
+            "address": "3 Glatigny",
+            "postalCode": "41310",
+            "city": "Prunay-Cassereau",
+            "countryCode": "FR"
+        },
+        "profiles": [
+            {
+                "network": "Github",
+                "username": "david-piatek",
+                "url": "https://github.com/david-piatek"
+            },
+            {
+                "network": "Linkedin",
+                "username": "david-piatek-519aa275",
+                "url": "https://www.linkedin.com/in/david-piatek-519aa275/"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "Singulart \uD83C\uDFA8",
+            "position": "Developer PHP Senior",
+            "website": "https://www.singulart.com/fr/",
+            "startDate": "2022-09-05",
+            "endDate": "2022-11-30",
+            "summary": "Au sein de la squad ma mission était l'implémentation de nouvelles features, faire du bug fix. Au sein de la guild amélioration de la stratégie de test fonctionnel avec php et end-to-end avec cypress",
+            "highlights": [
+                "Testing, CI/CD, best practices",
+                "Ajout de features dans Symfony"
+            ]
+        },
+        {
+            "company": "Pharmanity \ud83d\udc8a",
+            "position": "Lead Developer / DevOps",
+            "website": "https://www.pharmanity.com/",
+            "startDate": "2021-01-05",
+            "endDate": "2022-06-20",
+            "summary": "Ma mission initiale était de maintenir la version existante en ajoutant de nouvelles features. J'ai pu ensuite m'occuper du recrutement de la nouvelle équipe en vue d'une refonte sur laquelle j'ai pu mettre  en place l'infrastructure et l'architecture",
+            "highlights": [
+                "Remonter la stack après incendie ovh",
+                "Mise en place du PRA",
+                "Création d'une usine à application mobile",
+                "Mise en place CI/CD",
+                "Mise en place de la nouvelle architecture microservice en CQRS",
+                "Management d'une équipe SCRUM"
+            ]
+        },
+        {
+            "company": "Drawsheep \uD83D\uDC11",
+            "position": "Co-fondateur - Architecte - Devops",
+            "website": null,
+            "startDate": "2019-06-01",
+            "endDate": "2021-03-10",
+            "summary": "Définition de l'orientation produit et mise en place de l'architecture / devops pour la création d'un erp/crm à destination des TPE",
+            "highlights": [
+                "Création des différents usecases",
+                "Mise en place d'une architecture scalable, résiliente",
+                "Mise en place d'une usine à site",
+                "CI/CD",
+                "Gestion des clusters Kubernetes"
+            ]
+        },
+        {
+            "company": "Prestashop \ud83c\udfa8",
+            "position": "Developer PHP Senior",
+            "website": "https://www.prestashop.com/fr",
+            "startDate": "2019-01-09",
+            "endDate": "2020-12-20",
+            "summary": "Mettre prestashop en SaaS en verouillant certaines fonctionalités pour des questions de sécurité et de performances. Migrer les clients sur leurs propres serveurs à l'arrêt  de l'offre SaaS. Collaborer à la mise en place du nouveau système de monétisation de prestashop. ",
+            "highlights": [
+                "Déploiement d'une image docker sur Kubernetes",
+                "Script adaptable à n'importe quel hébergeur pour migration des clients",
+                "Collaboration à des projets open source",
+                "Mise en place des environnements de developpement"
+            ]
+        },
+        {
+            "company": "Foxnot \uD83E\uDD8A",
+            "position": "Lead Developer",
+            "website": "https://www.foxnot.com/",
+            "startDate": "2016-11-20",
+            "endDate": "2018-12-01",
+            "summary": "Au sein d'une startup en lancement j'ai du créer l'équipe en veillant à la passation des connaissances des prestataires de services. En collaboration avec le produit et l'infrastructure nous avons du trouver des solutions out of box pour permettre des communications entre le site et le logiciel des notaires",
+            "highlights": [
+                "Mise en place CI- CD",
+                "Management d'équipe",
+                "Interfaçage entre une box et le site web",
+                "Instauration des bonnes pratiques",
+                "Gestion infrastructure"
+            ]
+        },
+        {
+            "company": "La centrale pharma  \ud83d\udc8a",
+            "position": "Developer fullstack",
+            "website": "https://www.lacentralepharma.com/",
+            "startDate": "2013-06-30",
+            "endDate": "2016-04-30",
+            "summary": "En tant que developpeur fullstack j'ai pu travailler sur différentes technologies PHP (Joomla, Symfony), créer des web services (REST et SOAP).",
+            "highlights": [
+                "Implémentation de PharmaML (protocol propre aux grossistes en pharmacies",
+                "Mise en place d'un outil d'analyses statistiques",
+                "Connexion à une solution d'e-learning en SOAP",
+                "Maintient du back en PHP"
+            ]
+        },
+        {
+            "company": "David Piatek \uD83D\uDCF7",
+            "position": "Gérant / Photographe",
+            "website": null,
+            "startDate": "2011-06-01",
+            "endDate": "2013-08-05",
+            "summary": "Gestion de l'entreprise, prise de vue, developement de photographie",
+            "highlights": [
+                "Gestion de l'entreprise",
+                "Recherche de prestataire",
+                "Prise de vue"
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Les p'tites canailles",
+            "position": "Membre actif",
+            "url": null,
+            "startDate": "2022-09-01",
+            "endDate": null,
+            "summary": "Association de parents d'élèves voulant faire vivre le village et la petite école communale",
+            "highlights": []
+        }
+    ],
+    "education": [
+        {
+            "institution": "SensioLabs",
+            "area": "Paris",
+            "studyType": "Professional training",
+            "startDate": "2014-09-01",
+            "endDate": "2014-09-05",
+            "gpa": null,
+            "courses": [
+                "Symfony"
+            ]
+        },
+        {
+            "institution": "Cefim",
+            "area": "Tours",
+            "studyType": "Titre Professional CDA (Concepteur Développeur d'Applications)",
+            "startDate": "2014-09-01",
+            "endDate": "2014-09-05",
+            "gpa": null,
+            "courses": [
+                "Gestion de projet",
+                "Maquettage Application",
+                "Java",
+                "Android",
+                "MySQL"
+            ]
+        },
+        {
+            "institution": "Cefim",
+            "area": "Tours",
+            "studyType": "Titre Professional IMM (Infographiste Multi-Média)",
+            "startDate": "2012-09-01",
+            "endDate": "2012-06-01",
+            "gpa": null,
+            "courses": [
+                "Photoshop",
+                "Illustrator",
+                "Html/css",
+                "Wordpress"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "name": "Web development",
+            "level": "Master - Senior \ud83c\udf96\ufe0f",
+            "keywords": [
+                "PHP",
+                "Symfony",
+                "Typescript",
+                "Golang",
+                "Bash"
+            ]
+        },
+        {
+            "name": "Testing",
+            "level": "Advanced - Aficionado \ud83c\udf35",
+            "keywords": [
+                "PHPUnit",
+                "Behat",
+                "Jest",
+                "Cypress",
+                "TDD",
+                "BDD"
+            ]
+        },
+        {
+            "name": "Best Practices",
+            "level": "Advanced - Guard \ud83d\udc82",
+            "keywords": [
+                "SOLID",
+                "KISS",
+                "Twelve-Factor App",
+                "Software craftsmanship"
+            ]
+        },
+        {
+            "name": "CI/CD",
+            "level": "Advanced - Lover \u2764\ufe0f",
+            "keywords": [
+                "Gitlab",
+                "Github-action",
+                "Automation",
+                "Feature flags",
+                "A/B Testing"
+            ]
+        },
+        {
+            "name": "Database",
+            "level": "Advanced - Consumer \ud83e\udd5e",
+            "keywords": [
+                "MySQL",
+                "MariaDB",
+                "ElasticSearch",
+                "MongoDB",
+                "Redis",
+                "Eventstore-db"
+            ]
+        },
+        {
+            "name": "Architecture",
+            "level": "Advanced - Addict \ud83e\uddd3",
+            "keywords": [
+                "CQRS",
+                "SOA - microservice",
+                "DDD",
+                "Clean architecture",
+                "event sourcing"
+            ]
+        },
+        {
+            "name": "Server provisioning",
+            "level": "Advanced - Enthusiast \ud83c\udf89",
+            "keywords": [
+                "Terraform",
+                "Ansible",
+                "packer",
+                "docker",
+                "kubernetes"
+            ]
+        },
+        {
+            "name": "Cloud Provider",
+            "level": "Advanced - Addict \ud83e\udd84",
+            "keywords": [
+                "GCP",
+                "Azure",
+                "Digital Ocean"
+            ]
+        },
+        {
+            "name": "Monitoring",
+            "level": "Advanced - Survivor \uD83D\uDCCA",
+            "keywords": [
+                "New relic",
+                "Datadog",
+                "Sentry",
+                "ELK"
+            ]
+        },
+        {
+            "name": "Project Management",
+            "level": "Advanced - Admin \ud83d\udc77\u200d\u2642\ufe0f",
+            "keywords": [
+                "Agile",
+                "Scrum",
+                "Mantoring",
+                "OKR",
+                "KPI"
+            ]
+        },
+        {
+            "name": "Miscellaneous",
+            "level": "Advanced - Power-User \ud83d\udcaa",
+            "keywords": [
+                "Linux",
+                "Git",
+                "vscode"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "French \ud83c\uddeb\ud83c\uddf7",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "English \uD83C\uDDEC\uD83C\uDDE7",
+            "fluency": "Intermediate"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Art \uD83C\uDFA8",
+            "keywords": [
+                "Jonglage",
+                "Musique",
+                "Photo",
+                "Art digital"
+            ]
+        },
+        {
+            "name": "Bricolage \uD83D\uDD28",
+            "keywords": [
+                "Renovation",
+                "Jardinage"
+            ]
+        },
+        {
+            "name": "Divers \uD83D\uDEF9",
+            "keywords": [
+                "BMX",
+                "Randonnée"
+            ]
+        }
+    ],
+    "references": [
+        {
+            "name": "Dominique Bazin - Foxnot",
+            "reference": "Hors du commun ! David est un ovni dans le boulot, c'est énorme !! Sur un plan humain il est un manager surdoué ! Un vrai plaisir de faire évoluer une solution, une boîte avec lui !"
+        }
+    ]
+}

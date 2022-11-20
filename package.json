@@ -1,0 +1,25 @@
+{
+  "name": "david-piatek-github-io",
+  "version": "1.0.0",
+  "description": "David PIATEK Resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "resume validate",
+    "serve": "resume serve",
+    "export": "resume export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david-piatek/david-piatek.github.io.git"
+  },
+  "author": "David Piatek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/david-piatek/david-piatek.github.io/issues"
+  },
+  "homepage": "https://github.com/david-piatek/david-piatek.github.io#readme",
+  "dependencies": {
+    "jsonresume-theme-stackoverflow": "^1.4.0",
+    "resume-cli": "^3.0.5"
+  }
+}
