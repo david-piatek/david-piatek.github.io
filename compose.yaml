@@ -2,9 +2,10 @@ version: '3.8'
 
 services:
   resume:
-    image: node:lts
+    build: .
     working_dir: /usr/app
     volumes:
       - .:/usr/app
     ports:
-      - 4000:4000
+      - ${NODE_HTTP_PORT:-4000}:4000
+

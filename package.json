@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "resume validate",
-    "serve": "resume serve",
-    "export": "resume export"
+    "serve": "resume serve --theme=stackoverflow",
+    "export": "resume export index.html --theme=stackoverflow"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,4 @@
 
 /node_modules
 /public
-yarn-debug.log*
-yarn-error.log*
+/.env
