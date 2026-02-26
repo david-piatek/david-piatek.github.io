@@ -23,6 +23,7 @@ tasks:
     silent: true
     cmds:
       - docker compose run --rm resume npm run export
+      - task: export:pdf
 
   export:pdf:
     desc: "Export resume as PDF in FR and EN — usage: task export:pdf"
