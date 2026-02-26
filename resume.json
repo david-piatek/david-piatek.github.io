@@ -5,7 +5,7 @@
     "label": "Lead Developer - DevOps - Backend Developer",
     "email": "dav.piatek@gmail.com",
     "phone": "+33 611212739",
-    "summary": "Père de deux enfants, installé à la campagne, j’ai construit un équilibre personnel et professionnel qui m’aide à gérer la pression et les rythmes intenses de la tech avec calme et lucidité.\n\nPassionné de technologie depuis toujours, j’ai construit mon parcours autour du développement logiciel, avant d’évoluer vers des responsabilités de Tech Lead. Cette expérience m’a amené à travailler sur l’architecture, la qualité logicielle et l’infrastructure, et à me tourner progressivement vers le DevOps.\n\nAujourd’hui, j’interviens avec une vision globale du produit, en combinant développement, DevOps et automatisation, dans un contexte où l’IA accélère les cycles et redonne toute sa valeur aux profils capables de construire et d’industrialiser des solutions de bout en bout.",
+    "summary": "Père de deux enfants, installé à la campagne, j’ai construit un équilibre personnel et professionnel qui m’aide à gérer la pression et les rythmes intenses de la tech avec calme et lucidité.\n\nPassionné de technologie depuis toujours, j’ai bâti mon parcours autour du développement logiciel avant d’évoluer vers des responsabilités de Tech Lead. Cette expérience m’a conduit à travailler sur l’architecture, la qualité logicielle et l’infrastructure, puis à m’orienter progressivement vers le DevOps.\n\nAujourd’hui, j’interviens avec une vision globale du produit, en combinant développement, DevOps et automatisation, dans un contexte où l’IA accélère les cycles. Je m’inscris dans une démarche de product builder, à l’interface entre développement, DevOps et produit.",
     "location": {
       "address": "3 Glatigny",
       "postalCode": "41310",
@@ -242,7 +242,8 @@
       "name": "Best Practices",
       "keywords": [
         "SOLID",
-        "KISS",
+        "Peer Programming",
+        "Review",
         "Software craftsmanship"
       ]
     },
@@ -270,7 +271,8 @@
       "name": "Architecture",
       "keywords": [
         "CQRS",
-        "SOA - microservice",
+        "SOA ",
+        "microservice",
         "DDD",
         "Clean architecture",
         "event sourcing"
@@ -316,7 +318,8 @@
       "name": "Miscellaneous",
       "keywords": [
         "Linux",
-        "Git"
+        "Git",
+        "AI"
       ]
     }
   ],
@@ -327,7 +330,7 @@
     },
     {
       "language": "English 🇬🇧",
-      "fluency": ""
+      "fluency": "Intermediate"
     }
   ],
   "interests": [

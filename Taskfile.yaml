@@ -25,10 +25,13 @@ tasks:
       - docker compose run --rm resume npm run export
 
   export:pdf:
-    desc: Export resume (PDF)
+    desc: "Export resume as PDF in FR and EN — usage: task export:pdf"
     silent: true
+    vars:
+      FILENAME: 'david_piatek'
     cmds:
-      - docker compose run --rm resume npm run export:pdf
+      - docker compose run --rm resume sh -c "PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser RESUME_PUPPETEER_NO_SANDBOX=1 npx resume export {{.FILENAME}}.pdf --theme=stackoverflow"
+      - docker compose run --rm resume sh -c "PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser RESUME_PUPPETEER_NO_SANDBOX=1 npx resume export {{.FILENAME}}_en.pdf --theme=stackoverflow --resume resume.en.json"
 
   lint:
     desc: Lint Dockerfile and compose.yaml

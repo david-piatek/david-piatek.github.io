@@ -5,7 +5,7 @@
     "label": "Lead Developer - DevOps - Backend Developer",
     "email": "dav.piatek@gmail.com",
     "phone": "+33 611212739",
-    "summary": "Father of two, living in the countryside, I have built a strong personal and professional balance that helps me handle pressure and the fast-paced nature of the tech industry with calm and clarity.\n\nPassionate about technology from an early age, I built my career around software development before moving into Tech Lead roles. This experience allowed me to work across application architecture, software quality and infrastructure, and gradually develop a strong interest in DevOps.\n\nToday, I work with a holistic product mindset, combining development, DevOps and automation, in a context where AI accelerates delivery cycles and reinforces the value of engineers capable of building and industrializing products end to end.",
+    "summary": "Father of two, living in the countryside, I have built a strong personal and professional balance that helps me handle pressure and the fast-paced nature of the tech industry with calm and clarity.\n\nPassionate about technology from an early age, I built my career around software development before moving into Tech Lead roles. This experience led me to work across application architecture, software quality and infrastructure, and gradually develop a strong interest in DevOps.\n\nToday, I work with a holistic product mindset, combining development, DevOps and automation, in a context where AI accelerates delivery cycles. I position myself as a product builder, at the intersection of development, DevOps and product.",
     "location": {
       "address": "3 Glatigny",
       "postalCode": "41310",
@@ -179,7 +179,9 @@
       "studyType": "Professional training",
       "startDate": "2014-09-01",
       "endDate": "2014-09-05",
-      "courses": ["Symfony"]
+      "courses": [
+        "Symfony"
+      ]
     },
     {
       "institution": "Cefim",
@@ -210,26 +212,142 @@
     }
   ],
   "skills": [
-    { "name": "Web Development", "keywords": ["PHP", "Symfony", "TypeScript", "Golang", "Bash"] },
-    { "name": "Testing", "keywords": ["PHPUnit", "Behat", "Jest", "Cypress", "TDD", "BDD"] },
-    { "name": "Best Practices", "keywords": ["SOLID", "KISS", "Software craftsmanship"] },
-    { "name": "CI/CD", "keywords": ["GitLab", "GitHub Actions", "Automation", "Feature flags", "A/B testing"] },
-    { "name": "Databases", "keywords": ["MySQL", "MariaDB", "Elasticsearch", "Redis", "EventStoreDB"] },
-    { "name": "Architecture", "keywords": ["CQRS", "SOA / Microservices", "DDD", "Clean Architecture", "Event sourcing"] },
-    { "name": "Infrastructure & Provisioning", "keywords": ["Terraform", "Ansible", "Packer", "Docker", "Kubernetes"] },
-    { "name": "Cloud Providers", "keywords": ["GCP", "Azure", "DigitalOcean"] },
-    { "name": "Monitoring", "keywords": ["New Relic", "Sentry", "ELK", "Dynatrace"] },
-    { "name": "Project Management", "keywords": ["Agile", "Scrum", "Mentoring", "Management"] },
-    { "name": "Miscellaneous", "keywords": ["Linux", "Git"] }
+    {
+      "name": "Web Development",
+      "keywords": [
+        "PHP",
+        "Symfony",
+        "TypeScript",
+        "Golang",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Testing",
+      "keywords": [
+        "PHPUnit",
+        "Behat",
+        "Jest",
+        "Cypress",
+        "TDD",
+        "BDD"
+      ]
+    },
+    {
+      "name": "Best Practices",
+      "keywords": [
+        "SOLID",
+        "KISS",
+        "Software craftsmanship"
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "keywords": [
+        "GitLab",
+        "GitHub Actions",
+        "Automation",
+        "Feature flags",
+        "A/B testing"
+      ]
+    },
+    {
+      "name": "Databases",
+      "keywords": [
+        "MySQL",
+        "MariaDB",
+        "Elasticsearch",
+        "Redis",
+        "EventStoreDB"
+      ]
+    },
+    {
+      "name": "Architecture",
+      "keywords": [
+        "CQRS",
+        "SOA / Microservices",
+        "DDD",
+        "Clean Architecture",
+        "Event sourcing"
+      ]
+    },
+    {
+      "name": "Infrastructure & Provisioning",
+      "keywords": [
+        "Terraform",
+        "Ansible",
+        "Packer",
+        "Docker",
+        "Kubernetes"
+      ]
+    },
+    {
+      "name": "Cloud Providers",
+      "keywords": [
+        "GCP",
+        "Azure",
+        "DigitalOcean"
+      ]
+    },
+    {
+      "name": "Monitoring",
+      "keywords": [
+        "New Relic",
+        "Sentry",
+        "ELK",
+        "Dynatrace"
+      ]
+    },
+    {
+      "name": "Project Management",
+      "keywords": [
+        "Agile",
+        "Scrum",
+        "Mentoring",
+        "Management"
+      ]
+    },
+    {
+      "name": "Miscellaneous",
+      "keywords": [
+        "Linux",
+        "Git"
+      ]
+    }
   ],
   "languages": [
-    { "language": "French", "fluency": "Native speaker" },
-    { "language": "English", "fluency": "Professional working proficiency" }
+    {
+      "language": "French",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    }
   ],
   "interests": [
-    { "name": "Art 🎨", "keywords": ["Juggling", "Music", "Photography"] },
-    { "name": "DIY 🔨", "keywords": ["Renovation", "Gardening"] },
-    { "name": "Misc 🛹", "keywords": ["BMX", "Fishing"] }
+    {
+      "name": "Art 🎨",
+      "keywords": [
+        "Juggling",
+        "Music",
+        "Photography"
+      ]
+    },
+    {
+      "name": "DIY 🔨",
+      "keywords": [
+        "Renovation",
+        "Gardening"
+      ]
+    },
+    {
+      "name": "Misc 🛹",
+      "keywords": [
+        "BMX",
+        "Fishing"
+      ]
+    }
   ],
   "references": [
     {
