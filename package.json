@@ -6,7 +6,8 @@
   "scripts": {
     "test": "resume validate",
     "serve": "resume serve --theme=stackoverflow",
-    "export": "resume export index.html --theme=stackoverflow"
+    "export": "resume export index.html --theme=stackoverflow",
+    "export:pdf": "PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser RESUME_PUPPETEER_NO_SANDBOX=1 resume export resume.pdf --theme=stackoverflow"
   },
   "repository": {
     "type": "git",

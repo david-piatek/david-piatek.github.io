@@ -19,10 +19,16 @@ tasks:
       - docker compose up -d
 
   export:
-    desc: Export resume
+    desc: Export resume (HTML)
     silent: true
     cmds:
       - docker compose run --rm resume npm run export
+
+  export:pdf:
+    desc: Export resume (PDF)
+    silent: true
+    cmds:
+      - docker compose run --rm resume npm run export:pdf
 
   lint:
     desc: Lint Dockerfile and compose.yaml
