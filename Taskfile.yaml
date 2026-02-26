@@ -10,6 +10,7 @@ tasks:
     cmds:
       - cp ./.env.dist ./.env || true
       - docker compose run --rm resume npm install
+      - task: hooks:install
 
   run:
     desc: Start the application
@@ -24,10 +25,11 @@ tasks:
       - docker compose run --rm resume npm run export
 
   lint:
-    desc: Lint Dockerfile with hadolint
+    desc: Lint Dockerfile and compose.yaml
     silent: true
     cmds:
       - hadolint Dockerfile
+      - docker compose config --quiet
 
   test:
     desc: Validate resume.json
