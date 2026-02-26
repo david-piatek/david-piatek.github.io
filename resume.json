@@ -47,9 +47,9 @@
       "highlights": [
         "Ajout de fonctionnalités",
         "TDD, architecture hexagonal",
-        "Amélioration de la CI",
-        "Amélioration de la CD",
-        "Migration Oracle vers PostgreSQL"
+        "Amélioration de la CI/CD",
+        "Migration Oracle vers PostgreSQL",
+        "Migration on-premise vers Azure AKS"
       ],
       "company": "OneyTrust🕵️‍♂️"
     },
