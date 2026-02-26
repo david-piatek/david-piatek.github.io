@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
   "basics": {
     "name": "David PIATEK",
-    "label": "Lead Developer - DevOps",
+    "label": "Lead Developer - DevOps - Backend Developer",
     "email": "dav.piatek@gmail.com",
     "phone": "+33 611212739",
     "summary": "Tech addict avec une vraie sensibilité produit, je ne code pas dans ma grotte : j’aime comprendre les enjeux, challenger les specs, et livrer vite du solide.\n\nPère de famille, vivant à la campagne, j’ai trouvé mon équilibre en gérant les rushs techniques à la pêche.\n\nLead dev dans l’âme, j’adore faire grandir les équipes, structurer les projets et poser des bases saines : archi hexagonale, CQRS, event sourcing… On ne shippe pas au hasard.\n\nCôté DevOps ? Docker, Kubernetes, Terraform, CI/CD, je sais faire tourner la machine, la sécuriser, et l’automatiser jusqu’au café ☕.\n\nL’arrivée de l’IA change la donne, et je suis là pour l’embrasser, pas la subir. Mon moteur : apprendre, transmettre, et trouver des solutions out of the box quand il le faut.\n\nJe suis ouvert aux opportunités freelance ou CDI.",
@@ -28,16 +28,28 @@
   },
   "work": [
     {
+      "company": "Mission freelance 🛠️",
+      "position": "Freelance - Développeur PHP/Symfony Senior / DevOps",
+      "startDate": "2025-07-07",
+      "summary": "Missions freelance",
+      "highlights": [
+        "Développement PHP/Symfony",
+        "Automatisation de processus",
+        "Correction CI/CD et Docker"
+      ]
+    },
+    {
       "position": "Freelance - Developer PHP Senior / DevOps",
       "website": "https://www.oneytrust.com",
-      "startDate": "2025-06-08",
-      "endDate": "2024-07-06",
+      "startDate": "2024-06-08",
+      "endDate": "2025-07-06",
       "summary": "En tant que freelance ma  mission était de reprendre en main le legacy, pour pouvoir le deployer sur azure",
       "highlights": [
         "Ajout de fonctionnalités",
         "TDD, architecture hexagonal",
         "Amélioration de la CI",
-        "Amélioration de la CD"
+        "Amélioration de la CD",
+        "Migration Oracle vers PostgreSQL"
       ],
       "company": "OneyTrust🕵️‍♂️"
     },
@@ -56,18 +68,6 @@
         "Support niveau 3"
       ],
       "company": "Skaleet 💰"
-    },
-    {
-      "position": "Developer PHP Senior",
-      "website": "https://www.singulart.com/fr/",
-      "startDate": "2022-09-05",
-      "endDate": "2022-11-30",
-      "summary": "Au sein de la squad ma mission était l'implémentation de nouvelles fonctionnalités, faire de la correction de bugs. Au sein de la guild amélioration de la stratégie de test fonctionnel avec php et end-to-end avec cypress",
-      "highlights": [
-        "Testing, CI/CD, best practices",
-        "Ajout de fonctionnalités dans Symfony"
-      ],
-      "company": "Singulart 🎨"
     },
     {
       "position": "Lead Developer / DevOps",
