@@ -3,7 +3,7 @@
   "basics": {
     "name": "David PIATEK",
     "label": "Lead Developer - DevOps",
-    "picture": "https://0.gravatar.com/avatar/1c386f5e5ba6b8b9afb242864b4e6e4d7d6db78f081bf16b14111aa30c5dcf31?size=512&d=initials",
+    "image": "https://0.gravatar.com/avatar/1c386f5e5ba6b8b9afb242864b4e6e4d7d6db78f081bf16b14111aa30c5dcf31?size=512&d=initials",
     "email": "dav.piatek@gmail.com",
     "phone": "+33 611212739",
     "summary": "Tech addict avec une vraie sensibilité produit, je ne code pas dans ma grotte : j’aime comprendre les enjeux, challenger les specs, et livrer vite du solide.\n\nPère de famille, vivant à la campagne, j’ai trouvé mon équilibre en gérant les rushs techniques à la pêche.\n\nLead dev dans l’âme, j’adore faire grandir les équipes, structurer les projets et poser des bases saines : archi hexagonale, CQRS, event sourcing… On ne shippe pas au hasard.\n\nCôté DevOps ? Docker, Kubernetes, Terraform, CI/CD, je sais faire tourner la machine, la sécuriser, et l’automatiser jusqu’au café ☕.\n\nL’arrivée de l’IA change la donne, et je suis là pour l’embrasser, pas la subir. Mon moteur : apprendre, transmettre, et trouver des solutions out of the box quand il le faut.\n\nJe suis ouvert aux opportunités freelance ou CDI.",
@@ -163,16 +163,13 @@
       "position": "Responsable de la communication",
       "url": "https://prunaystival.wixsite.com/prunaystival",
       "startDate": "2024-10-01",
-      "endDate": null,
       "summary": "Organisation d'un festival musical depuis 10 ans pour faire vivre le village",
       "highlights": []
     },
     {
       "organization": "Les p'tites canailles",
       "position": "Membre actif",
-      "url": null,
       "startDate": "2022-09-01",
-      "endDate": null,
       "summary": "Association de parents d'élèves voulant faire vivre le village et la petite école communale",
       "highlights": []
     }

@@ -1,1554 +1,191 @@
 <!doctype html>
-<html>
+<html lang="en-gb">
   <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <title>David PIATEK</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <style>
-  /********************************************
-* 	reset from
-* 	http://meyerweb.com/eric/tools/css/reset/
-*******************************************/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
-/****************
-*	COMMONS
-****************/
-
-body,
-html {
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 13px;
-    color: #40484f;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 1.46153846;
-    text-align: left;
-    -webkit-text-size-adjust: 100%;
-}
-
-p {
-    display: block;
-    margin-bottom: 1.3em;
-}
-
-a {
-    color: #0095ff;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #0c65a5;
-    text-decoration: underline;
-}
-
-ul {
-    margin-top: 1rem;
-}
-
-li {
-    list-style-type: square;
-    list-style-position: outside;
-    margin-left: 1.3em;
-}
-
-.highlights>li>p {
-    margin-bottom: 0.5em;
-}
-
-h1 {
-    font-size: 2rem;
-}
-
-h2 {
-    font-size: 1.67rem;
-}
-
-h3 {
-    font-size: 1.27rem;
-}
-
-em {
-    color: #757575;
-}
-
-blockquote {
-    margin-bottom: 1em;
-}
-
-strong {
-    font-weight: 700;
-}
-
-
-/* main container */
-
-#resume {
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-
-/* every section wrapper */
-
-.section {
-    margin-bottom: 1rem;
-}
-
-section .location {
-    margin-right: .5em;
-    color: #606d76;
-    font-weight: 700;
-}
-
-#contact {
-    margin-top: .5rem;
-}
-
-#profiles .item {
-    padding: 0;
-}
-
-#header>#profiles,
-#header>#contact,
-#skills,
-#languages,
-#interests {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-}
-
-#header>div {
-    line-height: 1.5;
-}
-
-#header>div>div {
-    margin-right: 1.2em;
-}
-
-#header h1.name {
-    font-size: 2.8rem;
-    font-weight: 100;
-    line-height: 100%;
-}
-
-#header h2.label {
-    color: #202931;
-    font-size: 1.47rem;
-    font-weight: 300;
-}
-
-#header .picture {
-    width: 11em;
-    float: right;
-    border-radius: 4px;
-}
-
-.main-summary {
-    background: #f1f8ff;
-    padding: 1.2em 1em;
-    margin-top: 1rem;
-}
-
-.main-summary p {
-    margin: .15em 0 0;
-}
-
-h2.section-title {
-    display: inline-block;
-    background: #fff;
-    padding: 0 1em 0.3em 0;
-    color: #ff6d1f;
-    text-transform: uppercase;
-    font-weight: 600;
-    border: none;
-    font-size: .9rem;
-}
-
-.section>header {
-    position: relative;
-}
-
-.fa {
-    margin-right: 0.25em;
-}
-
-.section>header::after {
-    position: absolute;
-    left: 0;
-    top: .7em;
-    height: 1px;
-    background: #ccc;
-    content: "";
-    width: 100%;
-    z-index: -100;
-    display: block;
-}
-
-.section.main-summary>section {
-    margin: 0;
-}
-
-.section>section>header {
-    font-size: 1.38rem;
-    position: relative;
-    margin-top: .7em;
-}
-
-.section>section>header:first-of-type {
-    margin: 0;
-}
-
-.section>section>header .space-left {
-    position: absolute;
-    left: -1.56rem;
-    top: 5px;
-    color: #aaa;
-    line-height: 1;
-    opacity: 0;
-}
-
-.position,
-.company,
-.organization,
-.institution,
-.date,
-.area,
-.studyType,
-.title,
-.awarder {
-    display: inline;
-}
-
-.position,
-.studyType,
-.area,
-.title,
-.language,
-.name {
-    font-weight: 600;
-}
-
-.company::before,
-.institution::before,
-.organization::before,
-.awarder::before {
-    content: "at "
-}
-
-.company,
-.institution,
-.organization,
-.awarder {
-    color: #606d76;
-    font-weight: 400;
-}
-
-.section header .date {
-    font-size: 1rem;
-    display: inline-table;
-    padding: .1em 0;
-    font-weight: 600;
-}
-
-ul.keywords,
-ul.courses {
-    margin-top: .5em;
-}
-
-ul.keywords li,
-ul.courses li {
-    display: inline-block;
-    margin: 2px 2px 2px 0;
-    padding: 4px 5px 5px;
-    font-size: .9rem;
-    line-height: 1;
-    text-transform: lowercase;
-    color: #3e6d8e;
-    background-color: #dfeaf1;
-    border: 0 solid #dfeaf1;
-    white-space: nowrap;
-}
-
-ul.keywords li:hover,
-ul.courses li:hover {
-    background: #dfeaf0;
-}
-
-.item {
-    padding: .5em 0;
-}
-
-.gpa {
-    padding-bottom: .5em;
-}
-
-.fa.social {
-    font-size: 1.1em;
-}
-
-
-/* Social Media Brand Colors */
-
-.google-plus {
-    color: #dd4b39;
-}
-
-.tumblr {
-    color: #32506d;
-}
-
-.foursquare {
-    color: #0072b1;
-}
-
-.facebook {
-    color: #3b5998;
-}
-
-.linkedin {
-    color: #007bb6;
-}
-
-.pinterest {
-    color: #cb2027;
-}
-
-.dribbble {
-    color: #ea4c89;
-}
-
-.instagram {
-    color: #517fa4;
-}
-
-.twitter {
-    color: #00aced;
-}
-
-.soundcloud {
-    color: #ff3a00;
-}
-
-.wordpress {
-    color: #21759b;
-}
-
-.youtube {
-    color: #bb0000;
-}
-
-.github {
-    color: #171515;
-}
-
-.stack-overflow {
-    color: #828386;
-    position: relative;
-}
-
-.flickr {
-    color: #ff0084;
-}
-
-.stack-overflow::after {
-    position: absolute;
-    left: 0;
-    content: '\f16c';
-    color: #f68a1f;
-    overflow: hidden;
-    height: 100%;
-}
-
-.telegram {
-    color: #2291c3;
-}
-
-#languages .item,
-#skills .item,
-#interests .item {
-    width: 15em;
-    padding: 0 .5em .5em 0;
-    border-bottom: none;
-}
-
-#skills .item {
-    width: 16em;
-}
-
-#skills .item .keywords {
-    width: 15em;
-}
-
-
-/* Skill chart */
-
-.level {
-    margin-bottom: .5em;
-}
-
-.level .bar {
-    border: 1px solid #ddd;
-    display: block;
-    width: 10em;
-    height: 5px;
-    position: relative;
-}
-
-.level .bar::after {
-    position: absolute;
-    content: " ";
-    top: 0;
-    left: 0;
-    background: black;
-    height: 5px;
-}
-
-.level.beginner .bar::after {
-    background: #EB5F51;
-    width: 2.5em;
-}
-
-.level.intermediate .bar::after {
-    background: #ffdf1f;
-    width: 5em;
-}
-
-.level.advanced .bar::after,
-.level.fluent .bar::after {
-    background: #5CB85C;
-    width: 7.5em;
-}
-
-.level.master .bar::after,
-.level.native.speaker .bar::after {
-    background: #59C596;
-    width: 10em;
-}
-
-#references .item {
-    padding-left: .5em;
-    border-left: 5px solid #ff6d1f;
-}
-
-.toggle-item {
-  visibility: hidden;
-}
-
-/******************
-*	HELPER CLASSES
-******************/
-
-.clear::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.display {
-    display: block;
-    opacity: 1 !important;
-}
-
-.margin1 {
-    margin-bottom: .5rem;
-}
-
-
-/****************
-*		TABLET
-****************/
-
-@media screen and (min-width: 602px) {
-    #resume {
-        width: 80%;
-        margin: 0 auto;
-    }
-}
-
-
-/****************
-*		LAPTOP
-****************/
-
-@media screen and (min-width: 1025px) {
-    li {
-        margin-left: 1.5em;
-    }
-    #resume {
-        width: 820px;
-        margin: 2rem auto;      
-    }
-    .section>section>header .space-left {
-        opacity: 1;
-        cursor: pointer;
-    }
-    .section>section {
-        margin-left: 1.67rem;
-    }
-    .toggle-item {
-        transform: translate(-9999px);
-    }
-    .toggle-item+label {
-        display: block;
-        margin-top: -16px;
-    }
-    .toggle-item:checked+label:after {
-        content: '\f0d7';
-    }
-    .toggle-item+label:after {
-        float: left;
-        cursor: pointer;
-        margin-left: -20px;
-        color: #aaa;
-        font-size: 16px;
-        content: '\f0da';
-        font-family: Fontawesome;
-    }
-    .toggle-item~.item {
-        height: 0;
-        opacity: 0;
-    }
-    .toggle-item:checked~.item {
-        height: auto;
-        opacity: 1;
-        transition: all .5s linear;
-    }
-    .company::before,
-    .institution::before,
-    .organization::before,
-    .awarder::before {
-        content: "| ";
-    }
-    .header-left {
-        float: left;
-        width: 70%;
-        word-break: normal;
-    }
-    .section header .date {
-        float: right;
-        padding: .2em;
-    }
-    .display {
-        display: none;
-    }
-    .display:not(.none) {
-        display: block;
-    }
-}
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>David PIATEK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./override.css">
+    <style>
+      /* Variables (light) */
+:root {
+  --color-text: #40484f; --color-text-secondary: #606d76; --color-text-muted: #757575;
+  --color-heading: #202931; --color-accent: #ff6d1f;
+  --color-link: #0095ff; --color-link-hover: #0c65a5;
+  --color-background: var(--color-section-title-bg); --color-background-alt: #f1f8ff;
+  --color-border: #ccc; --color-border-light: #ddd;
+  --color-keyword-text: #2c5777; --color-keyword-bg: #dfeaf1; --color-keyword-border: #dfeaf1;
+  --color-reference-border: #ff6d1f;
+  --color-bar-beginner: #eb5f51; --color-bar-intermediate: #ffdf1f;
+  --color-bar-advanced: #5cb85c; --color-bar-master: #59c596;
+  --color-section-title-bg: #fff;
+  --font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* Variables (dark) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #d4d4d8; --color-text-secondary: #a1a1aa; --color-text-muted: #9ca3af;
+    --color-heading: #e4e4e7; --color-accent: #fb923c;
+    --color-link: #60a5fa; --color-link-hover: #93c5fd;
+    --color-background: #18181b; --color-background-alt: #27272a;
+    --color-border: #3f3f46; --color-border-light: #3f3f46;
+    --color-keyword-text: #93c5fd; --color-keyword-bg: #1e3a5f; --color-keyword-border: #1e3a5f;
+    --color-reference-border: #fb923c;
+    --color-bar-beginner: #ef4444; --color-bar-intermediate: #eab308;
+    --color-bar-advanced: #22c55e; --color-bar-master: #34d399;
+    --color-section-title-bg: #18181b;
+    --font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
+}
+
+/* Minimal reset */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; }
+
+/* Base typography */
+body, html { font-family: var(--font-family); font-size: 13px; color: var(--color-text); background-color: var(--color-background); font-weight: 400; line-height: 1.46153846; text-align: left; }
+p { display: block; }
+a { color: var(--color-link); text-decoration: none; }
+a:hover { color: var(--color-link-hover); text-decoration: underline; }
+li { list-style-type: square; list-style-position: outside; margin-left: 1.3em; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.67rem; }
+h3 { font-size: 1.27rem; }
+em { color: var(--color-text-muted); }
+strong { font-weight: 700; }
+
+/* Accessibility */
+.skip-to-content { position: absolute; left: -9999px; top: 0; z-index: 999; padding: 0.5em 1em; background: var(--color-accent); color: #fff; font-weight: 600; text-decoration: none; }
+.skip-to-content:focus { left: 0; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+a:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; border-radius: 2px; }
+
+/* Print */
 @media print {
-    #resume {
-        margin: 0;
-        padding: 0;
-        -ms-word-wrap: break-word;
-        word-wrap: break-word;
-        line-height: 1.3;
-        /*font-family: Arial, Georgia, "Lucida Grande", sans-serif;*/
-    }
-    @page {
-        margin: 1cm 1.4cm;
-    }
-    .item-count {
-        display: none;
-    }
-    .company::before,
-    .institution::before,
-    .organization::before,
-    .awarder::before {
-        content: "at ";
-    }
-    .main-summary {
-        padding: 2rem 0;
-    }
-    .section {
-        margin: .8rem 0;
-        padding: 0;
-    }
-    .section header {
-        padding-bottom: .15rem;
-    }
-    .section .location {
-        padding-bottom: .15rem;
-    }
-    .stack-overflow::after {
-        content: "";
-    }
-    .fa.social {
-        color: #828386;
-    }
-    ul {
-        margin-top: .4em;
-    }
-    ul,
-    li {
-        padding: 0;
-    }
-    ul.keywords li,
-    ul.courses li {
-        margin: 0;
-        padding: 0;
-        font-size: .8rem;
-        text-transform: lowercase;
-    }
-    ul.keywords li::after,
-    ul.courses li::after {
-        padding: 0 0 0 .1rem;
-        content: " |";
-    }
-    ul.keywords::before,
-    ul.courses::before {
-        font-size: .8rem;
-        font-weight: 600;
-    }
-    ul.keywords::before {
-        content: "Skills acquired: ";
-    }
-    #skills .keywords::before {
-        content: '';
-    }
-    .section p {
-        margin: 0;
-        padding: 0;
-    }
-    ul.courses::before {
-        content: "Major courses: ";
-    }
-    ul.keywords li:last-of-type::after,
-    ul.courses li:last-of-type::after {
-        content: "";
-    }
-    .level em {
-        font-style: normal;
-        padding: .1em 0;
-    }
-    .level .bar {
-        display: none;
-    }
-    #profiles .item {
-        padding: 0;
-    }
-    .item.display {
-        display: block;
-        opacity: 1 !important;
-    }
+  @page { margin: 1cm 1.4cm; }
+  body { line-height: 1.25; }
+  ul { margin-top: 0.4em; }
+  ul, li { padding: 0; }
 }
 
-  </style>
-  
+@media screen and (min-width: 1025px) { li { margin-left: 1.5em; } }
+
+    </style>
+    <style id="svelte-rssu9l">.resume.svelte-rssu9l {padding:1.5rem;}
+
+  @media print {.resume.svelte-rssu9l {margin:0.1em;padding:0.1em;-ms-word-wrap:break-word;word-wrap:break-word;line-height:1.25;}
+  }
+
+  @media screen and (max-width: 601px) {.resume.svelte-rssu9l {width:100%;padding:1rem;box-sizing:border-box;}
+  }
+
+  @media screen and (min-width: 602px) {.resume.svelte-rssu9l {width:80%;margin:0 auto;}
+  }
+
+  @media screen and (min-width: 1025px) {.resume.svelte-rssu9l {width:820px;margin:2rem auto;}
+  }</style><style id="svelte-10f9ycp">.header.svelte-10f9ycp {margin-bottom:1rem;}.name.svelte-10f9ycp {font-size:2.8rem;font-weight:100;line-height:100%;}.label.svelte-10f9ycp {color:var(--color-heading);font-size:1.47rem;font-weight:300;}.image.svelte-10f9ycp {width:11em;float:right;border-radius:4px;}.profiles.svelte-10f9ycp {display:flex;flex-flow:row wrap;justify-content:flex-start;}.main-summary.svelte-10f9ycp {background:var(--color-background-alt);padding:1.2em 1em;}
+
+  /* p margin reset handled by summary wrapper */
+
+  @media print {.profiles.svelte-10f9ycp a:not(.hide-href-print)::after {content:" (" attr(href) ") ";}.profiles.svelte-10f9ycp .item {padding:0;}.main-summary.svelte-10f9ycp {padding:0;background:transparent;}
+  }
+
+  @media screen and (max-width: 601px) {.header.svelte-10f9ycp .profiles:where(.svelte-10f9ycp), .header.svelte-10f9ycp .contact {flex-wrap:wrap;}.name.svelte-10f9ycp {font-size:2rem;}.label.svelte-10f9ycp {font-size:1.2rem;}.image.svelte-10f9ycp {float:none;display:block;margin:0 auto 1rem;width:8em;}
+  }</style><style id="svelte-121pvxs">.contact.svelte-121pvxs {display:flex;flex-flow:row wrap;justify-content:flex-start;margin-top:0.5rem;}.contact-item.svelte-121pvxs {margin-right:1.2em;line-height:1.5;}.icon.svelte-121pvxs {margin-right:0.25em;}</style><style id="svelte-a76edc">.item.svelte-a76edc {padding:0;margin-right:0.8em;}.social.svelte-a76edc {font-size:1.1em;margin-right:0.25em;color:var(--brand-light);}
+
+  @media print {.social.svelte-a76edc {color:#828386;}.fa-stack-overflow::after {content:"";}
+  }
+
+  @media (prefers-color-scheme: dark) {.social.svelte-a76edc {color:var(--brand-dark);}
+  }</style><style id="svelte-1lncexq">.section.svelte-1lncexq {margin-bottom:1rem;}header.svelte-1lncexq {position:relative;}header.svelte-1lncexq::after {position:absolute;left:0;top:0.7em;height:1px;background:var(--color-border);content:"";width:100%;z-index:-100;display:block;}
+
+  @media print {.section.svelte-1lncexq {margin:0.8rem 0;padding:0;}header.svelte-1lncexq {padding-bottom:0.15rem;}.location {padding-bottom:0.15rem;}.section.svelte-1lncexq > section > section {border-bottom:1px solid #fdfdfd;margin:.5em 0;}.section.svelte-1lncexq > section > section:last-of-type {margin:0;}
+  }
+
+  @media print {.item-count.svelte-1lncexq {display:none;}
+  }.section-title.svelte-1lncexq {display:inline-block;background:var(--color-section-title-bg);padding:0 1em 0.3em 0;color:var(--color-accent);text-transform:uppercase;font-weight:600;border:none;font-size:0.9rem;}</style><style id="svelte-18p2gu6">.skills-grid.svelte-18p2gu6 {display:flex;flex-flow:row wrap;justify-content:flex-start;}.skill-item.svelte-18p2gu6 {width:16em;padding:0 0.5em 0.5em 0;border-bottom:none;}.name.svelte-18p2gu6 {font-weight:600;}
+
+  @media print {.skills-grid.svelte-18p2gu6 .skill-item:where(.svelte-18p2gu6) {display:flex;flex-direction:column;margin:0.3rem 0;padding:0;}
+  }
+
+  @media screen and (max-width: 601px) {.skills-grid.svelte-18p2gu6 {flex-direction:column;}.skill-item.svelte-18p2gu6 {width:100%;padding-right:0;}
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 601px) {.skills-grid.svelte-18p2gu6 {flex-direction:row;flex-wrap:wrap;}.skill-item.svelte-18p2gu6 {width:48%;padding-right:2%;}
+  }</style><style id="svelte-10tjtrd">.level.svelte-10tjtrd {margin-bottom:0.5em;}.level.svelte-10tjtrd em:where(.svelte-10tjtrd) {padding-left:0.2em;}.level.svelte-10tjtrd .bar:where(.svelte-10tjtrd) {border:1px solid var(--color-border-light);display:block;width:10em;height:5px;position:relative;}.level.svelte-10tjtrd .bar:where(.svelte-10tjtrd)::after {position:absolute;content:" ";top:0;left:0;background:black;height:5px;}.level.beginner.svelte-10tjtrd .bar:where(.svelte-10tjtrd)::after {background:var(--color-bar-beginner);width:2.5em;}.level.intermediate.svelte-10tjtrd .bar:where(.svelte-10tjtrd)::after {background:var(--color-bar-intermediate);width:5em;}.level.advanced.svelte-10tjtrd .bar:where(.svelte-10tjtrd)::after,
+  .level.fluent.svelte-10tjtrd .bar:where(.svelte-10tjtrd)::after {background:var(--color-bar-advanced);width:7.5em;}.level.master.svelte-10tjtrd .bar:where(.svelte-10tjtrd)::after,
+  .level.expert.svelte-10tjtrd .bar:where(.svelte-10tjtrd)::after,
+  .level.native.speaker.svelte-10tjtrd .bar:where(.svelte-10tjtrd)::after {background:var(--color-bar-master);width:10em;}
+
+  @media print {.level.svelte-10tjtrd {margin:0.1rem 0;font-weight:400;}.level.svelte-10tjtrd em:where(.svelte-10tjtrd) {font-style:normal;padding:0.1em 0;}.level.svelte-10tjtrd .bar:where(.svelte-10tjtrd) {display:none;}
+  }</style><style id="svelte-1615qzb">ul.svelte-1615qzb {margin:0.5em 0;}li.svelte-1615qzb {display:inline-block;margin:2px 2px 2px 0;padding:4px 5px 5px;font-size:0.9rem;line-height:1;color:var(--color-keyword-text);background-color:var(--color-keyword-bg);border:0 solid var(--color-keyword-border);white-space:nowrap;}li.svelte-1615qzb:hover {background:var(--color-keyword-bg);}
+
+  @media print {li.svelte-1615qzb {margin:0;padding:0;font-size:0.8rem;background:transparent;}li.svelte-1615qzb::after {padding:0 0 0 0.1rem;content:", ";}li.svelte-1615qzb:last-of-type::after {content:"";}.skills-grid li.svelte-1615qzb::after {content:", ";}.skills-grid li.svelte-1615qzb:last-of-type::after {content:"";}ul.svelte-1615qzb::before {font-size:0.8rem;font-weight:600;}ul.keywords.svelte-1615qzb::before {content:"Skills: ";font-size:1rem;}.skills-grid ul.svelte-1615qzb::before {content:none;}ul.courses.svelte-1615qzb::before {content:"Major courses: ";font-size:1rem;}li.svelte-1615qzb {font-size:1rem;line-height:inherit;}.skills-grid .keywords.svelte-1615qzb {font-size:0.9rem;margin:0;}
+  }</style><style id="svelte-g3qng">.timeline-item.svelte-g3qng {margin-top:0.7em;}.timeline-item.svelte-g3qng:first-of-type {margin-top:0;}.position.svelte-g3qng,
+  .company.svelte-g3qng,
+  .organization.svelte-g3qng,
+  .institution.svelte-g3qng,
+  .date.svelte-g3qng,
+  .area.svelte-g3qng,
+  .studyType.svelte-g3qng,
+  .title.svelte-g3qng,
+  .awarder.svelte-g3qng,
+  .publisher.svelte-g3qng,
+  .issuer.svelte-g3qng {display:inline;}.position.svelte-g3qng,
+  .studyType.svelte-g3qng,
+  .area.svelte-g3qng,
+  .title.svelte-g3qng {font-weight:600;}.company.svelte-g3qng::before,
+  .institution.svelte-g3qng::before,
+  .organization.svelte-g3qng::before,
+  .awarder.svelte-g3qng::before {content:"at ";}.company.svelte-g3qng,
+  .institution.svelte-g3qng,
+  .organization.svelte-g3qng,
+  .awarder.svelte-g3qng {color:var(--color-text-secondary);font-weight:400;}header.svelte-g3qng .date:where(.svelte-g3qng) {display:block;font-size:1rem;padding:0.1em 0;color:var(--color-heading);font-weight:600;}.item.svelte-g3qng {overflow:hidden;}
+
+  /* p margin handled via inline styles in paragraphSplit */.clear.svelte-g3qng::after {content:"";display:table;clear:both;}.location.svelte-g3qng {margin-right:0.5em;color:var(--color-text-secondary);font-weight:700;}header.svelte-g3qng {font-size:1.38rem;position:relative;}.header-left.svelte-g3qng .position:where(.svelte-g3qng) + .company:where(.svelte-g3qng)::before,
+  .header-left.svelte-g3qng .position:where(.svelte-g3qng) + .institution:where(.svelte-g3qng)::before,
+  .header-left.svelte-g3qng .position:where(.svelte-g3qng) + .organization:where(.svelte-g3qng)::before,
+  .header-left.svelte-g3qng .position:where(.svelte-g3qng) + .awarder:where(.svelte-g3qng)::before {content:"at ";}
+
+  @media print {.company.svelte-g3qng a:where(.svelte-g3qng) {color:#40484f;}.company.svelte-g3qng::before,
+    .institution.svelte-g3qng::before,
+    .organization.svelte-g3qng::before,
+    .awarder.svelte-g3qng::before {content:"at ";}.section p {margin:0;padding:0;}.fa-location-dot:before {padding-left:0.1em;}
+  }
+
+  @media screen and (max-width: 601px) {header.svelte-g3qng .date:where(.svelte-g3qng) {display:block;float:none;font-size:0.9rem;margin-top:0.2em;}.section > section.svelte-g3qng > header:where(.svelte-g3qng) {font-size:1.15rem;}
+  }
+
+  @media screen and (min-width: 602px) {header.svelte-g3qng .date:where(.svelte-g3qng) {float:right;font-weight:600;color:var(--color-heading);}
+  }
+
+  @media screen and (min-width: 1025px) {header.svelte-g3qng .date:where(.svelte-g3qng) {padding:0.2em;}.section > section.svelte-g3qng > header:where(.svelte-g3qng) .space-left:where(.svelte-g3qng) {opacity:1;cursor:pointer;}.section > section.svelte-g3qng:not(.main-summary) {margin-left:1.67rem;}.company.svelte-g3qng::before, .institution.svelte-g3qng::before, .organization.svelte-g3qng::before, .awarder.svelte-g3qng::before {content:"| ";}.header-left.svelte-g3qng {float:left;width:70%;word-break:normal;}.display.svelte-g3qng {display:none;}.display.svelte-g3qng:not(.none) {display:block;}
+  }</style><style id="svelte-hqrtpf">
+  @media print {.highlights.svelte-hqrtpf {margin:0.5em 0 0 0;}.highlights.svelte-hqrtpf > li:where(.svelte-hqrtpf) > p {margin-bottom:0.3em;}
+  }</style><style id="svelte-rbv6q6">.gpa.svelte-rbv6q6 {clear:both;padding-bottom:0.5em;}</style><style id="svelte-2dygc7">.languages-grid.svelte-2dygc7 {display:flex;flex-flow:row wrap;justify-content:flex-start;}.language-item.svelte-2dygc7 {width:15em;padding:0 0.5em 0.5em 0;border-bottom:none;}.language.svelte-2dygc7 {font-weight:600;}.display.svelte-2dygc7 {display:block;opacity:1 !important;}
+
+  @media screen and (max-width: 601px) {.languages-grid.svelte-2dygc7 {flex-direction:column;}.language-item.svelte-2dygc7 {width:100%;padding-right:0;}
+  }</style><style id="svelte-1bnc9h3">.interests-grid.svelte-1bnc9h3 {display:flex;flex-flow:row wrap;justify-content:flex-start;}.interest-item.svelte-1bnc9h3 {width:15em;padding:0 0.5em 0.5em 0;border-bottom:none;}
+
+  @media screen and (max-width: 601px) {.interests-grid.svelte-1bnc9h3 {flex-direction:column;}.interest-item.svelte-1bnc9h3 {width:100%;padding-right:0;}
+  }</style><style id="svelte-1y7ope6">.reference-item.svelte-1y7ope6 {padding-left:0.5em;margin-bottom:1em;border-left:5px solid var(--color-reference-border);}.name.svelte-1y7ope6 {font-weight:600;}</style>
   </head>
   <body>
-  
-  <div id="resume">
-    	<header id="header" class="clear">
-    		<img class="picture" src="https://0.gravatar.com/avatar/1c386f5e5ba6b8b9afb242864b4e6e4d7d6db78f081bf16b14111aa30c5dcf31?size&#x3D;512&amp;d&#x3D;initials" alt="David PIATEK" />
-    		<div class="middle">
-    			<h1 class="name">David PIATEK</h1>
-    			<h2 class="label">Lead Developer - DevOps</h2>
-    		</div>
-    		
-    		<span class="location">
-    			<span class="address">3 Glatigny,</span> 
-    			<span class="postalCode">41310,</span> 
-    			<span class="city">Prunay-Cassereau,</span> 
-    			<span class="countryCode">FR</span> 
-    		</span>
-    		
-    
-    		<div id="contact">
-    			<div class="email">
-    				<span class="fa fa-envelope-o"></span>
-    				<a href="mailto:dav.piatek@gmail.com">dav.piatek@gmail.com</a>
-    			</div>
-    			<div class="phone">
-    				<span class="fa fa-mobile"></span>
-    				<a href="tel:+33 611212739">+33 611212739</a>
-    			</div>
-    		</div>
-    
-    		<div id="profiles">
-    			<div class="item">
-    				<div class="username">
-    					<span class="fa fa-github github social"></span>
-    					<span class="url">
-    						<a target="_blank" href="https://github.com/david-piatek">david-piatek</a>
-    					</span> 
-    				</div>
-    			</div>
-    			<div class="item">
-    				<div class="username">
-    					<span class="fa fa-linkedin linkedin social"></span>
-    					<span class="url">
-    						<a target="_blank" href="https://www.linkedin.com/in/david-piatek-519aa275/">david-piatek-519aa275</a>
-    					</span> 
-    				</div>
-    			</div>
-    		</div>
-    	</header>
-    
-    	<section class="section main-summary">
-    		<section>
-    			<div><p>Tech addict avec une vraie sensibilité produit, je ne code pas dans ma grotte : j’aime comprendre les enjeux, challenger les specs, et livrer vite du solide.</p><p>Père de famille, vivant à la campagne, j’ai trouvé mon équilibre en gérant les rushs techniques à la pêche.</p><p>Lead dev dans l’âme, j’adore faire grandir les équipes, structurer les projets et poser des bases saines : archi hexagonale, CQRS, event sourcing… On ne shippe pas au hasard.</p><p>Côté DevOps ? Docker, Kubernetes, Terraform, CI/CD, je sais faire tourner la machine, la sécuriser, et l’automatiser jusqu’au café ☕.</p><p>L’arrivée de l’IA change la donne, et je suis là pour l’embrasser, pas la subir. Mon moteur : apprendre, transmettre, et trouver des solutions out of the box quand il le faut.</p><p>Je suis ouvert aux opportunités freelance ou CDI.</p></div>
-    		</section>
-    	</section>
-    
-    <section class="section margin1">
-    	<header>
-    		<h2 class='section-title'>Skills</h2>
-    	</header>
-    	<section id="skills">
-    		<div class="item">
-    			<h3 class="name">
-    				Web development
-    			</h3>
-    			 
-    			<div class="level master - senior 🎖️">
-    				<em>Master - Senior 🎖️</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>PHP</li>
-    				<li>Symfony</li>
-    				<li>Typescript</li>
-    				<li>Golang</li>
-    				<li>Bash</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Testing
-    			</h3>
-    			 
-    			<div class="level advanced - aficionado 🌵">
-    				<em>Advanced - Aficionado 🌵</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>PHPUnit</li>
-    				<li>Behat</li>
-    				<li>Jest</li>
-    				<li>Cypress</li>
-    				<li>TDD (Test Driven Development)</li>
-    				<li>BDD (Behavior Driven Development)</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Best Practices
-    			</h3>
-    			 
-    			<div class="level advanced - guard 💂">
-    				<em>Advanced - Guard 💂</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>SOLID</li>
-    				<li>KISS</li>
-    				<li>Software craftsmanship</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				CI/CD (Intégration et Déploiement Continus)
-    			</h3>
-    			 
-    			<div class="level advanced - lover ❤️">
-    				<em>Advanced - Lover ❤️</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>Gitlab</li>
-    				<li>Github-action</li>
-    				<li>Automation</li>
-    				<li>Feature flags</li>
-    				<li>A/B Testing</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Database
-    			</h3>
-    			 
-    			<div class="level advanced - consumer 🥞">
-    				<em>Advanced - Consumer 🥞</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>MySQL</li>
-    				<li>MariaDB</li>
-    				<li>ElasticSearch</li>
-    				<li>Redis</li>
-    				<li>Eventstore-db</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Architecture
-    			</h3>
-    			 
-    			<div class="level advanced - addict 🧓">
-    				<em>Advanced - Addict 🧓</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>CQRS</li>
-    				<li>SOA - microservice</li>
-    				<li>DDD</li>
-    				<li>Clean architecture</li>
-    				<li>event sourcing</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Server provisioning
-    			</h3>
-    			 
-    			<div class="level advanced - enthusiast 🎉">
-    				<em>Advanced - Enthusiast 🎉</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>Terraform</li>
-    				<li>Ansible</li>
-    				<li>packer</li>
-    				<li>docker</li>
-    				<li>kubernetes</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Cloud Provider
-    			</h3>
-    			 
-    			<div class="level advanced - addict 🦄">
-    				<em>Advanced - Addict 🦄</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>GCP</li>
-    				<li>Azure</li>
-    				<li>Digital Ocean</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Monitoring
-    			</h3>
-    			 
-    			<div class="level advanced - survivor 📊">
-    				<em>Advanced - Survivor 📊</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>New relic</li>
-    				<li>Sentry</li>
-    				<li>ELK</li>
-    				<li>Dynatrace</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Project Management
-    			</h3>
-    			 
-    			<div class="level advanced - admin 👷‍♂️">
-    				<em>Advanced - Admin 👷‍♂️</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>Agile</li>
-    				<li>Scrum</li>
-    				<li>Mentoring</li>
-    				<li>Management</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Miscellaneous
-    			</h3>
-    			 
-    			<div class="level advanced - power-user 💪">
-    				<em>Advanced - Power-User 💪</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>Linux</li>
-    				<li>Git</li>
-    			</ul>
-    		</div>
-    	</section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Work Experience <span class="item-count">(9)</span></h2>
-      </header>
-    
-      <section id="work">
-        <section class="work-item">
-    
-            <input id="work-item-0" type="checkbox" class="toggle-item" checked="checked" />
-            <label for="work-item-0"></label>
-    
-    			<header>
-    				<div class="position">Freelance - Developer PHP Senior / DevOps</div>
-    				<div class="company">OneyTrust🕵️‍♂️</div>
-    				<div class="date">
-    				  <span class="startDate">July 2025</span> 
-    					<span class="endDate">- June 2024</span> 
-    				</div>
-    			</header>
-    			
-        	<span class="website">
-        		<a target="_blank" href="https://www.oneytrust.com">https://www.oneytrust.com</a>
-        	</span>      	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>En tant que freelance ma  mission était de reprendre en main le legacy, pour pouvoir le deployer sur azure</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Ajout de fonctionnalités</p></li>
-                <li><p>TDD, architecture hexagonal</p></li>
-                <li><p>Amélioration de la CI</p></li>
-                <li><p>Amélioration de la CD</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-1" type="checkbox" class="toggle-item" />
-            <label for="work-item-1"></label>
-    
-    			<header>
-    				<div class="position">TechLead</div>
-    				<div class="company">Skaleet 💰</div>
-    				<div class="date">
-    				  <span class="startDate">January 2023</span> 
-    					<span class="endDate">- November 2024</span> 
-    				</div>
-    			</header>
-    			
-        	<span class="website">
-        		<a target="_blank" href="https://skaleet.com/en">https://skaleet.com/en</a>
-        	</span>      	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>En tant que TechLead je manageais ma Squad. En collaboration avec le Product Owner et le Test Manager nous definitions les specs et je m’assurais de la faisabilité technique</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Management</p></li>
-                <li><p>Amélioration de CI/CD</p></li>
-                <li><p>Rédaction de spécifications</p></li>
-                <li><p>Réalisation de POC</p></li>
-                <li><p>Architecture</p></li>
-                <li><p>Support niveau 3</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-2" type="checkbox" class="toggle-item" />
-            <label for="work-item-2"></label>
-    
-    			<header>
-    				<div class="position">Developer PHP Senior</div>
-    				<div class="company">Singulart 🎨</div>
-    				<div class="date">
-    				  <span class="startDate">September 2022</span> 
-    					<span class="endDate">- November 2022</span> 
-    				</div>
-    			</header>
-    			
-        	<span class="website">
-        		<a target="_blank" href="https://www.singulart.com/fr/">https://www.singulart.com/fr/</a>
-        	</span>      	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>Au sein de la squad ma mission était l'implémentation de nouvelles fonctionnalités, faire de la correction de bugs. Au sein de la guild amélioration de la stratégie de test fonctionnel avec php et end-to-end avec cypress</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Testing, CI/CD, best practices</p></li>
-                <li><p>Ajout de fonctionnalités dans Symfony</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-3" type="checkbox" class="toggle-item" />
-            <label for="work-item-3"></label>
-    
-    			<header>
-    				<div class="position">Lead Developer / DevOps</div>
-    				<div class="company">Pharmanity 💊</div>
-    				<div class="date">
-    				  <span class="startDate">January 2021</span> 
-    					<span class="endDate">- June 2022</span> 
-    				</div>
-    			</header>
-    			
-        	<span class="website">
-        		<a target="_blank" href="https://www.pharmanity.com/">https://www.pharmanity.com/</a>
-        	</span>      	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>Ma mission initiale était de maintenir la version existante en ajoutant de nouvelles fonctionnalités. J'ai pu ensuite m'occuper du recrutement de la nouvelle équipe en vue d'une refonte sur laquelle j'ai pu mettre  en place l'infrastructure et l'architecture</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Reconstituer la stack après incendie ovh</p></li>
-                <li><p>Mise en œuvre du Plan de Reprise d'Activité</p></li>
-                <li><p>Création d'une usine à application mobile</p></li>
-                <li><p>Mise en œuvre CI/CD </p></li>
-                <li><p>Mise en œuvre de la nouvelle architecture microservice en CQRS</p></li>
-                <li><p>Management d'une équipe SCRUM</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-4" type="checkbox" class="toggle-item" />
-            <label for="work-item-4"></label>
-    
-    			<header>
-    				<div class="position">Co-fondateur / Architecte / DevOps</div>
-    				<div class="company">Drawsheep 🐑</div>
-    				<div class="date">
-    				  <span class="startDate">June 2019</span> 
-    					<span class="endDate">- March 2021</span> 
-    				</div>
-    			</header>
-    			
-         	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>Définition de l'orientation produit et mise en œuvre de l'architecture / DevOps pour la création d'un erp/crm à destination des TPE</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Création des différents usecases</p></li>
-                <li><p>mise en œuvre d'une architecture scalable, résiliente</p></li>
-                <li><p>mise en œuvre d'une usine à site</p></li>
-                <li><p>CI/CD </p></li>
-                <li><p>Gestion des clusters Kubernetes</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-5" type="checkbox" class="toggle-item" />
-            <label for="work-item-5"></label>
-    
-    			<header>
-    				<div class="position">Developer PHP Senior</div>
-    				<div class="company">Prestashop 🎨</div>
-    				<div class="date">
-    				  <span class="startDate">January 2019</span> 
-    					<span class="endDate">- December 2020</span> 
-    				</div>
-    			</header>
-    			
-        	<span class="website">
-        		<a target="_blank" href="https://www.prestashop.com/fr">https://www.prestashop.com/fr</a>
-        	</span>      	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>Mettre prestashop en SaaS en verrouillant certaines fonctionnalités pour des questions de sécurité et de performances. Migrer les clients sur leurs propres serveurs à l'arrêt  de l'offre SaaS. Collaborer à la mise en œuvre du nouveau système de monétisation de prestashop.</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Déploiement d'une image docker sur Kubernetes</p></li>
-                <li><p>Script adaptable à n'importe quel hébergeur pour migration des clients</p></li>
-                <li><p>Collaboration à des projets open source</p></li>
-                <li><p>Mise en œuvre des environnements de developpement</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-6" type="checkbox" class="toggle-item" />
-            <label for="work-item-6"></label>
-    
-    			<header>
-    				<div class="position">Lead Developer</div>
-    				<div class="company">Foxnot 🦊</div>
-    				<div class="date">
-    				  <span class="startDate">November 2016</span> 
-    					<span class="endDate">- December 2018</span> 
-    				</div>
-    			</header>
-    			
-        	<span class="website">
-        		<a target="_blank" href="https://www.foxnot.com/">https://www.foxnot.com/</a>
-        	</span>      	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>Au sein d'une startup en lancement j'ai du créer l'équipe en veillant à la transmission des connaissances des prestataires de services. En collaboration avec le produit et l'infrastructure nous avons du trouver des solutions out of box pour permettre des communications entre le site et le logiciel des notaires</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Mise en œuvre CI/CD</p></li>
-                <li><p>Management d'équipe</p></li>
-                <li><p>Interfaçage entre une box et le site web</p></li>
-                <li><p>Instauration des bonnes pratiques</p></li>
-                <li><p>Gestion de l’infrastructure</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-7" type="checkbox" class="toggle-item" />
-            <label for="work-item-7"></label>
-    
-    			<header>
-    				<div class="position">Developer fullstack</div>
-    				<div class="company">La centrale pharma  💊</div>
-    				<div class="date">
-    				  <span class="startDate">June 2013</span> 
-    					<span class="endDate">- April 2016</span> 
-    				</div>
-    			</header>
-    			
-        	<span class="website">
-        		<a target="_blank" href="https://www.lacentralepharma.com/">https://www.lacentralepharma.com/</a>
-        	</span>      	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>En tant que développeur fullstack j'ai pu travailler sur différentes technologies PHP (Joomla, Symfony), créer des web services (REST et SOAP).</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Implémentation de PharmaML (protocol propre aux grossistes en pharmacies</p></li>
-                <li><p>Mise en œuvre d'un outil d'analyses statistiques</p></li>
-                <li><p>Connexion à une solution d'e-learning en SOAP</p></li>
-                <li><p>Maintien du back en PHP</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-8" type="checkbox" class="toggle-item" />
-            <label for="work-item-8"></label>
-    
-    			<header>
-    				<div class="position">Gérant / Photographe</div>
-    				<div class="company">David Piatek 📷</div>
-    				<div class="date">
-    				  <span class="startDate">June 2011</span> 
-    					<span class="endDate">- August 2013</span> 
-    				</div>
-    			</header>
-    			
-         	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>Gestion de l'entreprise, prise de vue, Développement de photographie</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Gestion de l'entreprise</p></li>
-                <li><p>Recherche de prestataire</p></li>
-                <li><p>Prise de vue</p></li>
-            </ul>
-        	</div>
-        </section>
-      </section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Volunteer</h2>
-      </header>
-      <section id="volunteer">
-        <section class="volunteer-item">
-    
-            <input id="volunteer-item-0" type="checkbox" class="toggle-item" checked="checked" />
-            <label for="volunteer-item-0"></label>
-    
-          <header>
-            <div class="header-left">
-              <div class="position">
-                Responsable de la communication
-              </div>
-              <div class="organization">
-                Prunaystival
-              </div>
-            </div>
-            <div class="date">
-              <span class="startDate">
-              October 2024
-              </span>
-              <span class="endDate">
-              - Current
-              </span>
-            </div>
-          </header>
-          <div class="item">
-            <div class="summary">
-              <p><p>Organisation d'un festival musical depuis 10 ans pour faire vivre le village</p></p>
-            </div>
-          </div>
-        </section>
-        <section class="volunteer-item">
-    
-            <input id="volunteer-item-1" type="checkbox" class="toggle-item" />
-            <label for="volunteer-item-1"></label>
-    
-          <header>
-            <div class="header-left">
-              <div class="position">
-                Membre actif
-              </div>
-              <div class="organization">
-                Les p&#x27;tites canailles
-              </div>
-            </div>
-            <div class="date">
-              <span class="startDate">
-              September 2022
-              </span>
-              <span class="endDate">
-              - Current
-              </span>
-            </div>
-          </header>
-          <div class="item">
-            <div class="summary">
-              <p><p>Association de parents d'élèves voulant faire vivre le village et la petite école communale</p></p>
-            </div>
-          </div>
-        </section>
-      </section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Education <span class="item-count">(3)</span></h2>
-      </header>
-    
-      <section id="education">
-        <section class="education-item">
-          <header>
-            <div class="header-left">
-              <div class="studyType">
-                Professional training
-              </div>
-              <div class="area">
-                Paris
-              </div>
-              <div class="institution">
-                SensioLabs
-              </div>
-            </div>
-            <div class="date">
-              <span class="startDate">
-              2014
-              </span>
-              <span class="endDate">
-              - 2014
-              </span>
-            </div>
-          </header>
-    
-    
-          <ul class="courses">
-            <li>Symfony</li>
-          </ul>
-    
-          <div class="item">
-          </div>
-        </section>
-        <section class="education-item">
-          <header>
-            <div class="header-left">
-              <div class="studyType">
-                Titre Professional CDA (Concepteur Développeur d&#x27;Applications)
-              </div>
-              <div class="area">
-                Tours
-              </div>
-              <div class="institution">
-                Cefim
-              </div>
-            </div>
-            <div class="date">
-              <span class="startDate">
-              2014
-              </span>
-              <span class="endDate">
-              - 2014
-              </span>
-            </div>
-          </header>
-    
-    
-          <ul class="courses">
-            <li>Gestion de projet</li>
-            <li>Maquettage d&#x27;application</li>
-            <li>Java</li>
-            <li>Android</li>
-            <li>MySQL</li>
-          </ul>
-    
-          <div class="item">
-          </div>
-        </section>
-        <section class="education-item">
-          <header>
-            <div class="header-left">
-              <div class="studyType">
-                Titre Professional IMM (Infographiste Multi-Média)
-              </div>
-              <div class="area">
-                Tours
-              </div>
-              <div class="institution">
-                Cefim
-              </div>
-            </div>
-            <div class="date">
-              <span class="startDate">
-              2012
-              </span>
-              <span class="endDate">
-              - 2012
-              </span>
-            </div>
-          </header>
-    
-    
-          <ul class="courses">
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>HTML/CSS</li>
-            <li>Wordpress</li>
-          </ul>
-    
-          <div class="item">
-          </div>
-        </section>
-      </section>
-    </section>
-    <section class="section margin1">
-      <header>
-        <h2 class='section-title'>Languages</h2>
-      </header>
-      <section id="languages">
-        <div class="display">
-          <h3 class="language">
-            French 🇫🇷
-          </h3>
-          <div class="item">
-            <div class="level fluency native speaker">
-              <em>Native speaker</em>
-              <div class="bar"></div>
-            </div>
-          </div>
-        </div>
-        <div class="display">
-          <h3 class="language">
-            English 🇬🇧
-          </h3>
-          <div class="item">
-            <div class="level fluency intermediate">
-              <em>Intermediate</em>
-              <div class="bar"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
-    <section class="section margin1">
-      <header>
-        <h2 class='section-title' class='section-title'>Interests</h2>
-      </header>
-      <section id="interests">
-        <div class="item">
-          <h3 class="name">
-            Art 🎨
-          </h3>
-          <ul class="keywords">
-            <li>Jonglage</li>
-            <li>Musique</li>
-            <li>Photo</li>
-            <li>Art digital</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Bricolage 🔨
-          </h3>
-          <ul class="keywords">
-            <li>Renovation</li>
-            <li>Jardinage</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Divers 🛹
-          </h3>
-          <ul class="keywords">
-            <li>BMX</li>
-            <li>Pêche</li>
-          </ul>
-        </div>
-      </section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>References</h2>
-      </header>
-      <section id="references">
-        <div class="item">
-          <blockquote class="reference">
-            &#8220;&#32;J&#x27;ai eu le plaisir de manager David en tant que développeur &amp; DevOps freelance et DevOps et le recommande vivement.
-    David possède une excellente maîtrise des pratiques DevOps. Il a joué un rôle clé dans l&#x27;amélioration de notre CI/CD et nous a grandement aidés dans notre projet de cloudification et de migration vers Kubernetes. Ses compétences techniques solides nous ont permis de moderniser efficacement notre infrastructure.
-    Au niveau relationnel, David se distingue par sa patience et sa capacité à expliquer clairement les concepts techniques complexes. Sa communication fluide et son tempérament calme font de lui un collaborateur apprécié des équipes. Il sait créer du consensus et facilite les prises de décision collectives.&#32;&#8221;
-          </blockquote>
-          <div class="name">
-            Guillaume Beauventre - CTO - OneyTrust
-          </div>
-        </div>
-        <div class="item">
-          <blockquote class="reference">
-            &#8220;&#32;L&#x27;expertise autour du développement logiciel de David est indéniable : connaissance du PHP, mais aussi et surtout des pratiques du software craftsmanship. Ajouté à cela il possède aussi de solides connaissances sur des outils d&#x27;infrastructure : CI/CD, Docker, Kubernetes, ...
-    
-    David est aussi quelqu&#x27;un de très agréable, investi dans son travail et apprécié de ses collègues.
-    Il ne reste pas bloqué devant les problèmes, il cherche &amp; trouve des solutions.
-    
-    J&#x27;ai adoré l&#x27;avoir dans mon équipe.&#32;&#8221;
-          </blockquote>
-          <div class="name">
-            Paul Jay - CTO - Skaleet
-          </div>
-        </div>
-        <div class="item">
-          <blockquote class="reference">
-            &#8220;&#32;Hors du commun ! David est un ovni dans le boulot, c&#x27;est énorme !! Sur un plan humain il est un manager surdoué ! Un vrai plaisir de faire évoluer une solution, une boîte avec lui !&#32;&#8221;
-          </blockquote>
-          <div class="name">
-            Dominique Bazin - Directeur de l&#x27;innovation - Foxnot
-          </div>
-        </div>
-      </section>
-    </section>
+    <a class="skip-to-content" href="#resume">Skip to content</a> <main id="resume" class="resume svelte-rssu9l"><header class="header clear svelte-10f9ycp"><img class="image svelte-10f9ycp" src="https://0.gravatar.com/avatar/1c386f5e5ba6b8b9afb242864b4e6e4d7d6db78f081bf16b14111aa30c5dcf31?size=512&amp;d=initials" alt="David PIATEK"/> <div class="middle"><h1 class="name svelte-10f9ycp">David PIATEK</h1> <h2 class="label svelte-10f9ycp">Lead Developer - DevOps</h2></div> <span class="location"><span>3 Glatigny,</span> <span>41310,</span> <span>Prunay-Cassereau,</span> <!--[!--> <span>(FR)</span></span> <!--[!--><!----> <div class="contact svelte-121pvxs"><div class="contact-item svelte-121pvxs"><span class="fa-regular fa-envelope icon svelte-121pvxs"></span> <a class="hide-href-print" href="mailto:dav.piatek@gmail.com">dav.piatek@gmail.com</a></div> <div class="contact-item svelte-121pvxs"><span class="fa-solid fa-mobile-screen-button icon svelte-121pvxs"></span> <a class="hide-href-print" href="tel:+33 611212739">+33 611212739</a></div> <!--[!--></div><!----> <nav class="profiles svelte-10f9ycp" aria-label="Social profiles"><div class="item svelte-a76edc"><div class="username"><span class="fa-brands fa-github social svelte-a76edc" style="--brand-light: #171515; --brand-dark: #c9d1d9"></span> <span class="url"><a target="_blank" href="https://github.com/david-piatek"><span class="show-only-url-print">david-piatek</span></a></span></div></div><div class="item svelte-a76edc"><div class="username"><span class="fa-brands fa-linkedin social svelte-a76edc" style="--brand-light: #007bb6; --brand-dark: #007bb6"></span> <span class="url"><a target="_blank" href="https://www.linkedin.com/in/david-piatek-519aa275/"><span class="show-only-url-print">david-piatek-519aa275</span></a></span></div></div></nav></header> <section class="section svelte-1lncexq"><header class="svelte-1lncexq"><h2 class="section-title svelte-1lncexq">Summary<!--[!--></h2></header> <section class="main-summary svelte-10f9ycp"><div><!----><p style="margin:0">Tech addict avec une vraie sensibilité produit, je ne code pas dans ma grotte : j’aime comprendre les enjeux, challenger les specs, et livrer vite du solide.</p>
+<p style="margin:0">Père de famille, vivant à la campagne, j’ai trouvé mon équilibre en gérant les rushs techniques à la pêche.</p>
+<p style="margin:0">Lead dev dans l’âme, j’adore faire grandir les équipes, structurer les projets et poser des bases saines : archi hexagonale, CQRS, event sourcing… On ne shippe pas au hasard.</p>
+<p style="margin:0">Côté DevOps ? Docker, Kubernetes, Terraform, CI/CD, je sais faire tourner la machine, la sécuriser, et l’automatiser jusqu’au café ☕.</p>
+<p style="margin:0">L’arrivée de l’IA change la donne, et je suis là pour l’embrasser, pas la subir. Mon moteur : apprendre, transmettre, et trouver des solutions out of the box quand il le faut.</p>
+<p style="margin:0">Je suis ouvert aux opportunités freelance ou CDI.</p><!----><!----></div></section><!----></section><!--[1--><section class="section svelte-1lncexq"><header class="svelte-1lncexq"><h2 class="section-title svelte-1lncexq">Skills<!--[!--></h2></header> <section class="skills-grid svelte-18p2gu6"><div class="skill-item svelte-18p2gu6"><h3 class="name svelte-18p2gu6">Web development</h3> <div class="level advanced svelte-10tjtrd" role="meter" aria-label="Web development level: Master - Senior 🎖️" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><em class="svelte-10tjtrd">Master - Senior 🎖️</em> <div class="bar svelte-10tjtrd" aria-hidden="true"></div></div> <ul class="keywords svelte-1615qzb"><li class="svelte-1615qzb">PHP</li><li class="svelte-1615qzb">Symfony</li><li class="svelte-1615qzb">Typescript</li><li class="svelte-1615qzb">Golang</li><li class="svelte-1615qzb">Bash</li></ul><!----></div><div class="skill-item svelte-18p2gu6"><h3 class="name svelte-18p2gu6">Testing</h3> <div class="level advanced svelte-10tjtrd" role="meter" aria-label="Testing level: Advanced - Aficionado 🌵" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><em class="svelte-10tjtrd">Advanced - Aficionado 🌵</em> <div class="bar svelte-10tjtrd" aria-hidden="true"></div></div> <ul class="keywords svelte-1615qzb"><li class="svelte-1615qzb">PHPUnit</li><li class="svelte-1615qzb">Behat</li><li class="svelte-1615qzb">Jest</li><li class="svelte-1615qzb">Cypress</li><li class="svelte-1615qzb">TDD (Test Driven Development)</li><li class="svelte-1615qzb">BDD (Behavior Driven Development)</li></ul><!----></div><div class="skill-item svelte-18p2gu6"><h3 class="name svelte-18p2gu6">Best Practices</h3> <div class="level advanced svelte-10tjtrd" role="meter" aria-label="Best Practices level: Advanced - Guard 💂" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><em class="svelte-10tjtrd">Advanced - Guard 💂</em> <div class="bar svelte-10tjtrd" aria-hidden="true"></div></div> <ul class="keywords svelte-1615qzb"><li class="svelte-1615qzb">SOLID</li><li class="svelte-1615qzb">KISS</li><li class="svelte-1615qzb">Software craftsmanship</li></ul><!----></div><div class="skill-item svelte-18p2gu6"><h3 class="name svelte-18p2gu6">CI/CD (Intégration et Déploiement Continus)</h3> <div class="level advanced svelte-10tjtrd" role="meter" aria-label="CI/CD (Intégration et Déploiement Continus) level: Advanced - Lover ❤️" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><em class="svelte-10tjtrd">Advanced - Lover ❤️</em> <div class="bar svelte-10tjtrd" aria-hidden="true"></div></div> <ul class="keywords svelte-1615qzb"><li class="svelte-1615qzb">Gitlab</li><li class="svelte-1615qzb">Github-action</li><li class="svelte-1615qzb">Automation</li><li class="svelte-1615qzb">Feature flags</li><li class="svelte-1615qzb">A/B Testing</li></ul><!----></div><div class="skill-item svelte-18p2gu6"><h3 class="name svelte-18p2gu6">Database</h3> <div class="level advanced svelte-10tjtrd" role="meter" aria-label="Database level: Advanced - Consumer 🥞" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><em class="svelte-10tjtrd">Advanced - Consumer 🥞</em> <div class="bar svelte-10tjtrd" aria-hidden="true"></div></div> <ul class="keywords svelte-1615qzb"><li class="svelte-1615qzb">MySQL</li><li class="svelte-1615qzb">MariaDB</li><li class="svelte-1615qzb">ElasticSearch</li><li class="svelte-1615qzb">Redis</li><li class="svelte-1615qzb">Eventstore-db</li></ul><!----></div><div class="skill-item svelte-18p2gu6"><h3 class="name svelte-18p2gu6">Architecture</h3> <div class="level advanced svelte-10tjtrd" role="meter" aria-label="Architecture level: Advanced - Addict 🧓" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><em class="svelte-10tjtrd">Advanced - Addict 🧓</em> <div class="bar svelte-10tjtrd" aria-hidden="true"></div></div> <ul class="keywords svelte-1615qzb"><li class="svelte-1615qzb">CQRS</li><li class="svelte-1615qzb">SOA - microservice</li><li class="svelte-1615qzb">DDD</li><li class="svelte-1615qzb">Clean architecture</li><li class="svelte-1615qzb">event sourcing</li></ul><!----></div><div class="skill-item svelte-18p2gu6"><h3 class="name svelte-18p2gu6">Server provisioning</h3> <div class="level advanced svelte-10tjtrd" role="meter" aria-label="Server provisioning level: Advanced - Enthusiast 🎉" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><em class="svelte-10tjtrd">Advanced - Enthusiast 🎉</em> <div class="bar svelte-10tjtrd" aria-hidden="true"></div></div> <ul class="keywords svelte-1615qzb"><li class="svelte-1615qzb">Terraform</li><li class="svelte-1615qzb">Ansible</li><li class="svelte-1615qzb">packer</li><li class="svelte-1615qzb">docker</li><li class="svelte-1615qzb">kubernetes</li></ul><!----></div><div class="skill-item svelte-18p2gu6"><h3 class="name svelte-18p2gu6">Cloud Provider</h3> <div class="level advanced svelte-10tjtrd" role="meter" aria-label="Cloud Provider level: Advanced - Addict 🦄" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><em class="svelte-10tjtrd">Advanced - Addict 🦄</em> <div class="bar svelte-10tjtrd" aria-hidden="true"></div></div> <ul class="keywords svelte-1615qzb"><li class="svelte-1615qzb">GCP</li><li class="svelte-1615qzb">Azure</li><li class="svelte-1615qzb">Digital Ocean</li></ul><!----></div><div class="skill-item svelte-18p2gu6"><h3 class="name svelte-18p2gu6">Monitoring</h3> <div class="level advanced svelte-10tjtrd" role="meter" aria-label="Monitoring level: Advanced - Survivor 📊" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><em class="svelte-10tjtrd">Advanced - Survivor 📊</em> <div class="bar svelte-10tjtrd" aria-hidden="true"></div></div> <ul class="keywords svelte-1615qzb"><li class="svelte-1615qzb">New relic</li><li class="svelte-1615qzb">Sentry</li><li class="svelte-1615qzb">ELK</li><li class="svelte-1615qzb">Dynatrace</li></ul><!----></div><div class="skill-item svelte-18p2gu6"><h3 class="name svelte-18p2gu6">Project Management</h3> <div class="level advanced svelte-10tjtrd" role="meter" aria-label="Project Management level: Advanced - Admin 👷‍♂️" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><em class="svelte-10tjtrd">Advanced - Admin 👷‍♂️</em> <div class="bar svelte-10tjtrd" aria-hidden="true"></div></div> <ul class="keywords svelte-1615qzb"><li class="svelte-1615qzb">Agile</li><li class="svelte-1615qzb">Scrum</li><li class="svelte-1615qzb">Mentoring</li><li class="svelte-1615qzb">Management</li></ul><!----></div><div class="skill-item svelte-18p2gu6"><h3 class="name svelte-18p2gu6">Miscellaneous</h3> <div class="level advanced svelte-10tjtrd" role="meter" aria-label="Miscellaneous level: Advanced - Power-User 💪" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><em class="svelte-10tjtrd">Advanced - Power-User 💪</em> <div class="bar svelte-10tjtrd" aria-hidden="true"></div></div> <ul class="keywords svelte-1615qzb"><li class="svelte-1615qzb">Linux</li><li class="svelte-1615qzb">Git</li></ul><!----></div></section><!----></section><!--[2--><section class="section svelte-1lncexq"><header class="svelte-1lncexq"><h2 class="section-title svelte-1lncexq">Work Experience<span class="item-count svelte-1lncexq">(9)</span></h2></header> <section id="work"><section class="timeline-item svelte-g3qng"><header class="clear svelte-g3qng"><div class="date"><span class="startDate">Jun 2025</span> <span class="endDate">- Jul 2024</span></div> <div class="header-left svelte-g3qng"><div class="position svelte-g3qng">Freelance - Developer PHP Senior / DevOps</div> <!--[!--></div></header> <!--[!--> <!--[!--><!----> <!--[!--> <div class="item svelte-g3qng"><div class="summary"><!----><p style="margin:0">En tant que freelance ma  mission était de reprendre en main le legacy, pour pouvoir le deployer sur azure</p><!----><!----></div> <ul class="highlights svelte-hqrtpf"><li class="svelte-hqrtpf"><!----><p style="margin:0">Ajout de fonctionnalités</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">TDD, architecture hexagonal</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Amélioration de la CI</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Amélioration de la CD</p><!----><!----></li></ul><!----></div></section><section class="timeline-item svelte-g3qng"><header class="clear svelte-g3qng"><div class="date"><span class="startDate">Jan 2023</span> <span class="endDate">- Nov 2024</span></div> <div class="header-left svelte-g3qng"><div class="position svelte-g3qng">TechLead</div> <!--[!--></div></header> <!--[!--> <!--[!--><!----> <!--[!--> <div class="item svelte-g3qng"><div class="summary"><!----><p style="margin:0">En tant que TechLead je manageais ma Squad. En collaboration avec le Product Owner et le Test Manager nous definitions les specs et je m’assurais de la faisabilité technique</p><!----><!----></div> <ul class="highlights svelte-hqrtpf"><li class="svelte-hqrtpf"><!----><p style="margin:0">Management</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Amélioration de CI/CD</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Rédaction de spécifications</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Réalisation de POC</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Architecture</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Support niveau 3</p><!----><!----></li></ul><!----></div></section><section class="timeline-item svelte-g3qng"><header class="clear svelte-g3qng"><div class="date"><span class="startDate">Sept 2022</span> <span class="endDate">- Nov 2022</span></div> <div class="header-left svelte-g3qng"><div class="position svelte-g3qng">Developer PHP Senior</div> <!--[!--></div></header> <!--[!--> <!--[!--><!----> <!--[!--> <div class="item svelte-g3qng"><div class="summary"><!----><p style="margin:0">Au sein de la squad ma mission était l'implémentation de nouvelles fonctionnalités, faire de la correction de bugs. Au sein de la guild amélioration de la stratégie de test fonctionnel avec php et end-to-end avec cypress</p><!----><!----></div> <ul class="highlights svelte-hqrtpf"><li class="svelte-hqrtpf"><!----><p style="margin:0">Testing, CI/CD, best practices</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Ajout de fonctionnalités dans Symfony</p><!----><!----></li></ul><!----></div></section><section class="timeline-item svelte-g3qng"><header class="clear svelte-g3qng"><div class="date"><span class="startDate">Jan 2021</span> <span class="endDate">- Jun 2022</span></div> <div class="header-left svelte-g3qng"><div class="position svelte-g3qng">Lead Developer / DevOps</div> <!--[!--></div></header> <!--[!--> <!--[!--><!----> <!--[!--> <div class="item svelte-g3qng"><div class="summary"><!----><p style="margin:0">Ma mission initiale était de maintenir la version existante en ajoutant de nouvelles fonctionnalités. J'ai pu ensuite m'occuper du recrutement de la nouvelle équipe en vue d'une refonte sur laquelle j'ai pu mettre  en place l'infrastructure et l'architecture</p><!----><!----></div> <ul class="highlights svelte-hqrtpf"><li class="svelte-hqrtpf"><!----><p style="margin:0">Reconstituer la stack après incendie ovh</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Mise en œuvre du Plan de Reprise d'Activité</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Création d'une usine à application mobile</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Mise en œuvre CI/CD</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Mise en œuvre de la nouvelle architecture microservice en CQRS</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Management d'une équipe SCRUM</p><!----><!----></li></ul><!----></div></section><section class="timeline-item svelte-g3qng"><header class="clear svelte-g3qng"><div class="date"><span class="startDate">Jun 2019</span> <span class="endDate">- Mar 2021</span></div> <div class="header-left svelte-g3qng"><div class="position svelte-g3qng">Co-fondateur / Architecte / DevOps</div> <!--[!--></div></header> <!--[!--> <!--[!--><!----> <!--[!--> <div class="item svelte-g3qng"><div class="summary"><!----><p style="margin:0">Définition de l'orientation produit et mise en œuvre de l'architecture / DevOps pour la création d'un erp/crm à destination des TPE</p><!----><!----></div> <ul class="highlights svelte-hqrtpf"><li class="svelte-hqrtpf"><!----><p style="margin:0">Création des différents usecases</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">mise en œuvre d'une architecture scalable, résiliente</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">mise en œuvre d'une usine à site</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">CI/CD</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Gestion des clusters Kubernetes</p><!----><!----></li></ul><!----></div></section><section class="timeline-item svelte-g3qng"><header class="clear svelte-g3qng"><div class="date"><span class="startDate">Jan 2019</span> <span class="endDate">- Dec 2020</span></div> <div class="header-left svelte-g3qng"><div class="position svelte-g3qng">Developer PHP Senior</div> <!--[!--></div></header> <!--[!--> <!--[!--><!----> <!--[!--> <div class="item svelte-g3qng"><div class="summary"><!----><p style="margin:0">Mettre prestashop en SaaS en verrouillant certaines fonctionnalités pour des questions de sécurité et de performances. Migrer les clients sur leurs propres serveurs à l'arrêt  de l'offre SaaS. Collaborer à la mise en œuvre du nouveau système de monétisation de prestashop.</p><!----><!----></div> <ul class="highlights svelte-hqrtpf"><li class="svelte-hqrtpf"><!----><p style="margin:0">Déploiement d'une image docker sur Kubernetes</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Script adaptable à n'importe quel hébergeur pour migration des clients</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Collaboration à des projets open source</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Mise en œuvre des environnements de developpement</p><!----><!----></li></ul><!----></div></section><section class="timeline-item svelte-g3qng"><header class="clear svelte-g3qng"><div class="date"><span class="startDate">Nov 2016</span> <span class="endDate">- Dec 2018</span></div> <div class="header-left svelte-g3qng"><div class="position svelte-g3qng">Lead Developer</div> <!--[!--></div></header> <!--[!--> <!--[!--><!----> <!--[!--> <div class="item svelte-g3qng"><div class="summary"><!----><p style="margin:0">Au sein d'une startup en lancement j'ai du créer l'équipe en veillant à la transmission des connaissances des prestataires de services. En collaboration avec le produit et l'infrastructure nous avons du trouver des solutions out of box pour permettre des communications entre le site et le logiciel des notaires</p><!----><!----></div> <ul class="highlights svelte-hqrtpf"><li class="svelte-hqrtpf"><!----><p style="margin:0">Mise en œuvre CI/CD</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Management d'équipe</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Interfaçage entre une box et le site web</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Instauration des bonnes pratiques</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Gestion de l’infrastructure</p><!----><!----></li></ul><!----></div></section><section class="timeline-item svelte-g3qng"><header class="clear svelte-g3qng"><div class="date"><span class="startDate">Jun 2013</span> <span class="endDate">- Apr 2016</span></div> <div class="header-left svelte-g3qng"><div class="position svelte-g3qng">Developer fullstack</div> <!--[!--></div></header> <!--[!--> <!--[!--><!----> <!--[!--> <div class="item svelte-g3qng"><div class="summary"><!----><p style="margin:0">En tant que développeur fullstack j'ai pu travailler sur différentes technologies PHP (Joomla, Symfony), créer des web services (REST et SOAP).</p><!----><!----></div> <ul class="highlights svelte-hqrtpf"><li class="svelte-hqrtpf"><!----><p style="margin:0">Implémentation de PharmaML (protocol propre aux grossistes en pharmacies</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Mise en œuvre d'un outil d'analyses statistiques</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Connexion à une solution d'e-learning en SOAP</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Maintien du back en PHP</p><!----><!----></li></ul><!----></div></section><section class="timeline-item svelte-g3qng"><header class="clear svelte-g3qng"><div class="date"><span class="startDate">Jun 2011</span> <span class="endDate">- Aug 2013</span></div> <div class="header-left svelte-g3qng"><div class="position svelte-g3qng">Gérant / Photographe</div> <!--[!--></div></header> <!--[!--> <!--[!--><!----> <!--[!--> <div class="item svelte-g3qng"><div class="summary"><!----><p style="margin:0">Gestion de l'entreprise, prise de vue, Développement de photographie</p><!----><!----></div> <ul class="highlights svelte-hqrtpf"><li class="svelte-hqrtpf"><!----><p style="margin:0">Gestion de l'entreprise</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Recherche de prestataire</p><!----><!----></li><li class="svelte-hqrtpf"><!----><p style="margin:0">Prise de vue</p><!----><!----></li></ul><!----></div></section></section><!----></section><!--[3--><!--[!--><!--[4--><section class="section svelte-1lncexq"><header class="svelte-1lncexq"><h2 class="section-title svelte-1lncexq">Volunteer<span class="item-count svelte-1lncexq">(2)</span></h2></header> <section id="volunteer"><section class="timeline-item svelte-g3qng"><header class="clear svelte-g3qng"><div class="date"><span class="startDate">Oct 2024</span> <!--[!--><span class="endDate">- Current</span></div> <div class="header-left svelte-g3qng"><div class="position svelte-g3qng">Responsable de la communication</div> <div class="organization svelte-g3qng"><a target="_blank" href="https://prunaystival.wixsite.com/prunaystival" class="svelte-g3qng">Prunaystival</a></div></div></header> <!--[!--> <!--[!--><!----> <!--[!--> <div class="item svelte-g3qng"><div class="summary"><!----><p style="margin:0">Organisation d'un festival musical depuis 10 ans pour faire vivre le village</p><!----><!----></div> <!--[!--><!----></div></section><section class="timeline-item svelte-g3qng"><header class="clear svelte-g3qng"><div class="date"><span class="startDate">Sept 2022</span> <!--[!--><span class="endDate">- Current</span></div> <div class="header-left svelte-g3qng"><div class="position svelte-g3qng">Membre actif</div> <div class="organization svelte-g3qng"><!--[!-->Les p'tites canailles</div></div></header> <!--[!--> <!--[!--><!----> <!--[!--> <div class="item svelte-g3qng"><div class="summary"><!----><p style="margin:0">Association de parents d'élèves voulant faire vivre le village et la petite école communale</p><!----><!----></div> <!--[!--><!----></div></section></section><!----></section><!--[5--><section class="section svelte-1lncexq"><header class="svelte-1lncexq"><h2 class="section-title svelte-1lncexq">Education<span class="item-count svelte-1lncexq">(3)</span></h2></header> <section id="education"><section class="timeline-item svelte-g3qng"><header class="clear svelte-g3qng"><div class="date"><span class="startDate">Sept 2014</span> <span class="endDate">- Sept 2014</span></div> <div class="header-left svelte-g3qng"><div class="position svelte-g3qng">Professional training Paris</div> <div class="institution svelte-g3qng"><!--[!-->SensioLabs</div></div></header> <!--[!--> <!--[!--><!----> <ul class="courses svelte-1615qzb"><li class="svelte-1615qzb">Symfony</li></ul> <!--[!--><!----> <div class="item svelte-g3qng"><!--[!--> <!--[!--><!----></div></section><section class="timeline-item svelte-g3qng"><header class="clear svelte-g3qng"><div class="date"><span class="startDate">Sept 2014</span> <span class="endDate">- Sept 2014</span></div> <div class="header-left svelte-g3qng"><div class="position svelte-g3qng">Titre Professional CDA (Concepteur Développeur d'Applications) Tours</div> <div class="institution svelte-g3qng"><!--[!-->Cefim</div></div></header> <!--[!--> <!--[!--><!----> <ul class="courses svelte-1615qzb"><li class="svelte-1615qzb">Gestion de projet</li><li class="svelte-1615qzb">Maquettage d'application</li><li class="svelte-1615qzb">Java</li><li class="svelte-1615qzb">Android</li><li class="svelte-1615qzb">MySQL</li></ul> <!--[!--><!----> <div class="item svelte-g3qng"><!--[!--> <!--[!--><!----></div></section><section class="timeline-item svelte-g3qng"><header class="clear svelte-g3qng"><div class="date"><span class="startDate">Sept 2012</span> <span class="endDate">- Jun 2012</span></div> <div class="header-left svelte-g3qng"><div class="position svelte-g3qng">Titre Professional IMM (Infographiste Multi-Média) Tours</div> <div class="institution svelte-g3qng"><!--[!-->Cefim</div></div></header> <!--[!--> <!--[!--><!----> <ul class="courses svelte-1615qzb"><li class="svelte-1615qzb">Photoshop</li><li class="svelte-1615qzb">Illustrator</li><li class="svelte-1615qzb">HTML/CSS</li><li class="svelte-1615qzb">Wordpress</li></ul> <!--[!--><!----> <div class="item svelte-g3qng"><!--[!--> <!--[!--><!----></div></section></section><!----></section><!--[6--><!--[!--><!--[7--><!--[!--><!--[8--><!--[!--><!--[9--><section class="section svelte-1lncexq"><header class="svelte-1lncexq"><h2 class="section-title svelte-1lncexq">Languages<span class="item-count svelte-1lncexq">(2)</span></h2></header> <section class="languages-grid svelte-2dygc7"><div class="language-entry display svelte-2dygc7"><h3 class="language svelte-2dygc7">French 🇫🇷</h3> <div class="language-item svelte-2dygc7"><div class="level master svelte-10tjtrd" role="meter" aria-label="Native speaker" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><em class="svelte-10tjtrd">Native speaker</em> <div class="bar svelte-10tjtrd" aria-hidden="true"></div></div></div></div><div class="language-entry display svelte-2dygc7"><h3 class="language svelte-2dygc7">English 🇬🇧</h3> <div class="language-item svelte-2dygc7"><div class="level intermediate svelte-10tjtrd" role="meter" aria-label="Intermediate" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><em class="svelte-10tjtrd">Intermediate</em> <div class="bar svelte-10tjtrd" aria-hidden="true"></div></div></div></div></section><!----></section><!--[10--><section class="section svelte-1lncexq"><header class="svelte-1lncexq"><h2 class="section-title svelte-1lncexq">Interests<span class="item-count svelte-1lncexq">(3)</span></h2></header> <section class="interests-grid svelte-1bnc9h3"><div class="interest-item svelte-1bnc9h3"><h3 class="name">Art 🎨</h3> <ul class="keywords svelte-1615qzb"><li class="svelte-1615qzb">Jonglage</li><li class="svelte-1615qzb">Musique</li><li class="svelte-1615qzb">Photo</li><li class="svelte-1615qzb">Art digital</li></ul><!----> <!--[!--></div><div class="interest-item svelte-1bnc9h3"><h3 class="name">Bricolage 🔨</h3> <ul class="keywords svelte-1615qzb"><li class="svelte-1615qzb">Renovation</li><li class="svelte-1615qzb">Jardinage</li></ul><!----> <!--[!--></div><div class="interest-item svelte-1bnc9h3"><h3 class="name">Divers 🛹</h3> <ul class="keywords svelte-1615qzb"><li class="svelte-1615qzb">BMX</li><li class="svelte-1615qzb">Pêche</li></ul><!----> <!--[!--></div></section><!----></section><!--[11--><section class="section svelte-1lncexq"><header class="svelte-1lncexq"><h2 class="section-title svelte-1lncexq">References<span class="item-count svelte-1lncexq">(3)</span></h2></header> <section class="references-list"><div class="reference-item svelte-1y7ope6"><blockquote class="reference">“ J'ai eu le plaisir de manager David en tant que développeur &amp; DevOps freelance et DevOps et le recommande vivement.
+David possède une excellente maîtrise des pratiques DevOps. Il a joué un rôle clé dans l'amélioration de notre CI/CD et nous a grandement aidés dans notre projet de cloudification et de migration vers Kubernetes. Ses compétences techniques solides nous ont permis de moderniser efficacement notre infrastructure.
+Au niveau relationnel, David se distingue par sa patience et sa capacité à expliquer clairement les concepts techniques complexes. Sa communication fluide et son tempérament calme font de lui un collaborateur apprécié des équipes. Il sait créer du consensus et facilite les prises de décision collectives. ”</blockquote> <div class="name svelte-1y7ope6">Guillaume Beauventre - CTO - OneyTrust</div></div><div class="reference-item svelte-1y7ope6"><blockquote class="reference">“ L'expertise autour du développement logiciel de David est indéniable : connaissance du PHP, mais aussi et surtout des pratiques du software craftsmanship. Ajouté à cela il possède aussi de solides connaissances sur des outils d'infrastructure : CI/CD, Docker, Kubernetes, ...
 
+David est aussi quelqu'un de très agréable, investi dans son travail et apprécié de ses collègues.
+Il ne reste pas bloqué devant les problèmes, il cherche &amp; trouve des solutions.
+
+J'ai adoré l'avoir dans mon équipe. ”</blockquote> <div class="name svelte-1y7ope6">Paul Jay - CTO - Skaleet</div></div><div class="reference-item svelte-1y7ope6"><blockquote class="reference">“ Hors du commun ! David est un ovni dans le boulot, c'est énorme !! Sur un plan humain il est un manager surdoué ! Un vrai plaisir de faire évoluer une solution, une boîte avec lui ! ”</blockquote> <div class="name svelte-1y7ope6">Dominique Bazin - Directeur de l'innovation - Foxnot</div></div></section><!----></section></main>
   </body>
 </html>
