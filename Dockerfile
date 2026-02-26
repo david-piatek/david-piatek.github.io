@@ -1,5 +1,5 @@
-FROM node:24.2.0-alpine3.21
+FROM node:24.14.0-alpine3.23
 
-RUN apk add chromium
+RUN apk add --no-cache chromium=144.0.7559.132-r3
 
 CMD ["npm", "run", "serve"]

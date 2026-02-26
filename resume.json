@@ -3,7 +3,6 @@
   "basics": {
     "name": "David PIATEK",
     "label": "Lead Developer - DevOps",
-    "image": "https://0.gravatar.com/avatar/1c386f5e5ba6b8b9afb242864b4e6e4d7d6db78f081bf16b14111aa30c5dcf31?size=512&d=initials",
     "email": "dav.piatek@gmail.com",
     "phone": "+33 611212739",
     "summary": "Tech addict avec une vraie sensibilité produit, je ne code pas dans ma grotte : j’aime comprendre les enjeux, challenger les specs, et livrer vite du solide.\n\nPère de famille, vivant à la campagne, j’ai trouvé mon équilibre en gérant les rushs techniques à la pêche.\n\nLead dev dans l’âme, j’adore faire grandir les équipes, structurer les projets et poser des bases saines : archi hexagonale, CQRS, event sourcing… On ne shippe pas au hasard.\n\nCôté DevOps ? Docker, Kubernetes, Terraform, CI/CD, je sais faire tourner la machine, la sécuriser, et l’automatiser jusqu’au café ☕.\n\nL’arrivée de l’IA change la donne, et je suis là pour l’embrasser, pas la subir. Mon moteur : apprendre, transmettre, et trouver des solutions out of the box quand il le faut.\n\nJe suis ouvert aux opportunités freelance ou CDI.",
@@ -24,7 +23,8 @@
         "username": "david-piatek-519aa275",
         "url": "https://www.linkedin.com/in/david-piatek-519aa275/"
       }
-    ]
+    ],
+    "picture": "https://0.gravatar.com/avatar/1c386f5e5ba6b8b9afb242864b4e6e4d7d6db78f081bf16b14111aa30c5dcf31?size=512&d=initials"
   },
   "work": [
     {
@@ -39,7 +39,7 @@
         "Amélioration de la CI",
         "Amélioration de la CD"
       ],
-      "name": "OneyTrust🕵️‍♂️"
+      "company": "OneyTrust🕵️‍♂️"
     },
     {
       "position": "TechLead",
@@ -55,7 +55,7 @@
         "Architecture",
         "Support niveau 3"
       ],
-      "name": "Skaleet 💰"
+      "company": "Skaleet 💰"
     },
     {
       "position": "Developer PHP Senior",
@@ -67,7 +67,7 @@
         "Testing, CI/CD, best practices",
         "Ajout de fonctionnalités dans Symfony"
       ],
-      "name": "Singulart 🎨"
+      "company": "Singulart 🎨"
     },
     {
       "position": "Lead Developer / DevOps",
@@ -83,7 +83,7 @@
         "Mise en œuvre de la nouvelle architecture microservice en CQRS",
         "Management d'une équipe SCRUM"
       ],
-      "name": "Pharmanity 💊"
+      "company": "Pharmanity 💊"
     },
     {
       "position": "Co-fondateur / Architecte / DevOps",
@@ -98,7 +98,7 @@
         "CI/CD ",
         "Gestion des clusters Kubernetes"
       ],
-      "name": "Drawsheep 🐑"
+      "company": "Drawsheep 🐑"
     },
     {
       "position": "Developer PHP Senior",
@@ -112,7 +112,7 @@
         "Collaboration à des projets open source",
         "Mise en œuvre des environnements de developpement"
       ],
-      "name": "Prestashop 🎨"
+      "company": "Prestashop 🎨"
     },
     {
       "position": "Lead Developer",
@@ -127,7 +127,7 @@
         "Instauration des bonnes pratiques",
         "Gestion de l’infrastructure"
       ],
-      "name": "Foxnot 🦊"
+      "company": "Foxnot 🦊"
     },
     {
       "position": "Developer fullstack",
@@ -141,7 +141,7 @@
         "Connexion à une solution d'e-learning en SOAP",
         "Maintien du back en PHP"
       ],
-      "name": "La centrale pharma  💊"
+      "company": "La centrale pharma  💊"
     },
     {
       "position": "Gérant / Photographe",
@@ -154,7 +154,7 @@
         "Recherche de prestataire",
         "Prise de vue"
       ],
-      "name": "David Piatek 📷"
+      "company": "David Piatek 📷"
     }
   ],
   "volunteer": [

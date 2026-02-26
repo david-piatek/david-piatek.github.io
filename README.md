@@ -14,7 +14,6 @@ Here's my resume. It is built upon the [JSON Resume schema](https://jsonresume.o
 
 ```bash
 task init
-task hooks:install
 ```
 
 ## Usage
