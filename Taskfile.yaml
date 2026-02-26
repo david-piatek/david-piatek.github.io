@@ -9,7 +9,7 @@ tasks:
     silent: true
     cmds:
       - cp ./.env.dist ./.env || true
-      - docker compose run --rm  resume npm install
+      - docker compose run --rm resume npm install
 
   run:
     desc: Start the application
@@ -21,7 +21,7 @@ tasks:
     desc: Export
     silent: true
     cmds:
-      - docker compose run --rm  resume npm run export
+      - docker compose run --rm resume npm run export
 
   default:
     desc: Default
