@@ -5,7 +5,7 @@
     "label": "Lead Developer - DevOps - Backend Developer",
     "email": "dav.piatek@gmail.com",
     "phone": "+33 611212739",
-    "summary": "Tech addict avec une vraie sensibilité produit, je ne code pas dans ma grotte : j’aime comprendre les enjeux, challenger les specs, et livrer vite du solide.\n\nPère de famille, vivant à la campagne, j’ai trouvé mon équilibre en gérant les rushs techniques à la pêche.\n\nLead dev dans l’âme, j’adore faire grandir les équipes, structurer les projets et poser des bases saines : archi hexagonale, CQRS, event sourcing… On ne shippe pas au hasard.\n\nCôté DevOps ? Docker, Kubernetes, Terraform, CI/CD, je sais faire tourner la machine, la sécuriser, et l’automatiser jusqu’au café ☕.\n\nL’arrivée de l’IA change la donne, et je suis là pour l’embrasser, pas la subir. Mon moteur : apprendre, transmettre, et trouver des solutions out of the box quand il le faut.\n\nJe suis ouvert aux opportunités freelance ou CDI.",
+    "summary": "Passionné de technologie, aujourd’hui très investi dans les sujets autour de l’IA, j’évolue dans la tech avec une recherche constante d’équilibre et de recul, renforcée par un cadre de vie proche de la nature.\n\nIssu du développement, j’ai exercé des responsabilités de Tech Lead, ce qui m’a permis de travailler sur l’architecture, la qualité logicielle et l’infrastructure. Au fil des projets, je me suis découvert une appétence forte pour le DevOps : industrialisation, automatisation et fiabilisation des plateformes.\n\nConvaincu que l’IA renforce plus que jamais la valeur des profils capables de construire des produits de bout en bout, je m’inscris aujourd’hui dans une démarche de product builder, à l’interface entre développement, DevOps et produit.",
     "location": {
       "address": "3 Glatigny",
       "postalCode": "41310",
@@ -219,7 +219,6 @@
   "skills": [
     {
       "name": "Web development",
-      "level": "Master - Senior 🎖️",
       "keywords": [
         "PHP",
         "Symfony",
@@ -230,19 +229,17 @@
     },
     {
       "name": "Testing",
-      "level": "Advanced - Aficionado 🌵",
       "keywords": [
         "PHPUnit",
         "Behat",
         "Jest",
         "Cypress",
-        "TDD (Test Driven Development)",
-        "BDD (Behavior Driven Development)"
+        "TDD",
+        "BDD"
       ]
     },
     {
       "name": "Best Practices",
-      "level": "Advanced - Guard 💂",
       "keywords": [
         "SOLID",
         "KISS",
@@ -250,8 +247,7 @@
       ]
     },
     {
-      "name": "CI/CD (Intégration et Déploiement Continus)",
-      "level": "Advanced - Lover ❤️",
+      "name": "CI/CD",
       "keywords": [
         "Gitlab",
         "Github-action",
@@ -262,7 +258,6 @@
     },
     {
       "name": "Database",
-      "level": "Advanced - Consumer 🥞",
       "keywords": [
         "MySQL",
         "MariaDB",
@@ -273,7 +268,6 @@
     },
     {
       "name": "Architecture",
-      "level": "Advanced - Addict 🧓",
       "keywords": [
         "CQRS",
         "SOA - microservice",
@@ -284,7 +278,6 @@
     },
     {
       "name": "Server provisioning",
-      "level": "Advanced - Enthusiast 🎉",
       "keywords": [
         "Terraform",
         "Ansible",
@@ -295,7 +288,6 @@
     },
     {
       "name": "Cloud Provider",
-      "level": "Advanced - Addict 🦄",
       "keywords": [
         "GCP",
         "Azure",
@@ -304,7 +296,6 @@
     },
     {
       "name": "Monitoring",
-      "level": "Advanced - Survivor 📊",
       "keywords": [
         "New relic",
         "Sentry",
@@ -314,7 +305,6 @@
     },
     {
       "name": "Project Management",
-      "level": "Advanced - Admin 👷‍♂️",
       "keywords": [
         "Agile",
         "Scrum",
@@ -324,7 +314,6 @@
     },
     {
       "name": "Miscellaneous",
-      "level": "Advanced - Power-User 💪",
       "keywords": [
         "Linux",
         "Git"
@@ -338,7 +327,7 @@
     },
     {
       "language": "English 🇬🇧",
-      "fluency": "Intermediate"
+      "fluency": ""
     }
   ],
   "interests": [
@@ -347,8 +336,7 @@
       "keywords": [
         "Jonglage",
         "Musique",
-        "Photo",
-        "Art digital"
+        "Photo"
       ]
     },
     {
