@@ -3,16 +3,18 @@
 ## Requirements
 
 * [Task](https://taskfile.dev/installation/)
-* [Docker (as a non-root user)](https://docs.docker.com/get-docker/) (Install only Docker Engine, avoid 
+* [Docker (as a non-root user)](https://docs.docker.com/get-docker/)
+* [hadolint](https://github.com/hadolint/hadolint#install) — Dockerfile linter
 
 ## Description
 
-Here's my resume. It is built upon the [JSON Resume schema](https://jsonresume.org/schema/) using the [JSON Resume CLI tool](https://github.com/jsonresume/resume-cli). 
+Here's my resume. It is built upon the [JSON Resume schema](https://jsonresume.org/schema/) using the [JSON Resume CLI tool](https://github.com/jsonresume/resume-cli).
 
 ## Install
 
 ```bash
 task init
+task hooks:install
 ```
 
 ## Usage

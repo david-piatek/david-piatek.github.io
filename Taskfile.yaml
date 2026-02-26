@@ -23,6 +23,26 @@ tasks:
     cmds:
       - docker compose run --rm resume npm run export
 
+  lint:
+    desc: Lint Dockerfile with hadolint
+    silent: true
+    cmds:
+      - hadolint Dockerfile
+
+  test:
+    desc: Validate resume.json
+    silent: true
+    cmds:
+      - docker compose run --rm resume npm test
+
+  hooks:install:
+    desc: Install git hooks
+    silent: true
+    cmds:
+      - git config core.hooksPath .githooks
+      - chmod +x .githooks/pre-commit .githooks/pre-push
+      - echo "Git hooks installed."
+
   default:
     desc: Default
     cmds:
