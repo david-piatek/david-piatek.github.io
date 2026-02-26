@@ -1,0 +1,369 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "basics": {
+    "name": "David PIATEK",
+    "label": "Lead Developer - DevOps - Backend Developer",
+    "email": "dav.piatek@gmail.com",
+    "phone": "+33 611212739",
+    "summary": "Father of two, living in the countryside, I have built a personal and professional balance that helps me navigate the pressure and intense pace of tech with calm and clarity.\n\nA technology enthusiast from the start, I built my career around software development before moving into Tech Lead responsibilities. This experience led me to work on architecture, software quality and infrastructure, and to gradually shift towards DevOps.\n\nToday, I operate with a full-product vision, combining development, DevOps and automation — in a context where AI is accelerating cycles and reinforcing the value of profiles capable of building and industrialising end-to-end solutions.",
+    "location": {
+      "address": "3 Glatigny",
+      "postalCode": "41310",
+      "city": "Prunay-Cassereau",
+      "countryCode": "FR"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "david-piatek",
+        "url": "https://github.com/david-piatek"
+      },
+      {
+        "network": "Linkedin",
+        "username": "david-piatek-519aa275",
+        "url": "https://www.linkedin.com/in/david-piatek-519aa275/"
+      }
+    ],
+    "picture": "https://0.gravatar.com/avatar/1c386f5e5ba6b8b9afb242864b4e6e4d7d6db78f081bf16b14111aa30c5dcf31?size=512&d=initials"
+  },
+  "work": [
+    {
+      "company": "Freelance mission 🛠️",
+      "position": "Freelance - Senior PHP/Symfony Developer / DevOps",
+      "startDate": "2025-07-07",
+      "summary": "Freelance missions around process automation and showcase website development.",
+      "highlights": [
+        "PHP/Symfony development",
+        "Process automation",
+        "CI/CD and Docker fixes"
+      ]
+    },
+    {
+      "company": "OneyTrust🕵️‍♂️",
+      "position": "Freelance - Senior PHP Developer / DevOps",
+      "website": "https://www.oneytrust.com",
+      "startDate": "2024-06-08",
+      "endDate": "2025-07-06",
+      "summary": "As a freelance developer, my mission was to take ownership of the legacy codebase and deploy it on Azure.",
+      "highlights": [
+        "Feature development",
+        "TDD, hexagonal architecture",
+        "CI/CD improvement",
+        "Oracle to PostgreSQL migration",
+        "On-premise to Azure AKS migration"
+      ]
+    },
+    {
+      "company": "Skaleet 💰",
+      "position": "Tech Lead",
+      "website": "https://skaleet.com/en",
+      "startDate": "2023-01-11",
+      "endDate": "2024-11-15",
+      "summary": "As Tech Lead, I managed my squad. In collaboration with the Product Owner and Test Manager, we defined specifications and I ensured technical feasibility.",
+      "highlights": [
+        "Team management",
+        "CI/CD improvement",
+        "Specification writing",
+        "POC delivery",
+        "Architecture",
+        "Level 3 support"
+      ]
+    },
+    {
+      "company": "Pharmanity 💊",
+      "position": "Lead Developer / DevOps",
+      "website": "https://www.pharmanity.com/",
+      "startDate": "2021-01-05",
+      "endDate": "2022-06-20",
+      "summary": "My initial mission was to maintain the existing version while adding new features. I then handled recruitment for the new team ahead of a full rewrite, during which I set up the infrastructure and architecture.",
+      "highlights": [
+        "Rebuilt the stack after OVH datacenter fire",
+        "Disaster recovery plan implementation",
+        "Mobile application factory setup",
+        "CI/CD implementation",
+        "New CQRS microservice architecture",
+        "SCRUM team management"
+      ]
+    },
+    {
+      "company": "Drawsheep 🐑",
+      "position": "Co-founder / Architect / DevOps",
+      "startDate": "2019-06-01",
+      "endDate": "2021-03-10",
+      "summary": "Defined product direction and implemented the architecture and DevOps for building an ERP/CRM platform targeting small businesses.",
+      "highlights": [
+        "Use case design",
+        "Scalable and resilient architecture",
+        "Multi-site factory setup",
+        "CI/CD",
+        "Kubernetes cluster management"
+      ]
+    },
+    {
+      "company": "Prestashop 🎨",
+      "position": "Senior PHP Developer",
+      "website": "https://www.prestashop.com/fr",
+      "startDate": "2019-01-09",
+      "endDate": "2020-12-20",
+      "summary": "Delivered PrestaShop as SaaS by locking down features for security and performance. Migrated customers to their own servers when the SaaS offer ended. Contributed to the new PrestaShop monetisation system.",
+      "highlights": [
+        "Docker image deployment on Kubernetes",
+        "Flexible migration script for any hosting provider",
+        "Open source contributions",
+        "Development environment setup"
+      ]
+    },
+    {
+      "company": "Foxnot 🦊",
+      "position": "Lead Developer",
+      "website": "https://www.foxnot.com/",
+      "startDate": "2016-11-20",
+      "endDate": "2018-12-01",
+      "summary": "Within a early-stage startup, I built the team while ensuring knowledge transfer from service providers. Working with product and infrastructure teams, we devised out-of-the-box solutions to enable communication between the website and notary software.",
+      "highlights": [
+        "CI/CD implementation",
+        "Team management",
+        "Website to hardware box integration",
+        "Best practices introduction",
+        "Infrastructure management"
+      ]
+    },
+    {
+      "company": "La centrale pharma 💊",
+      "position": "Fullstack Developer",
+      "website": "https://www.lacentralepharma.com/",
+      "startDate": "2013-06-30",
+      "endDate": "2016-04-30",
+      "summary": "As a fullstack developer, I worked across multiple PHP technologies (Joomla, Symfony) and built REST and SOAP web services.",
+      "highlights": [
+        "PharmaML implementation (pharmaceutical wholesaler protocol)",
+        "Statistical analysis tool development",
+        "SOAP e-learning platform integration",
+        "PHP backend maintenance"
+      ]
+    },
+    {
+      "company": "David Piatek 📷",
+      "position": "Owner / Photographer",
+      "startDate": "2011-06-01",
+      "endDate": "2013-08-05",
+      "summary": "Business management, photography, and photo development.",
+      "highlights": [
+        "Business management",
+        "Supplier sourcing",
+        "Photography"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Prunaystival",
+      "position": "Head of Communications",
+      "url": "https://prunaystival.wixsite.com/prunaystival",
+      "startDate": "2024-10-01",
+      "summary": "Organising a music festival for 10 years to bring life to the village.",
+      "highlights": []
+    },
+    {
+      "organization": "Les p'tites canailles",
+      "position": "Active member",
+      "startDate": "2022-09-01",
+      "summary": "Parents' association working to keep the village and its small community school alive.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "SensioLabs",
+      "area": "Paris",
+      "studyType": "Professional training",
+      "startDate": "2014-09-01",
+      "endDate": "2014-09-05",
+      "gpa": null,
+      "courses": [
+        "Symfony"
+      ]
+    },
+    {
+      "institution": "Cefim",
+      "area": "Tours",
+      "studyType": "Professional Certificate - Application Designer Developer",
+      "startDate": "2014-09-01",
+      "endDate": "2014-09-05",
+      "gpa": null,
+      "courses": [
+        "Project management",
+        "Application wireframing",
+        "Java",
+        "Android",
+        "MySQL"
+      ]
+    },
+    {
+      "institution": "Cefim",
+      "area": "Tours",
+      "studyType": "Professional Certificate - Multimedia Designer",
+      "startDate": "2012-09-01",
+      "endDate": "2012-06-01",
+      "gpa": null,
+      "courses": [
+        "Photoshop",
+        "Illustrator",
+        "HTML/CSS",
+        "Wordpress"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web development",
+      "keywords": [
+        "PHP",
+        "Symfony",
+        "Typescript",
+        "Golang",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Testing",
+      "keywords": [
+        "PHPUnit",
+        "Behat",
+        "Jest",
+        "Cypress",
+        "TDD",
+        "BDD"
+      ]
+    },
+    {
+      "name": "Best Practices",
+      "keywords": [
+        "SOLID",
+        "KISS",
+        "Software craftsmanship"
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "keywords": [
+        "Gitlab",
+        "Github-action",
+        "Automation",
+        "Feature flags",
+        "A/B Testing"
+      ]
+    },
+    {
+      "name": "Database",
+      "keywords": [
+        "MySQL",
+        "MariaDB",
+        "ElasticSearch",
+        "Redis",
+        "Eventstore-db"
+      ]
+    },
+    {
+      "name": "Architecture",
+      "keywords": [
+        "CQRS",
+        "SOA - microservice",
+        "DDD",
+        "Clean architecture",
+        "Event sourcing"
+      ]
+    },
+    {
+      "name": "Server provisioning",
+      "keywords": [
+        "Terraform",
+        "Ansible",
+        "Packer",
+        "Docker",
+        "Kubernetes"
+      ]
+    },
+    {
+      "name": "Cloud Provider",
+      "keywords": [
+        "GCP",
+        "Azure",
+        "Digital Ocean"
+      ]
+    },
+    {
+      "name": "Monitoring",
+      "keywords": [
+        "New Relic",
+        "Sentry",
+        "ELK",
+        "Dynatrace"
+      ]
+    },
+    {
+      "name": "Project Management",
+      "keywords": [
+        "Agile",
+        "Scrum",
+        "Mentoring",
+        "Management"
+      ]
+    },
+    {
+      "name": "Miscellaneous",
+      "keywords": [
+        "Linux",
+        "Git"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "French 🇫🇷",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English 🇬🇧",
+      "fluency": "Intermediate"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Art 🎨",
+      "keywords": [
+        "Juggling",
+        "Music",
+        "Photography"
+      ]
+    },
+    {
+      "name": "DIY 🔨",
+      "keywords": [
+        "Renovation",
+        "Gardening"
+      ]
+    },
+    {
+      "name": "Outdoors 🛹",
+      "keywords": [
+        "BMX",
+        "Fishing"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Guillaume Beauventre - CTO - OneyTrust",
+      "reference": "I had the pleasure of managing David as a freelance developer & DevOps and I highly recommend him.\nDavid has an excellent command of DevOps practices. He played a key role in improving our CI/CD and greatly helped us with our cloudification and Kubernetes migration project. His strong technical skills enabled us to effectively modernise our infrastructure.\nOn a personal level, David stands out for his patience and ability to clearly explain complex technical concepts. His smooth communication and calm temperament make him a team favourite. He knows how to build consensus and facilitates collective decision-making."
+    },
+    {
+      "name": "Paul Jay - CTO - Skaleet",
+      "reference": "David's software development expertise is undeniable: deep knowledge of PHP, and above all of software craftsmanship practices. On top of that, he has solid knowledge of infrastructure tooling: CI/CD, Docker, Kubernetes...\n\nDavid is also a very pleasant person, committed to his work and appreciated by his colleagues.\nHe doesn't get stuck on problems — he seeks and finds solutions.\n\nI loved having him on my team."
+    },
+    {
+      "name": "Dominique Bazin - Head of Innovation - Foxnot",
+      "reference": "One of a kind! David is an absolute standout at work — it's impressive!! On a human level, he is an exceptionally gifted manager! A true pleasure to grow a solution and a company alongside him!"
+    }
+  ]
+}

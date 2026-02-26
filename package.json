@@ -6,7 +6,8 @@
   "scripts": {
     "test": "resume validate",
     "serve": "resume serve --theme=stackoverflow",
-    "export": "resume export index.html --theme=stackoverflow"
+    "export": "resume export index.html --theme=stackoverflow",
+    "export:en": "resume export index.en.html --theme=stackoverflow --resume resume.en.json"
   },
   "repository": {
     "type": "git",
