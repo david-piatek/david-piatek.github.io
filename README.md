@@ -24,6 +24,10 @@ To have all possible actions with the documentation, [just do it](https://media.
 task
 ```
 
+## Security
+
+GitHub Dependabot reports vulnerabilities in the dependencies (`resume-cli`, `jsonresume-theme-stackoverflow`). These are **acknowledged and accepted** — this toolchain runs locally only and is never exposed publicly. The exported `index.html` is the only artifact deployed.
+
 ## Contact me
 
 My [Linkedin Profile](https://www.linkedin.com/in/david-piatek-519aa275/) or send me an email at dav.piatek@gmail.com
