@@ -28,7 +28,6 @@
   },
   "work": [
     {
-      "company": "OneyTrust🕵️‍♂️",
       "position": "Freelance - Developer PHP Senior / DevOps",
       "website": "https://www.oneytrust.com",
       "startDate": "2025-06-08",
@@ -39,10 +38,10 @@
         "TDD, architecture hexagonal",
         "Amélioration de la CI",
         "Amélioration de la CD"
-      ]
+      ],
+      "name": "OneyTrust🕵️‍♂️"
     },
     {
-      "company": "Skaleet 💰",
       "position": "TechLead",
       "website": "https://skaleet.com/en",
       "startDate": "2023-01-11",
@@ -55,10 +54,10 @@
         "Réalisation de POC",
         "Architecture",
         "Support niveau 3"
-      ]
+      ],
+      "name": "Skaleet 💰"
     },
     {
-      "company": "Singulart 🎨",
       "position": "Developer PHP Senior",
       "website": "https://www.singulart.com/fr/",
       "startDate": "2022-09-05",
@@ -67,10 +66,10 @@
       "highlights": [
         "Testing, CI/CD, best practices",
         "Ajout de fonctionnalités dans Symfony"
-      ]
+      ],
+      "name": "Singulart 🎨"
     },
     {
-      "company": "Pharmanity 💊",
       "position": "Lead Developer / DevOps",
       "website": "https://www.pharmanity.com/",
       "startDate": "2021-01-05",
@@ -83,10 +82,10 @@
         "Mise en œuvre CI/CD ",
         "Mise en œuvre de la nouvelle architecture microservice en CQRS",
         "Management d'une équipe SCRUM"
-      ]
+      ],
+      "name": "Pharmanity 💊"
     },
     {
-      "company": "Drawsheep 🐑",
       "position": "Co-fondateur / Architecte / DevOps",
       "website": null,
       "startDate": "2019-06-01",
@@ -98,10 +97,10 @@
         "mise en œuvre d'une usine à site",
         "CI/CD ",
         "Gestion des clusters Kubernetes"
-      ]
+      ],
+      "name": "Drawsheep 🐑"
     },
     {
-      "company": "Prestashop 🎨",
       "position": "Developer PHP Senior",
       "website": "https://www.prestashop.com/fr",
       "startDate": "2019-01-09",
@@ -112,10 +111,10 @@
         "Script adaptable à n'importe quel hébergeur pour migration des clients",
         "Collaboration à des projets open source",
         "Mise en œuvre des environnements de developpement"
-      ]
+      ],
+      "name": "Prestashop 🎨"
     },
     {
-      "company": "Foxnot 🦊",
       "position": "Lead Developer",
       "website": "https://www.foxnot.com/",
       "startDate": "2016-11-20",
@@ -127,10 +126,10 @@
         "Interfaçage entre une box et le site web",
         "Instauration des bonnes pratiques",
         "Gestion de l’infrastructure"
-      ]
+      ],
+      "name": "Foxnot 🦊"
     },
     {
-      "company": "La centrale pharma  💊",
       "position": "Developer fullstack",
       "website": "https://www.lacentralepharma.com/",
       "startDate": "2013-06-30",
@@ -141,10 +140,10 @@
         "Mise en œuvre d'un outil d'analyses statistiques",
         "Connexion à une solution d'e-learning en SOAP",
         "Maintien du back en PHP"
-      ]
+      ],
+      "name": "La centrale pharma  💊"
     },
     {
-      "company": "David Piatek 📷",
       "position": "Gérant / Photographe",
       "website": null,
       "startDate": "2011-06-01",
@@ -154,7 +153,8 @@
         "Gestion de l'entreprise",
         "Recherche de prestataire",
         "Prise de vue"
-      ]
+      ],
+      "name": "David Piatek 📷"
     }
   ],
   "volunteer": [
