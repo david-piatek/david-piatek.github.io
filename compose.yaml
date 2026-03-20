@@ -1,8 +1,0 @@
-services:
-  resume:
-    build: .
-    working_dir: /usr/app
-    volumes:
-      - .:/usr/app
-    ports:
-      - ${NODE_HTTP_PORT:-4000}:4000

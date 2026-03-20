@@ -1,0 +1,275 @@
+{
+    "profil": {
+        "picture": "https://0.gravatar.com/avatar/1c386f5e5ba6b8b9afb242864b4e6e4d7d6db78f081bf16b14111aa30c5dcf31?size=512&d=initials",
+        "name": "David PIATEK",
+        "title": "BUILDER",
+        "email": "dav.piatek@gmail.com",
+        "phone": "+33 611212739",
+        "summary": "Père de deux enfants, installé à la campagne, j’ai construit un équilibre personnel et professionnel qui m’aide à gérer la pression et les rythmes intenses de la tech avec calme et lucidité.\n\nPassionné de technologie depuis toujours, j’ai bâti mon parcours autour du développement logiciel avant d’évoluer vers des responsabilités de Tech Lead. Cette expérience m’a conduit à travailler sur l’architecture, la qualité logicielle et l’infrastructure, puis à m’orienter progressivement vers le DevOps.\n\nAujourd’hui, j’interviens avec une vision globale du produit, en combinant développement, DevOps et automatisation, dans un contexte où l’IA accélère les cycles. Je m’inscris dans une démarche de product builder, à l’interface entre développement, DevOps et produit.",
+        "location": {
+            "address": "3 Glatigny",
+            "postalCode": "41310",
+            "city": "Prunay-Cassereau",
+            "countryCode": "FR"
+        },
+        "links": [
+            {
+                "network": "Github",
+                "username": "david-piatek",
+                "url": "https://github.com/david-piatek"
+            },
+            {
+                "network": "Linkedin",
+                "username": "david-piatek-519aa275",
+                "url": "https://www.linkedin.com/in/david-piatek-519aa275/"
+            }
+        ],
+        "languages": [
+            {
+                "language": "French 🇫🇷",
+                "fluency": "Native speaker"
+            },
+            {
+                "language": "English 🇬🇧",
+                "fluency": "Intermediate"
+            }
+        ],
+        "interests": [
+            {
+                "name": "Art 🎨",
+                "keywords": [
+                    "Jonglage",
+                    "Musique",
+                    "Photo"
+                ]
+            },
+            {
+                "name": "Bricolage 🔨",
+                "keywords": [
+                    "Renovation",
+                    "Jardinage"
+                ]
+            },
+            {
+                "name": "Divers 🛹",
+                "keywords": [
+                    "BMX",
+                    "Pêche"
+                ]
+            }
+        ]
+    },
+    "history": [
+        {
+            "company": "Mission freelance 🛠️",
+            "position": "BUILDER",
+            "type": "Freelance",
+            "startDate": "2025-07-07",
+            "summary": "Missions freelance",
+            "highlights": [
+                "Développement PHP/Symfony",
+                "Automatisation de processus",
+                "Correction CI/CD et Docker"
+            ],
+            "keywords": [
+                "PHP",
+                "Symfony",
+                "Typescript",
+                "Golang",
+                "Bash"
+            ]
+        },
+        {
+            "company": "OneyTrust🕵️‍♂️",
+            "type": "Freelance",
+            "position": "Developer",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRpj9fg1tgOQMCmVYvmVcWV1eusTqDrYAnTA&s",
+            "website": "https://www.oneytrust.com",
+            "startDate": "2024-06-08",
+            "endDate": "2025-07-06",
+            "summary": "En tant que freelance ma  mission était de reprendre en main le legacy, pour pouvoir le deployer sur azure",
+            "highlights": [
+                "Ajout de fonctionnalités",
+                "TDD, architecture hexagonal",
+                "Amélioration de la CI/CD",
+                "Migration Oracle vers PostgreSQL",
+                "Migration on-premise vers Azure AKS"
+            ],
+            "keywords": [
+                "PHP",
+                "Symfony",
+                "Typescript",
+                "Golang",
+                "Bash"
+            ],
+            "references": [
+                {
+                    "name": "Guillaume Beauventre - CTO - OneyTrust",
+                    "reference": "J'ai eu le plaisir de manager David en tant que développeur & DevOps freelance et DevOps et le recommande vivement.\nDavid possède une excellente maîtrise des pratiques DevOps. Il a joué un rôle clé dans l'amélioration de notre CI/CD et nous a grandement aidés dans notre projet de cloudification et de migration vers Kubernetes. Ses compétences techniques solides nous ont permis de moderniser efficacement notre infrastructure.\nAu niveau relationnel, David se distingue par sa patience et sa capacité à expliquer clairement les concepts techniques complexes. Sa communication fluide et son tempérament calme font de lui un collaborateur apprécié des équipes. Il sait créer du consensus et facilite les prises de décision collectives."
+                }
+            ]
+        },
+        {
+            "company": "Skaleet",
+            "type": "CDI",
+            "position": "TechLead",
+            "logo": "data:image/png;base64,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",
+            "website": "https://skaleet.com/en",
+            "startDate": "2023-01-11",
+            "endDate": "2024-11-15",
+            "summary": "En tant que TechLead je manageais ma Squad. En collaboration avec le Product Owner et le Test Manager nous definitions les specs et je m’assurais de la faisabilité technique",
+            "highlights": [
+                "Management",
+                "Amélioration de CI/CD",
+                "Rédaction de spécifications",
+                "Réalisation de POC",
+                "Architecture",
+                "Support niveau 3"
+            ],
+            "references": [
+                {
+                    "name": "Paul Jay - CTO - Skaleet",
+                    "reference": "L'expertise autour du développement logiciel de David est indéniable : connaissance du PHP, mais aussi et surtout des pratiques du software craftsmanship. Ajouté à cela il possède aussi de solides connaissances sur des outils d'infrastructure : CI/CD, Docker, Kubernetes, ...\n\nDavid est aussi quelqu'un de très agréable, investi dans son travail et apprécié de ses collègues.\nIl ne reste pas bloqué devant les problèmes, il cherche & trouve des solutions.\n\nJ'ai adoré l'avoir dans mon équipe."
+                }
+            ]
+        },
+        {
+            "company": "Pharmanity",
+            "type": "CDI",
+            "position": "TechLead",
+            "website": "https://www.pharmanity.com/",
+            "startDate": "2021-01-05",
+            "endDate": "2022-06-20",
+            "summary": "Ma mission initiale était de maintenir la version existante en ajoutant de nouvelles fonctionnalités. J'ai pu ensuite m'occuper du recrutement de la nouvelle équipe en vue d'une refonte sur laquelle j'ai pu mettre  en place l'infrastructure et l'architecture",
+            "highlights": [
+                "Reconstituer la stack après incendie ovh",
+                "Mise en œuvre du Plan de Reprise d'Activité",
+                "Création d'une usine à application mobile",
+                "Mise en œuvre CI/CD ",
+                "Mise en œuvre de la nouvelle architecture microservice en CQRS",
+                "Management d'une équipe SCRUM"
+            ]
+        },
+        {
+            "company": "Drawsheep 🐑",
+            "position": "Co-fondateur / DG",
+            "type": null,
+            "website": null,
+            "startDate": "2019-06-01",
+            "endDate": "2021-03-10",
+            "summary": "Définition de l'orientation produit et mise en œuvre de l'architecture / DevOps pour la création d'un erp/crm à destination des TPE",
+            "highlights": [
+                "Création des différents usecases",
+                "mise en œuvre d'une architecture scalable, résiliente",
+                "mise en œuvre d'une usine à site",
+                "CI/CD ",
+                "Gestion des clusters Kubernetes"
+            ]
+        },
+        {
+            "company": "Prestashop 🎨",
+            "type": "CDI",
+            "position": "DevOps",
+            "website": "https://www.prestashop.com/fr",
+            "startDate": "2019-01-09",
+            "endDate": "2020-12-20",
+            "summary": "Mettre prestashop en SaaS en verrouillant certaines fonctionnalités pour des questions de sécurité et de performances. Migrer les clients sur leurs propres serveurs à l'arrêt  de l'offre SaaS. Collaborer à la mise en œuvre du nouveau système de monétisation de prestashop.",
+            "highlights": [
+                "Déploiement d'une image docker sur Kubernetes",
+                "Script adaptable à n'importe quel hébergeur pour migration des clients",
+                "Collaboration à des projets open source",
+                "Mise en œuvre des environnements de developpement"
+            ]
+        },
+        {
+            "company": "Foxnot 🦊",
+            "logo": "https://www.cetir.net/wp-content/uploads/2017/12/2017_realisation_Foxnot_01.jpg",
+            "website": "https://www.foxnot.com/",
+            "position": "Lead Developer",
+            "type": "CDI",
+            "startDate": "2016-11-20",
+            "endDate": "2018-12-01",
+            "summary": "Au sein d'une startup en lancement j'ai du créer l'équipe en veillant à la transmission des connaissances des prestataires de services. En collaboration avec le produit et l'infrastructure nous avons du trouver des solutions out of box pour permettre des communications entre le site et le logiciel des notaires",
+            "highlights": [
+                "Mise en œuvre CI/CD",
+                "Management d'équipe",
+                "Interfaçage entre une box et le site web",
+                "Instauration des bonnes pratiques",
+                "Gestion de l’infrastructure"
+            ],
+            "references": [
+                {
+                    "name": "Dominique Bazin - Directeur de l'innovation - Foxnot",
+                    "reference": "Hors du commun ! David est un ovni dans le boulot, c'est énorme !! Sur un plan humain il est un manager surdoué ! Un vrai plaisir de faire évoluer une solution, une boîte avec lui !"
+                }
+            ]
+        },
+        {
+            "company": "SensioLabs",
+            "type": "student",
+            "position": "student",
+            "website": "https://www.prestashop.com/fr",
+            "startDate": "2014-09-01",
+            "endDate": "2014-09-05",
+            "courses": [
+                "Symfony"
+            ]
+        },
+        {
+            "company": "La centrale pharma  💊",
+            "position": "Developer fullstack",
+            "website": "https://www.lacentralepharma.com/",
+            "startDate": "2013-06-30",
+            "endDate": "2016-04-30",
+            "summary": "En tant que développeur fullstack j'ai pu travailler sur différentes technologies PHP (Joomla, Symfony), créer des web services (REST et SOAP).",
+            "highlights": [
+                "Implémentation de PharmaML (protocol propre aux grossistes en pharmacies",
+                "Mise en œuvre d'un outil d'analyses statistiques",
+                "Connexion à une solution d'e-learning en SOAP",
+                "Maintien du back en PHP"
+            ]
+        },
+        {
+            "institution": "Cefim",
+            "type": "student",
+            "position": "Titre Professional CDA (Concepteur Développeur d'Applications)",
+            "startDate": "2014-09-01",
+            "endDate": "2014-09-05",
+            "highlights": [
+                "Gestion de projet",
+                "Maquettage d'application",
+                "Java",
+                "Android",
+                "MySQL"
+            ]
+        },
+        {
+            "company": "Cefim",
+            "type": "student",
+            "position": "Titre Professional IMM (Infographiste Multi-Média)",
+            "startDate": "2012-09-01",
+            "endDate": "2013-06-01",
+
+            "highlights": [
+                "Photoshop",
+                "Illustrator",
+                "HTML/CSS",
+                "Wordpress"
+            ]
+        },
+        {
+            "company": "David Piatek",
+            "type": "Founder",
+            "position": "Gérant / Photographe",
+            "website": null,
+            "startDate": "2011-06-01",
+            "endDate": "2013-08-05",
+            "summary": "Gestion de l'entreprise, prise de vue, Développement de photographie",
+            "highlights": [
+                "Gestion de l'entreprise",
+                "Recherche de prestataire",
+                "Prise de vue"
+            ]
+        }
+    ]
+}
