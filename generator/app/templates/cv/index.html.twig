@@ -212,8 +212,15 @@
 
         /* Timeline */
         .t-item {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
             position: relative;
+        }
+
+        .t-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
         }
 
         .t-header {
@@ -268,14 +275,11 @@
         }
 
         .t-logo {
-            width: 55px;
-            height: 55px;
+            width: 70px;
+            height: 70px;
             object-fit: contain;
             border-radius: 10px;
-            background: var(--white);
             flex-shrink: 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-            border: 1px solid var(--border);
         }
 
         .t-keywords {
