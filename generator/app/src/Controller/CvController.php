@@ -32,36 +32,4 @@ class CvController extends AbstractController
             'Content-Length'      => strlen($pdf),
         ]);
     }
-
-    #[Route('/admin', methods: ['GET'])]
-    public function admin(string $cvFile): Response
-    {
-        $json = file_get_contents($cvFile);
-
-        return $this->render('cv/admin.html.twig', ['json' => $json]);
-    }
-
-    #[Route('/admin', methods: ['POST'])]
-    public function adminSave(Request $request, string $cvFile): Response
-    {
-        $raw = $request->request->get('cv');
-
-        $decoded = json_decode($raw);
-        if ($decoded === null) {
-            return $this->render('cv/admin.html.twig', [
-                'json'  => $raw,
-                'error' => 'JSON invalide : ' . json_last_error_msg(),
-            ]);
-        }
-
-        file_put_contents($cvFile, json_encode($decoded, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
-
-        return $this->redirectToRoute('app_cv_admin');
-    }
-
-    #[Route('/{any}', requirements: ['any' => '.+'], priority: -1)]
-    public function notFound(): RedirectResponse
-    {
-        return $this->redirect('/');
-    }
 }

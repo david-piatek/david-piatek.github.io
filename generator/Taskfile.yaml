@@ -27,26 +27,19 @@ tasks:
     desc: "Run application (foreground)"
     cmds:
       - task: init
-      - docker compose -f ops/compose.yaml run --rm cv php
+      - docker compose -f ops/compose.yaml run --rm cv sh
 
   console:
     desc: "Run Symfony console command"
     cmds:
       - docker compose -f ops/compose.yaml run --rm cv php bin/console {{.CLI_ARGS}}
 
-  build:
-    desc: "Export rendered HTML → ../index.html"
-    cmds:
-      - task: init
-      - docker compose -f ops/compose.yaml up -d cv
-      - curl -sf --retry 10 --retry-delay 1 --retry-connrefused http://localhost:${HTTP_PORT:-8456}/ -o ../index.html
-      - echo "Built → ../index.html"
-
   export:
-    desc: "Export CV to PDF → data/cv.pdf"
+    desc: "Export CV → ../index.html + data/cv.pdf"
     cmds:
       - task: init
       - docker compose -f ops/compose.yaml up -d
+      - curl -sf --retry 10 --retry-delay 1 --retry-connrefused http://localhost:${HTTP_PORT:-8456}/ -o ../index.html
       - docker compose -f ops/compose.yaml wait exporter
       - curl -sf http://localhost:${HTTP_PORT:-8456}/export -o data/cv.pdf
-      - echo "Exported → data/cv.pdf"
+      - echo "Exported → ../index.html + data/cv.pdf"

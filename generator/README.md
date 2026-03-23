@@ -26,6 +26,17 @@ To have all possible actions with the documentation, [just do it](https://media.
 task
 ```
 
+## URL parameters
+
+The CV page supports query parameters to control visibility:
+
+| Parameter  | Effect |
+|------------|--------|
+| `?public`  | Hides private contact info (email, phone, address). Links (GitHub, LinkedIn) remain visible. |
+| `?download` | Shows the "Download PDF" button (hidden by default). |
+
+Parameters can be combined: `?public&download`
+
 ## Contact me
 
 My [Linkedin Profile](https://www.linkedin.com/in/david-piatek-519aa275/) or send me an email at dav.piatek@gmail.com
