@@ -212,8 +212,15 @@
 
         /* Timeline */
         .t-item {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
             position: relative;
+        }
+
+        .t-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
         }
 
         .t-header {
@@ -268,14 +275,11 @@
         }
 
         .t-logo {
-            width: 55px;
-            height: 55px;
+            width: 70px;
+            height: 70px;
             object-fit: contain;
             border-radius: 10px;
-            background: var(--white);
             flex-shrink: 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-            border: 1px solid var(--border);
         }
 
         .t-keywords {
@@ -799,7 +803,7 @@
                                 <div class="t-date" data-start="2025-07-07"
                                      data-end="2025-12-31"></div>
                             </div>
-                                                            <img src="https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/09/baby-logos.jpg" class="t-logo" alt="Congé parental">
+                                                            <img src="/logos/cong_parental.jpg" class="t-logo" alt="Congé parental">
                                                     </div>
 
                                                     <div class="t-summary">Congé parental et restauration de longère</div>
@@ -824,7 +828,7 @@
                                 <div class="t-date" data-start="2024-06-08"
                                      data-end="2025-07-06"></div>
                             </div>
-                                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRpj9fg1tgOQMCmVYvmVcWV1eusTqDrYAnTA&amp;s" class="t-logo" alt="OneyTrust">
+                                                            <img src="/logos/oneytrust.png" class="t-logo" alt="OneyTrust">
                                                     </div>
 
                                                     <div class="t-summary">En tant que freelance ma  mission était de reprendre en main le legacy, pour pouvoir le deployer sur azure</div>
@@ -929,7 +933,7 @@
                                 <div class="t-date" data-start="2023-01-11"
                                      data-end="2024-11-15"></div>
                             </div>
-                                                            <img src="data:image/png;base64,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" class="t-logo" alt="Skaleet">
+                                                            <img src="/logos/skaleet.png" class="t-logo" alt="Skaleet">
                                                     </div>
 
                                                     <div class="t-summary">En tant que TechLead je manageais ma Squad. En collaboration avec le Product Owner et le Test Manager nous definitions les specs et je m’assurais de la faisabilité technique</div>
@@ -1022,7 +1026,7 @@
                                 <div class="t-date" data-start="2021-01-05"
                                      data-end="2022-06-20"></div>
                             </div>
-                                                            <img src="https://pbs.twimg.com/profile_images/1650779261546971139/5iKVt3VX_400x400.jpg" class="t-logo" alt="Pharmanity">
+                                                            <img src="/logos/pharmanity.jpg" class="t-logo" alt="Pharmanity">
                                                     </div>
 
                                                     <div class="t-summary">Ma mission initiale était de maintenir la version existante en ajoutant de nouvelles fonctionnalités. J&#039;ai pu ensuite m&#039;occuper du recrutement de la nouvelle équipe en vue d&#039;une refonte sur laquelle j&#039;ai pu mettre  en place l&#039;infrastructure et l&#039;architecture</div>
@@ -1155,7 +1159,7 @@
                                 <div class="t-date" data-start="2019-06-01"
                                      data-end="2021-03-10"></div>
                             </div>
-                                                            <img src="https://web.archive.org/web/20220112100952im_/http://drawsheep.com/favicon.png" class="t-logo" alt="Drawsheep">
+                                                            <img src="/logos/drawsheep.png" class="t-logo" alt="Drawsheep">
                                                     </div>
 
                                                     <div class="t-summary">Définition de l&#039;orientation produit et mise en œuvre de l&#039;architecture / DevOps pour la création d&#039;un erp/crm à destination des TPE</div>
@@ -1236,7 +1240,7 @@
                                 <div class="t-date" data-start="2019-01-09"
                                      data-end="2020-12-20"></div>
                             </div>
-                                                            <img src="https://www.ceicom-solutions.fr/wp-content/uploads/2021/06/Prestashop-logo.png" class="t-logo" alt="Prestashop">
+                                                            <img src="/logos/prestashop.png" class="t-logo" alt="Prestashop">
                                                     </div>
 
                                                     <div class="t-summary">Mettre prestashop en SaaS en verrouillant certaines fonctionnalités pour des questions de sécurité et de performances. Migrer les clients sur leurs propres serveurs à l&#039;arrêt  de l&#039;offre SaaS. Collaborer à la mise en œuvre du nouveau système de monétisation de prestashop.</div>
@@ -1313,7 +1317,7 @@
                                 <div class="t-date" data-start="2016-11-20"
                                      data-end="2018-12-01"></div>
                             </div>
-                                                            <img src="https://media.licdn.com/dms/image/v2/C4E0BAQEPxfKEF1Pfrg/company-logo_200_200/company-logo_200_200/0/1652345474571/foxnot_logo?e=2147483647&amp;v=beta&amp;t=Z_KPvpTDG9Pgd65emr33d4gucznjfd1CVZgd1w9v5Lg" class="t-logo" alt="Foxnot">
+                                                            <img src="/logos/foxnot.png" class="t-logo" alt="Foxnot">
                                                     </div>
 
                                                     <div class="t-summary">Au sein d&#039;une startup en lancement j&#039;ai du créer l&#039;équipe en veillant à la transmission des connaissances des prestataires de services. En collaboration avec le produit et l&#039;infrastructure nous avons du trouver des solutions out of box pour permettre des communications entre le site et le logiciel des notaires</div>
@@ -1374,7 +1378,7 @@
                                 <div class="t-date" data-start="2013-06-30"
                                      data-end="2016-04-30"></div>
                             </div>
-                                                            <img src="https://www.sagittapharma.com//uploads/groupings/logo/fichier-1-6904d1ef8f717442592604.png" class="t-logo" alt="La centrale pharma">
+                                                            <img src="/logos/la_centrale_pharma.png" class="t-logo" alt="La centrale pharma">
                                                     </div>
 
                                                     <div class="t-summary">En tant que développeur fullstack j&#039;ai pu travailler sur différentes technologies PHP (Joomla, Symfony), créer des web services (REST et SOAP).</div>
@@ -1456,7 +1460,7 @@ J&#039;ai adoré l&#039;avoir dans mon équipe. »</div>
                                 <div class="t-date" data-start="2024-10-06"
                                      data-end="2024-10-11"></div>
                             </div>
-                                                            <img src="https://enix.io/svg/logos/logo.svg" class="t-logo" alt="Enix">
+                                                            <img src="/logos/enix.svg" class="t-logo" alt="Enix">
                                                     </div>
 
                         
@@ -1483,7 +1487,7 @@ J&#039;ai adoré l&#039;avoir dans mon équipe. »</div>
                                 <div class="t-date" data-start="2014-09-01"
                                      data-end="2014-09-05"></div>
                             </div>
-                                                            <img src="https://logovtor.com/wp-content/uploads/2020/03/sensiolabs-logo-vector.png" class="t-logo" alt="SensioLabs">
+                                                            <img src="/logos/sensiolabs.png" class="t-logo" alt="SensioLabs">
                                                     </div>
 
                         
@@ -1502,7 +1506,7 @@ J&#039;ai adoré l&#039;avoir dans mon équipe. »</div>
                                 <div class="t-date" data-start="2013-09-01"
                                      data-end="2014-09-05"></div>
                             </div>
-                                                            <img src="https://www.ledigitalpme.fr/assets/components/phpthumbof/cache/20190725-040750_migx_ack.8018dfd5b3a6e4c8df59313d582b0a10.png" class="t-logo" alt="Cefim">
+                                                            <img src="/logos/cefim.png" class="t-logo" alt="Cefim">
                                                     </div>
 
                         
@@ -1531,7 +1535,7 @@ J&#039;ai adoré l&#039;avoir dans mon équipe. »</div>
                                 <div class="t-date" data-start="2012-09-01"
                                      data-end="2013-06-01"></div>
                             </div>
-                                                            <img src="https://www.ledigitalpme.fr/assets/components/phpthumbof/cache/20190725-040750_migx_ack.8018dfd5b3a6e4c8df59313d582b0a10.png" class="t-logo" alt="Cefim">
+                                                            <img src="/logos/cefim.png" class="t-logo" alt="Cefim">
                                                     </div>
 
                         
