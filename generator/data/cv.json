@@ -2,7 +2,7 @@
     "profil": {
         "picture": "https://0.gravatar.com/avatar/1c386f5e5ba6b8b9afb242864b4e6e4d7d6db78f081bf16b14111aa30c5dcf31?size=512&d=initials",
         "name": "David PIATEK",
-        "title": "BUILDER",
+        "title": "BUILDER PHP Symfony",
         "email": "dav.piatek@gmail.com",
         "phone": "+33 611212739",
         "summary": "Passionné de technologie depuis toujours, tour à tour développeur et Tech Lead en start-up et scale-up, j’ai développé une solide compréhension des enjeux QA, DevOps, Data et produit. Je fais le lien entre technique et produit pour délivrer rapidement de la valeur.",
@@ -57,12 +57,18 @@
                     "Pêche"
                 ]
             }
+        ],
+        "softSkills": [
+            "Communication",
+            "Esprit d'équipe",
+            "Adaptabilité",
+            "Curiosité"
         ]
     },
     "history": [
         {
             "company": {
-                "name": "Mission freelance 🛠️",
+                "name": "Missions freelance",
                 "logo": null,
                 "website": null,
                 "description": null
@@ -72,39 +78,151 @@
             "startDate": "2026-01-01",
             "summary": "Missions freelance",
             "highlights": [
-                "Développement PHP/Symfony",
-                "Automatisation de processus",
-                "Correction CI/CD et Docker"
+                "Automatisation de processus et amélioration des workflows",
+                "Optimisation CI/CD et containerisation Docker",
+                "Création d’un générateur de sites statiques",
+                "Développement d’un SI de centralisation et gestion de photos multi-supports pour une mairie"
             ],
-            "keywords": [
-                "AI",
-                "LLM",
-                "Symfony",
-                "Typescript",
-                "Golang",
-                "Terraform",
-                "ArgoCd",
-                "github-action",
-                "gitlab-ci"
+            "skills": [
+
+                {
+                    "type": "Web development",
+                    "global": "PHP",
+                    "precision": "PHP 8.5",
+                    "important": false
+                },
+                {
+                    "type": "Web development",
+                    "global": "Symfony",
+                    "precision": "Symfony 7.4",
+                    "important": false
+                },
+                {
+                    "type": "Web development",
+                    "global": "TypeScript",
+                    "precision": "NestJS",
+                    "important": false
+                },
+              {
+                "type": "Web development",
+                "global": "Golang",
+                "precision": "Golang",
+                "important": false
+              },
+              {
+                "type": "Architecture",
+                "global": "Hexagonal",
+                "precision": "Hexagonal",
+                "important": false
+              },
+              {
+                "type": "Best Practices",
+                "global": "TDD",
+                "precision": "TDD",
+                "important": false
+              },
+              {
+                "type": "Best Practices",
+                "global": "Craftsmanship",
+                "precision": "Craftsmanship",
+                "important": false
+              },
+              {
+                    "type": "Testing",
+                    "global": "PHPUNIT",
+                    "precision": "PHPUNIT",
+                    "important": false
+                },
+                {
+                    "type": "Testing",
+                    "global": "Playwright",
+                    "precision": "Playwright",
+                    "important": false
+                },
+                {
+                    "type": "CI/CD",
+                    "global": "ArgoCd",
+                    "precision": "ArgoCd",
+                    "important": false
+                },
+                {
+                    "type": "CI/CD",
+                    "global": "gitlab-ci",
+                    "precision": "gitlab-ci",
+                    "important": false
+                },
+                {
+                    "type": "Server provisioning",
+                    "global": "Terraform",
+                    "precision": "Terraform",
+                    "important": false
+                },
+                {
+                    "type": "AI",
+                    "global": "LLM",
+                    "precision": "GPT",
+                    "important": false
+                },
+                {
+                    "type": "AI",
+                    "global": "LLM",
+                    "precision": "Gemini",
+                    "important": false
+                },
+                {
+                    "type": "AI",
+                    "global": "LLM",
+                    "precision": "Claude Opus",
+                    "important": false
+                },
+                {
+                    "type": "AI",
+                    "global": "MCP",
+                    "precision": "MCP n8n",
+                    "important": false
+                },
+                {
+                    "type": "AI",
+                    "global": "MCP",
+                    "precision": "MCP drive",
+                    "important": false
+                },
+                {
+                    "type": "AI",
+                    "global": "N8N",
+                    "precision": "N8N",
+                    "important": false
+                },
+                {
+                    "type": "Cloud Provider",
+                    "global": "Scaleway",
+                    "precision": "Scaleway",
+                    "important": false
+                }
             ]
         },
         {
             "company": {
                 "name": "Congé parental",
-                "logo": null,
+                "logo": "https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/09/baby-logos.jpg",
                 "website": null,
                 "description": null
             },
-            "position": "Papa - Revonateur",
+            "position": "Papa - Révonateur",
             "contractType": "Conge",
             "startDate": "2025-07-07",
             "endDate": "2025-12-31",
-            "summary": "Congé parental et restation de longaire",
+            "summary": "Congé parental et restauration de longère",
             "highlights": [
-                "Vieile sur AI"
+                "Vieille sur AI"
             ],
-            "keywords": [
-                "AI"
+            "skills": [
+                {
+                    "type": "AI",
+                    "global": "AI",
+                    "precision": "AI",
+                    "important": false
+                }
             ]
         },
         {
@@ -114,7 +232,7 @@
                 "website": "https://www.oneytrust.com",
                 "description": "FinTech leader français de la lutte contre la fraude"
             },
-            "position": "Developer",
+            "position": "Senior Backend Developer",
             "contractType": "Freelance",
             "startDate": "2024-06-08",
             "endDate": "2025-07-06",
@@ -126,17 +244,170 @@
                 "Migration Oracle vers PostgreSQL",
                 "Migration on-premise vers Azure AKS"
             ],
-            "keywords": [
-                "PHP",
-                "Symfony",
-                "Typescript",
-                "Golang",
-                "Bash"
-            ],
             "references": [
                 {
                     "name": "Guillaume Beauventre - CTO - OneyTrust",
                     "reference": "J'ai eu le plaisir de manager David en tant que développeur & DevOps freelance et DevOps et le recommande vivement.\nDavid possède une excellente maîtrise des pratiques DevOps. Il a joué un rôle clé dans l'amélioration de notre CI/CD et nous a grandement aidés dans notre projet de cloudification et de migration vers Kubernetes. Ses compétences techniques solides nous ont permis de moderniser efficacement notre infrastructure.\nAu niveau relationnel, David se distingue par sa patience et sa capacité à expliquer clairement les concepts techniques complexes. Sa communication fluide et son tempérament calme font de lui un collaborateur apprécié des équipes. Il sait créer du consensus et facilite les prises de décision collectives."
+                }
+            ],
+            "skills": [
+                {
+                    "type": "Web development",
+                    "global": "PHP",
+                    "precision": "PHP 8.2",
+                    "important": false
+                },
+                {
+                    "type": "Web development",
+                    "global": "Symfony",
+                    "precision": "Symfony 6.4",
+                    "important": false
+                },
+              {
+                "type": "Architecture",
+                "global": "Hexagonal",
+                "precision": "Hexagonal",
+                "important": false
+              },
+              {
+                "type": "Best Practices",
+                "global": "TDD",
+                "precision": "TDD",
+                "important": false
+              },
+              {
+                "type": "Best Practices",
+                "global": "Peer Programing",
+                "precision": "Peer Programing",
+                "important": false
+              },
+              {
+                "type": "Best Practices",
+                "global": "Craftsmanship",
+                "precision": "Craftsmanship",
+                "important": false
+              },
+              {
+                    "type": "Testing",
+                    "global": "infection",
+                    "precision": "infection",
+                    "important": false
+                },
+                {
+                    "type": "Testing",
+                    "global": "php-cs-fixer",
+                    "precision": "php-cs-fixer",
+                    "important": false
+                },
+                {
+                    "type": "Testing",
+                    "global": "phpstan",
+                    "precision": "phpstan",
+                    "important": false
+                },
+                {
+                    "type": "Testing",
+                    "global": "PHPUNIT",
+                    "precision": "PHPUNIT",
+                    "important": false
+                },
+                {
+                    "type": "Testing",
+                    "global": "Playwright",
+                    "precision": "Playwright",
+                    "important": false
+                },
+                {
+                    "type": "CI/CD",
+                    "global": "ArgoCd",
+                    "precision": "ArgoCd",
+                    "important": false
+                },
+                {
+                    "type": "CI/CD",
+                    "global": "gitlab-ci",
+                    "precision": "gitlab-ci",
+                    "important": false
+                },
+                {
+                    "type": "Monitoring",
+                    "global": "Dynatrace",
+                    "precision": "Dynatrace",
+                    "important": false
+                },
+                {
+                    "type": "Monitoring",
+                    "global": "OpenSearch",
+                    "precision": "OpenSearch",
+                    "important": false
+                },
+                {
+                    "type": "DevOps",
+                    "global": "Docker",
+                    "precision": "Docker",
+                    "important": false
+                },
+                {
+                    "type": "DevOps",
+                    "global": "Helm",
+                    "precision": "Helm",
+                    "important": false
+                },
+                {
+                    "type": "DevOps",
+                    "global": "kubernetes",
+                    "precision": "kubernetes",
+                    "important": false
+                },
+                {
+                    "type": "Project Management",
+                    "global": "SCRUM",
+                    "precision": "SCRUM",
+                    "important": false
+                },
+                {
+                    "type": "AI",
+                    "global": "AI",
+                    "precision": "AI",
+                    "important": false
+                },
+                {
+                    "type": "Cloud Provider",
+                    "global": "Azure",
+                    "precision": "Azure",
+                    "important": false
+                }
+            ]
+        },
+        {
+            "company": {
+                "name": "Enix",
+                "logo": "https://enix.io/svg/logos/logo.svg",
+                "website": "https://enix.io/",
+                "description": null
+            },
+            "position": "Formation DevOps",
+            "contractType": "student",
+            "startDate": "2024-10-06",
+            "endDate": "2024-10-11",
+            "skills": [
+                {
+                    "type": "DevOps",
+                    "global": "Docker",
+                    "precision": "Docker",
+                    "important": false
+                },
+                {
+                    "type": "DevOps",
+                    "global": "Helm",
+                    "precision": "Helm",
+                    "important": false
+                },
+                {
+                    "type": "DevOps",
+                    "global": "kubernetes",
+                    "precision": "kubernetes",
+                    "important": false
                 }
             ]
         },
@@ -151,13 +422,6 @@
             "contractType": "CDI",
             "startDate": "2023-01-11",
             "endDate": "2024-11-15",
-            "keywords": [
-                "PHP",
-                "Symfony",
-                "Typescript",
-                "Golang",
-                "Bash"
-            ],
             "summary": "En tant que TechLead je manageais ma Squad. En collaboration avec le Product Owner et le Test Manager nous definitions les specs et je m’assurais de la faisabilité technique",
             "highlights": [
                 "Management",
@@ -170,7 +434,116 @@
             "references": [
                 {
                     "name": "Paul Jay - CTO - Skaleet",
-                    "reference": "L'expertise autour du développement logiciel de David est indéniable : connaissance du PHP, mais aussi et surtout des pratiques du software craftsmanship. Ajouté à cela il possède aussi de solides connaissances sur des outils d'infrastructure : CI/CD, Docker, Kubernetes, ...\n\nDavid est aussi quelqu'un de très agréable, investi dans son travail et apprécié de ses collègues.\nIl ne reste pas bloqué devant les problèmes, il cherche & trouve des solutions.\n\nJ'ai adoré l'avoir dans mon équipe."
+                    "reference": "L'expertise autour du développement logiciel de David est indéniable : connaissance du PHP, mais aussi et surtout des pratiques du software Craftsmanship. Ajouté à cela il possède aussi de solides connaissances sur des outils d'infrastructure : CI/CD, Docker, Kubernetes, ...\n\nDavid est aussi quelqu'un de très agréable, investi dans son travail et apprécié de ses collègues.\nIl ne reste pas bloqué devant les problèmes, il cherche & trouve des solutions.\n\nJ'ai adoré l'avoir dans mon équipe."
+                }
+            ],
+            "skills": [
+                {
+                    "type": "Web development",
+                    "global": "PHP",
+                    "precision": "PHP 8.0",
+                    "important": false
+                },
+              {
+                "type": "Architecture",
+                "global": "SOA",
+                "precision": "SOA",
+                "important": false
+              },
+              {
+                "type": "Best Practices",
+                "global": "TDD",
+                "precision": "TDD",
+                "important": false
+              },
+              {
+                "type": "Best Practices",
+                "global": "Peer Programing",
+                "precision": "Peer Programing",
+                "important": false
+              },           {
+                "type": "Best Practices",
+                "global": "Example mapping",
+                "precision": "Example mapping",
+                "important": false
+              },
+              {
+                "type": "Best Practices",
+                "global": "Craftsmanship",
+                "precision": "Craftsmanship",
+                "important": false
+              },
+              {
+                    "type": "Testing",
+                    "global": "php-cs-fixer",
+                    "precision": "php-cs-fixer",
+                    "important": false
+                },
+                {
+                    "type": "Testing",
+                    "global": "phpstan",
+                    "precision": "phpstan",
+                    "important": false
+                },
+                {
+                    "type": "Testing",
+                    "global": "PHPUNIT",
+                    "precision": "PHPUNIT",
+                    "important": false
+                },
+                {
+                    "type": "Testing",
+                    "global": "Playwright",
+                    "precision": "Playwright",
+                    "important": false
+                },
+                {
+                    "type": "CI/CD",
+                    "global": "ArgoCd",
+                    "precision": "ArgoCd",
+                    "important": false
+                },
+                {
+                    "type": "CI/CD",
+                    "global": "gitlab-ci",
+                    "precision": "gitlab-ci",
+                    "important": false
+                },
+                {
+                    "type": "Monitoring",
+                    "global": "ELK",
+                    "precision": "ELK",
+                    "important": false
+                },
+                {
+                    "type": "DevOps",
+                    "global": "Docker",
+                    "precision": "Docker",
+                    "important": false
+                },
+                {
+                    "type": "DevOps",
+                    "global": "Helm",
+                    "precision": "Helm",
+                    "important": false
+                },
+                {
+                    "type": "DevOps",
+                    "global": "kubernetes",
+                    "precision": "kubernetes",
+                    "important": false
+                },
+                {
+                    "type": "Project Management",
+                    "global": "SCRUM",
+                    "precision": "SCRUM",
+                    "important": false
+                },
+                {
+                    "type": "Cloud Provider",
+                    "global": "OVH",
+                    "precision": "OVH",
+                    "important": false
                 }
             ]
         },
@@ -193,6 +566,174 @@
                 "Mise en œuvre CI/CD ",
                 "Mise en œuvre de la nouvelle architecture microservice en CQRS",
                 "Management d'une équipe SCRUM"
+            ],
+            "skills": [
+                {
+                    "type": "Web development",
+                    "global": "PHP",
+                    "precision": "PHP 7",
+                    "important": false
+                },
+                {
+                    "type": "Web development",
+                    "global": "Symfony",
+                    "precision": "Symfony",
+                    "important": false
+                },
+                {
+                    "type": "Web development",
+                    "global": "TypeScript",
+                    "precision": "TypeScript",
+                    "important": false
+                },
+                {
+                    "type": "Web development",
+                    "global": "ReactJS",
+                    "precision": "ReactJS",
+                    "important": false
+                },
+                {
+                    "type": "Web development",
+                    "global": "Golang",
+                    "precision": "Golang",
+                    "important": false
+                },
+              {
+                "type": "Architecture",
+                "global": "CQRS",
+                "precision": "CQRS",
+                "important": false
+              },
+              {
+                "type": "Architecture",
+                "global": "microservice",
+                "precision": "microservice",
+                "important": false
+              },
+              {
+                "type": "Best Practices",
+                "global": "Peer Programing",
+                "precision": "Peer Programing",
+                "important": false
+              },           {
+                "type": "Best Practices",
+                "global": "Example mapping",
+                "precision": "Example mapping",
+                "important": false
+              },
+              {
+                "type": "Best Practices",
+                "global": "Craftsmanship",
+                "precision": "Craftsmanship",
+                "important": false
+              },                {
+                    "type": "Testing",
+                    "global": "php-cs-fixer",
+                    "precision": "php-cs-fixer",
+                    "important": false
+                },
+                {
+                    "type": "Testing",
+                    "global": "phpstan",
+                    "precision": "phpstan",
+                    "important": false
+                },
+                {
+                    "type": "Testing",
+                    "global": "PHPUNIT",
+                    "precision": "PHPUNIT",
+                    "important": false
+                },
+                {
+                    "type": "Testing",
+                    "global": "Playwright",
+                    "precision": "Playwright",
+                    "important": false
+                },
+                {
+                    "type": "CI/CD",
+                    "global": "ArgoCd",
+                    "precision": "ArgoCd",
+                    "important": false
+                },
+                {
+                    "type": "CI/CD",
+                    "global": "github-action",
+                    "precision": "github-action",
+                    "important": false
+                },
+                {
+                    "type": "CI/CD",
+                    "global": "gitlab-ci",
+                    "precision": "gitlab-ci",
+                    "important": false
+                },
+                {
+                    "type": "Monitoring",
+                    "global": "Sentry",
+                    "precision": "Sentry",
+                    "important": false
+                },
+                {
+                    "type": "DevOps",
+                    "global": "Docker",
+                    "precision": "Docker",
+                    "important": false
+                },
+                {
+                    "type": "DevOps",
+                    "global": "kubernetes",
+                    "precision": "kubernetes",
+                    "important": false
+                },
+                {
+                    "type": "DevOps",
+                    "global": "Kustomize",
+                    "precision": "Kustomize",
+                    "important": false
+                },
+                {
+                    "type": "Server provisioning",
+                    "global": "Terraform",
+                    "precision": "Terraform",
+                    "important": false
+                },
+                {
+                    "type": "Server provisioning",
+                    "global": "Packer",
+                    "precision": "Packer",
+                    "important": false
+                },
+                {
+                    "type": "Server provisioning",
+                    "global": "Ansible",
+                    "precision": "Ansible",
+                    "important": false
+                },
+                {
+                    "type": "Mobile",
+                    "global": "ReactNative",
+                    "precision": "ReactNative",
+                    "important": false
+                },
+                {
+                    "type": "Project Management",
+                    "global": "SCRUM",
+                    "precision": "SCRUM",
+                    "important": false
+                },
+                {
+                    "type": "Cloud Provider",
+                    "global": "Azure",
+                    "precision": "Azure",
+                    "important": false
+                },
+                {
+                    "type": "Cloud Provider",
+                    "global": "OVH",
+                    "precision": "OVH",
+                    "important": false
+                }
             ]
         },
         {
@@ -212,7 +753,98 @@
                 "mise en œuvre d'une architecture scalable, résiliente",
                 "mise en œuvre d'une usine à site",
                 "CI/CD ",
-                "Gestion des clusters Kubernetes"
+                "Gestion du cluster Kubernetes"
+            ],
+            "skills": [
+                {
+                    "type": "Web development",
+                    "global": "NestJS",
+                    "precision": "NestJS",
+                    "important": false
+                },
+                {
+                    "type": "Web development",
+                    "global": "ReactJS",
+                    "precision": "ReactJS",
+                    "important": false
+                },
+              {
+                "type": "Architecture",
+                "global": "Event-driven",
+                "precision": "Event-driven",
+                "important": false
+              },              {
+                "type": "Architecture",
+                "global": "CQRS",
+                "precision": "CQRS",
+                "important": false
+              },
+                {
+                    "type": "Testing",
+                    "global": "Cypress",
+                    "precision": "Cypress",
+                    "important": false
+                },
+                {
+                    "type": "Testing",
+                    "global": "eslint",
+                    "precision": "eslint",
+                    "important": false
+                },
+                {
+                    "type": "Testing",
+                    "global": "JEST",
+                    "precision": "JEST",
+                    "important": false
+                },
+                {
+                    "type": "CI/CD",
+                    "global": "ArgoCd",
+                    "precision": "ArgoCd",
+                    "important": false
+                },
+                {
+                    "type": "CI/CD",
+                    "global": "github-action",
+                    "precision": "github-action",
+                    "important": false
+                },
+                {
+                    "type": "DevOps",
+                    "global": "Docker",
+                    "precision": "Docker",
+                    "important": false
+                },
+                {
+                    "type": "DevOps",
+                    "global": "kubernetes",
+                    "precision": "kubernetes",
+                    "important": false
+                },
+                {
+                    "type": "DevOps",
+                    "global": "Kustomize",
+                    "precision": "Kustomize",
+                    "important": false
+                },
+                {
+                    "type": "Server provisioning",
+                    "global": "Terraform",
+                    "precision": "Terraform",
+                    "important": false
+                },
+                {
+                    "type": "Project Management",
+                    "global": "SCRUM",
+                    "precision": "SCRUM",
+                    "important": false
+                },
+                {
+                    "type": "Cloud Provider",
+                    "global": "Digital Ocean",
+                    "precision": "Digital Ocean",
+                    "important": false
+                }
             ]
         },
         {
@@ -222,7 +854,7 @@
                 "website": "https://www.prestashop.com/fr",
                 "description": "Un des leaders mondiaux des solutions e-commerce"
             },
-            "position": "DevOps",
+            "position": "Senior Backend Developer",
             "contractType": "CDI",
             "startDate": "2019-01-09",
             "endDate": "2020-12-20",
@@ -232,6 +864,93 @@
                 "Script adaptable à n'importe quel hébergeur pour migration des clients",
                 "Collaboration à des projets open source",
                 "Mise en œuvre des environnements de developpement"
+            ],
+            "skills": [
+
+                {
+                    "type": "Web development",
+                    "global": "PHP",
+                    "precision": "PHP 5.5",
+                    "important": false
+                },
+                {
+                    "type": "Web development",
+                    "global": "Symfony",
+                    "precision": "Symfony",
+                    "important": false
+                },
+              {
+                "type": "Web development",
+                "global": "NestJS",
+                "precision": "NestJS",
+                "important": false
+              },
+              {
+                "type": "Architecture",
+                "global": "Event-driven",
+                "precision": "Event-driven",
+                "important": false
+              },
+              {
+                    "type": "Testing",
+                    "global": "Cypress",
+                    "precision": "Cypress",
+                    "important": false
+                },
+                {
+                    "type": "Testing",
+                    "global": "PHPUNIT",
+                    "precision": "PHPUNIT",
+                    "important": false
+                },
+                {
+                    "type": "CI/CD",
+                    "global": "github-action",
+                    "precision": "github-action",
+                    "important": false
+                },
+                {
+                    "type": "Monitoring",
+                    "global": "DataDog",
+                    "precision": "DataDog",
+                    "important": false
+                },
+                {
+                    "type": "DevOps",
+                    "global": "Docker",
+                    "precision": "Docker",
+                    "important": false
+                },
+                {
+                    "type": "DevOps",
+                    "global": "kubernetes",
+                    "precision": "kubernetes",
+                    "important": false
+                },
+                {
+                    "type": "DevOps",
+                    "global": "Kustomize",
+                    "precision": "Kustomize",
+                    "important": false
+                },
+                {
+                    "type": "Server provisioning",
+                    "global": "Terraform",
+                    "precision": "Terraform",
+                    "important": false
+                },
+                {
+                    "type": "Project Management",
+                    "global": "SCRUM",
+                    "precision": "SCRUM",
+                    "important": false
+                },
+                {
+                    "type": "Cloud Provider",
+                    "global": "GCP",
+                    "precision": "GCP",
+                    "important": false
+                }
             ]
         },
         {
@@ -253,6 +972,68 @@
                 "Instauration des bonnes pratiques",
                 "Gestion de l’infrastructure"
             ],
+            "skills": [
+                {
+                    "type": "Web development",
+                    "global": "PHP",
+                    "precision": "PHP",
+                    "important": false
+                },
+                {
+                    "type": "Web development",
+                    "global": "Symfony",
+                    "precision": "Symfony",
+                    "important": false
+                },
+                {
+                    "type": "Web development",
+                    "global": "VueJS",
+                    "precision": "VueJS",
+                    "important": false
+                },
+                {
+                    "type": "Testing",
+                    "global": "Cypress",
+                    "precision": "Cypress",
+                    "important": false
+                },
+                {
+                    "type": "Testing",
+                    "global": "php-cs-fixer",
+                    "precision": "php-cs-fixer",
+                    "important": false
+                },
+                {
+                    "type": "Testing",
+                    "global": "PHPUNIT",
+                    "precision": "PHPUNIT",
+                    "important": false
+                },
+                {
+                    "type": "CI/CD",
+                    "global": "gitlab-ci",
+                    "precision": "gitlab-ci",
+                    "important": false
+                },
+                {
+                    "type": "Monitoring",
+                    "global": "Sentry",
+                    "precision": "Sentry",
+                    "important": false
+                },
+                {
+                    "type": "Project Management",
+                    "global": "SCRUM",
+                    "precision": "SCRUM",
+                    "important": false
+                },
+                {
+                    "type": "Cloud Provider",
+                    "global": "OVH",
+                    "precision": "OVH",
+                    "important": false
+                }
+            ],
             "references": [
                 {
                     "name": "Dominique Bazin - Directeur de l'innovation - Foxnot",
@@ -267,12 +1048,17 @@
                 "website": "https://sensiolabs.com/",
                 "description": null
             },
-            "position": "student",
+            "position": "Formation Symfony",
             "contractType": "student",
             "startDate": "2014-09-01",
             "endDate": "2014-09-05",
-            "keywords": [
-                "Symfony"
+            "skills": [
+                {
+                    "type": "Web development",
+                    "global": "Symfony",
+                    "precision": "Symfony",
+                    "important": false
+                }
             ]
         },
         {
@@ -283,6 +1069,7 @@
                 "description": "HealthTech centralisant les achats pharmaceutiques et grossiste-répartiteur"
             },
             "position": "Developer fullstack",
+            "contractType": "CDI",
             "startDate": "2013-06-30",
             "endDate": "2016-04-30",
             "summary": "En tant que développeur fullstack j'ai pu travailler sur différentes technologies PHP (Joomla, Symfony), créer des web services (REST et SOAP).",
@@ -291,6 +1078,20 @@
                 "Mise en œuvre d'un outil d'analyses statistiques",
                 "Connexion à une solution d'e-learning en SOAP",
                 "Maintien du back en PHP"
+            ],
+            "skills": [
+                {
+                    "type": "Web development",
+                    "global": "CMS",
+                    "precision": "Joomla",
+                    "important": false
+                },
+                {
+                    "type": "Web development",
+                    "global": "Symfony",
+                    "precision": "Symfony 2.5",
+                    "important": false
+                }
             ]
         },
         {
@@ -302,7 +1103,7 @@
             },
             "position": "Titre Professional CDA (Concepteur Développeur d'Applications)",
             "contractType": "student",
-            "startDate": "2014-09-01",
+            "startDate": "2013-09-01",
             "endDate": "2014-09-05",
             "highlights": [
                 "Gestion de projet",
@@ -310,6 +1111,26 @@
                 "Java",
                 "Android",
                 "MySQL"
+            ],
+            "skills": [
+                {
+                    "type": "Web development",
+                    "global": "Java",
+                    "precision": "Java",
+                    "important": false
+                },
+                {
+                    "type": "Mobile",
+                    "global": "Android",
+                    "precision": "Android",
+                    "important": false
+                },
+                {
+                    "type": "Divers",
+                    "global": "Gestion de projet",
+                    "precision": "Gestion de projet",
+                    "important": false
+                }
             ]
         },
         {
@@ -328,6 +1149,26 @@
                 "Illustrator",
                 "HTML/CSS",
                 "Wordpress"
+            ],
+            "skills": [
+                {
+                    "type": "Web development",
+                    "global": "CMS",
+                    "precision": "WordPress",
+                    "important": false
+                },
+                {
+                    "type": "Infographie",
+                    "global": "Illustrator",
+                    "precision": "Illustrator",
+                    "important": false
+                },
+                {
+                    "type": "Infographie",
+                    "global": "PhotoShop",
+                    "precision": "PhotoShop",
+                    "important": false
+                }
             ]
         },
         {
@@ -346,6 +1187,14 @@
                 "Gestion de l'entreprise",
                 "Recherche de prestataire",
                 "Prise de vue"
+            ],
+            "skills": [
+                {
+                    "type": "Gestion",
+                    "global": "Gestion d'entreprise",
+                    "precision": "Gestion d'entreprise",
+                    "important": false
+                }
             ]
         }
     ]
