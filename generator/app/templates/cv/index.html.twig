@@ -1,469 +1,784 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ cv.profil.name }} — CV</title>
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ cv.profil.name }} — CV</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    :root {
-      --dark:   #1a1f2e;
-      --accent: #3b82f6;
-      --muted:  #64748b;
-      --border: #e2e8f0;
-      --text:   #1e293b;
-      --light:  #f8fafc;
-    }
+        :root {
+            --primary: #0f172a; /* Slate 900 */
+            --accent: #2563eb; /* Blue 600 */
+            --accent-soft: #eff6ff;
+            --text-main: #334155; /* Slate 600 */
+            --text-dark: #1e293b; /* Slate 800 */
+            --text-light: #64748b; /* Slate 500 */
+            --border: #e2e8f0; /* Slate 200 */
+            --bg-sidebar: #f8fafc; /* Slate 50 */
+            --white: #ffffff;
+        }
 
-    body {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      font-size: 14px;
-      color: var(--text);
-      background: var(--light);
-      line-height: 1.5;
-    }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            font-size: 12px;
+            color: var(--text-main);
+            background: var(--white);
+            line-height: 1.4;
+            -webkit-font-smoothing: antialiased;
+        }
 
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+        h1, h2, h3 {
+            color: var(--text-dark);
+        }
 
-    .page {
-      display: grid;
-      grid-template-columns: 270px 1fr;
-      min-height: 100vh;
-      max-width: 1100px;
-      margin: 0 auto;
-      background: #fff;
-      box-shadow: 0 0 40px rgba(0,0,0,.08);
-    }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: all 0.2s;
+        }
 
-    /* ── Sidebar ── */
-    .sidebar {
-      background: var(--dark);
-      color: #e2e8f0;
-      padding: 36px 24px;
-    }
+        a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
 
-    .sidebar-photo {
-      display: block;
-      width: 86px; height: 86px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--accent);
-      margin: 0 auto 16px;
-    }
+        .page {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            min-height: 100vh;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--white);
+        }
 
-    .sidebar-name  { font-size: 1.15rem; font-weight: 700; color: #fff; text-align: center; line-height: 1.3; }
-    .sidebar-title { font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); text-align: center; margin-top: 4px; margin-bottom: 26px; }
+        /* ── Sidebar ── */
+        .sidebar {
+            background: var(--bg-sidebar);
+            padding: 30px 20px;
+            border-right: 1px solid var(--border);
+        }
 
-    .s-section { margin-bottom: 26px; }
+        .sidebar-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-    .s-title {
-      font-size: .62rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: .12em;
-      color: var(--accent);
-      margin-bottom: 10px; padding-bottom: 5px;
-      border-bottom: 1px solid #2d3748;
-    }
-    .s-toggle { cursor: pointer; user-select: none; display: flex; justify-content: space-between; align-items: center; }
-    .s-toggle::after { content: '▾'; font-size: .8rem; transition: transform .2s; }
-    .s-collapsed .s-toggle::after { transform: rotate(-90deg); }
-    .s-body { overflow: hidden; transition: max-height .3s ease, opacity .2s ease; max-height: 0; opacity: 0; }
-    .s-collapsible:not(.s-collapsed) .s-body { max-height: 500px; opacity: 1; }
+        .sidebar-photo {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 12px;
+            border: 3px solid var(--white);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
 
-    .contact-item {
-      display: flex; align-items: flex-start; gap: 8px;
-      margin-bottom: 7px; font-size: .8rem; color: #cbd5e1;
-      word-break: break-all;
-    }
-    .ci { flex-shrink: 0; margin-top: 2px; opacity: .6; }
+        .sidebar-name {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
 
-    .tag-list { display: flex; flex-wrap: wrap; gap: 4px; }
-    .tag {
-      background: #2d3748; color: #94a3b8;
-      border-radius: 4px; padding: 2px 7px; font-size: .7rem;
-    }
+        .sidebar-title {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--white);
+            background: var(--accent);
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-top: 8px;
+        }
 
-    .lang-item { display: flex; justify-content: space-between; margin-bottom: 5px; font-size: .8rem; }
-    .lang-fluency { color: #64748b; font-size: .72rem; }
+        .s-section {
+            margin-bottom: 20px;
+        }
 
-    /* ── Main ── */
-    .main { padding: 36px 36px 36px 32px; }
+        .s-title {
+            font-size: 0.62rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--text-light);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-    .section { margin-bottom: 32px; }
+        .s-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
 
-    .section-title {
-      font-size: .65rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: .12em;
-      color: var(--accent);
-      margin-bottom: 16px; padding-bottom: 5px;
-      border-bottom: 2px solid var(--border);
-      cursor: pointer; user-select: none;
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .section-title::after { content: '▾'; font-size: .8rem; transition: transform .2s; }
-    .section.collapsed .section-title::after { transform: rotate(-90deg); }
-    .section-body { overflow: hidden; transition: max-height .3s ease, opacity .2s ease; max-height: 2000px; opacity: 1; }
-    .section.collapsed .section-body { max-height: 0; opacity: 0; }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+            font-size: 0.78rem;
+        }
 
-    .t-item-body { overflow: hidden; transition: max-height .3s ease, opacity .2s ease; max-height: 0; opacity: 0; }
-    .t-item--collapsible.open .t-item-body { max-height: 1000px; opacity: 1; }
-    .t-toggle { border-radius: 6px; transition: background .15s; }
-    .t-toggle:hover { background: var(--light); }
+        .contact-item svg {
+            width: 14px;
+            height: 14px;
+            color: var(--accent);
+            opacity: 0.8;
+        }
 
-    .summary { color: var(--muted); line-height: 1.7; white-space: pre-line; }
+        .contact-item a {
+            color: var(--text-main);
+        }
 
-    /* Timeline */
-    .t-item { margin-bottom: 0; padding: 20px 0; border-bottom: 1px solid var(--border); }
-    .t-item:last-child { border-bottom: none; }
-    .t-date { font-size: .72rem; color: var(--muted); margin-top: 3px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-    .t-duration { background: #f1f5f9; color: #64748b; border-radius: 4px; padding: 1px 6px; font-size: .68rem; font-weight: 600; }
-    .t-header { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 4px; }
-    .t-logo { width: 72px; height: 72px; object-fit: contain; border-radius: 12px; flex-shrink: 0; border: 1px solid var(--border); padding: 6px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
-    .t-logo-placeholder { width: 72px; height: 72px; border-radius: 12px; flex-shrink: 0; border: 1px solid var(--border); background: var(--light); box-shadow: 0 2px 8px rgba(0,0,0,.08); display: flex; align-items: center; justify-content: center; font-size: .85rem; font-weight: 700; color: var(--muted); letter-spacing: .05em; }
-    .t-position { font-weight: 700; font-size: 1rem; color: var(--dark); }
-    .t-company { font-size: .8rem; color: var(--muted); font-weight: 500; }
-    .t-company a { color: var(--muted); }
-    .t-company-desc { font-weight: 400; opacity: 0.8; font-style: italic; }
-    .t-type {
-      display: inline-block; font-size: .75rem; font-weight: 600;
-      padding: 3px 10px; border-radius: 6px; margin-left: 6px;
-      background: #fff7ed; color: #ea580c; vertical-align: middle;
-    }
-    .t-type.cdi      { background: #dcfce7; color: #15803d; }
-    .t-type.founder  { background: #fef3c7; color: #92400e; }
-    .t-type.student  { background: #f3e8ff; color: #7e22ce; }
-    .t-type.conge    { background: #f1f5f9; color: #475569; }
-    .t-item--edu .t-date { color: var(--muted); }
-    .t-summary { color: var(--muted); font-size: .8rem; margin: 4px 0 6px; }
+        .lang-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-size: 0.78rem;
+        }
 
-    .t-highlights { list-style: none; padding: 0; margin-bottom: 6px; }
-    .t-highlights li {
-      font-size: .78rem; color: var(--muted);
-      padding-left: 12px; position: relative; margin-bottom: 2px;
-    }
-    .t-highlights li::before { content: '▸'; position: absolute; left: 0; color: var(--accent); }
+        .lang-fluency {
+            color: var(--text-light);
+            font-size: 0.7rem;
+        }
 
-    .t-keywords { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
-    .t-kw { background: #dbeafe; color: #1d4ed8; border-radius: 6px; padding: 3px 10px; font-size: .75rem; font-weight: 600; }
-    /* Removed .t-item--collapsible:not(.open) .t-kw rule */
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
 
-    /* References */
-    .t-refs-collapsible { margin-top: 16px; }
-    .t-refs-toggle {
-      font-size: .6rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: .1em;
-      color: var(--accent);
-      margin-bottom: 8px; padding-bottom: 4px;
-      border-bottom: 1px solid var(--border);
-      cursor: pointer; user-select: none;
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .t-refs-toggle::after { content: '▾'; font-size: .8rem; transition: transform .2s; }
-    .t-refs-collapsible:not(.open) .t-refs-toggle::after { transform: rotate(-90deg); }
+        .tag {
+            background: var(--white);
+            color: var(--text-main);
+            border-radius: 4px;
+            padding: 3px 8px;
+            font-size: 0.7rem;
+            border: 1px solid var(--type-color, var(--border));
+            font-weight: 500;
+        }
 
-    .t-refs-body { overflow: hidden; max-height: 0; opacity: 0; transition: max-height .3s ease, opacity .2s ease; }
-    .t-refs-collapsible.open .t-refs-body { max-height: 1000px; opacity: 1; margin-top: 8px; }
+        /* ── Main ── */
+        .main {
+            padding: 30px 35px 30px 30px;
+        }
 
-    .t-ref {
-      background: #f8fafc; border-left: 3px solid var(--accent);
-      border-radius: 0 6px 6px 0; padding: 8px 10px; margin-bottom: 6px;
-    }
-    .t-ref-name { font-size: .75rem; font-weight: 600; color: var(--text); margin-bottom: 3px; }
-    .t-ref-text { font-size: .75rem; color: var(--muted); font-style: italic; white-space: pre-line; }
+        .section {
+            margin-bottom: 25px;
+        }
 
-    /* Education */
-    .e-item { display: grid; grid-template-columns: 100px 1fr; gap: 14px; margin-bottom: 14px; }
-    .e-date { color: var(--muted); font-size: .75rem; text-align: right; padding-top: 2px; }
-    .e-title { font-weight: 600; font-size: .88rem; }
-    .e-sub   { color: var(--muted); font-size: .78rem; margin-bottom: 4px; }
-    .e-courses { display: flex; flex-wrap: wrap; gap: 3px; }
-    .e-course { background: #f1f5f9; color: #475569; border-radius: 4px; padding: 1px 6px; font-size: .68rem; }
+        .section-title {
+            font-size: 1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
 
-    /* Print button */
-    .print-btn {
-      position: fixed; bottom: 28px; right: 28px;
-      background: var(--accent); color: #fff;
-      border: none; border-radius: 50px;
-      padding: 12px 22px; font-size: .83rem; font-weight: 600;
-      cursor: pointer; text-decoration: none;
-      box-shadow: 0 4px 16px rgba(59,130,246,.4);
-      display: none; align-items: center; gap: 8px;
-      transition: background .15s, transform .1s;
-    }
-    .print-btn:hover { background: #2563eb; transform: translateY(-1px); color: #fff; }
-    .show-download .print-btn { display: flex; }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 2px;
+            background: var(--accent);
+            opacity: 0.25;
+        }
 
-    @media print {
-      body { background: #fff; }
-      .page { box-shadow: none; max-width: 100%; }
-      .print-btn { display: none; }
-      .t-ref-text { display: none; }
-    }
+        .summary {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: var(--text-main);
+            font-weight: 400;
+        }
 
-    @media (max-width: 700px) {
-      .page { grid-template-columns: 1fr; }
-      .sidebar { padding: 24px 18px; }
-      .main { padding: 24px 18px; }
-      .t-item, .e-item { grid-template-columns: 1fr; }
-      .t-date, .e-date { text-align: left; }
-    }
-  </style>
+        /* Timeline */
+        .t-item {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .t-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 6px;
+        }
+
+        .t-position {
+            font-weight: 600;
+            font-size: 0.88rem;
+            color: var(--text-dark);
+            margin-bottom: 3px;
+            letter-spacing: 0;
+        }
+
+        .t-company {
+            font-weight: 700;
+            font-size: 0.88rem;
+            color: var(--accent);
+            margin-bottom: 2px;
+        }
+
+        .t-company-desc {
+            font-weight: 500;
+            color: var(--text-dark);
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        .t-date {
+            font-size: 0.75rem;
+            color: var(--text-dark);
+            font-weight: 700;
+            margin-top: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: 0.02em;
+        }
+
+        .t-duration {
+            background: var(--accent);
+            color: var(--white);
+            padding: 1px 8px;
+            border-radius: 20px;
+            font-size: 0.6rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .t-logo {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+            border-radius: 10px;
+            background: var(--white);
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border);
+        }
+
+        .t-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: 8px 0;
+        }
+
+        .t-kw {
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            background: var(--white);
+            padding: 3px 10px;
+            border-radius: 6px;
+            border: 1.5px solid var(--type-color, var(--border));
+            text-transform: uppercase;
+        }
+
+        .t-kw--important {
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+            font-weight: 800;
+        }
+
+        /* Palette de couleurs par type */
+        .color-0 {
+            --type-color: #3b82f6;
+        }
+
+        /* Blue */
+        .color-1 {
+            --type-color: #10b981;
+        }
+
+        /* Emerald */
+        .color-2 {
+            --type-color: #f59e0b;
+        }
+
+        /* Amber */
+        .color-3 {
+            --type-color: #8b5cf6;
+        }
+
+        /* Violet */
+        .color-4 {
+            --type-color: #ef4444;
+        }
+
+        /* Red */
+        .color-5 {
+            --type-color: #06b6d4;
+        }
+
+        /* Cyan */
+        .color-6 {
+            --type-color: #f97316;
+        }
+
+        /* Orange */
+        .color-7 {
+            --type-color: #84cc16;
+        }
+
+        /* Lime */
+        .color-8 {
+            --type-color: #ec4899;
+        }
+
+        /* Pink */
+        .color-9 {
+            --type-color: #6366f1;
+        }
+
+        /* Indigo */
+        .color-10 {
+            --type-color: #14b8a6;
+        }
+
+        /* Teal */
+        .color-11 {
+            --type-color: #f43f5e;
+        }
+
+        /* Rose */
+
+        .t-summary {
+            font-size: 0.82rem;
+            margin-bottom: 8px;
+            color: var(--text-main);
+            line-height: 1.5;
+        }
+
+        .t-highlights {
+            list-style: none;
+        }
+
+        .t-highlights li {
+            font-size: 0.8rem;
+            margin-bottom: 4px;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .t-highlights li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 6px;
+            height: 1px;
+            background: var(--accent);
+        }
+
+        /* References */
+        .t-references {
+            margin-top: 12px;
+            padding-top: 10px;
+            border-top: 1px dashed var(--border);
+        }
+
+        .t-ref {
+            margin-bottom: 12px;
+            padding-left: 14px;
+            border-left: 2px solid var(--accent-soft);
+        }
+
+        .t-ref-text {
+            font-style: italic;
+            font-size: 0.78rem;
+            color: var(--text-light);
+            line-height: 1.5;
+            margin-bottom: 5px;
+        }
+
+        .t-ref-author {
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .skill-group-title {
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+            border-left: 3px solid var(--accent);
+            padding-left: 10px;
+        }
+
+        @media print {
+            .page {
+                max-width: 100%;
+                margin: 0;
+                grid-template-columns: 300px 1fr;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .page {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+            }
+        }
+    </style>
 </head>
 <body>
+
+{# --- Logique de regroupement des compétences et des références --- #}
+{% set allSkills = [] %}
+{% set allReferences = [] %}
+{% for item in cv.history %}
+    {% if item.contractType|default('') != 'student' %}
+        {% if item.skills is defined %}
+            {% for skill in item.skills %}
+                {% set allSkills = allSkills|merge([skill]) %}
+            {% endfor %}
+        {% endif %}
+    {% endif %}
+    {% if item.references is defined %}
+        {% for ref in item.references %}
+            {% set allReferences = allReferences|merge([ref]) %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}
+
+{# Création d'une liste unique de types #}
+{% set skillTypes = [] %}
+{% for s in allSkills %}
+    {% if s.type not in skillTypes %}
+        {% set skillTypes = skillTypes|merge([s.type]) %}
+    {% endif %}
+{% endfor %}
+
+{# Création de l'objet final groupé : { "Type": [ {global, precision}, ... ] } #}
+{% set groupedSkills = {} %}
+{% set typeToIndex = {} %}
+{% for type in skillTypes %}
+    {% set typeToIndex = typeToIndex|merge({ (type): loop.index0 }) %}
+    {% set uniqueGlobals = [] %}
+    {% set skillsForType = [] %}
+    {% for s in allSkills %}
+        {% if s.type == type %}
+            {% if s.global not in uniqueGlobals %}
+                {% set uniqueGlobals = uniqueGlobals|merge([s.global]) %}
+                {% set skillsForType = skillsForType|merge([s]) %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    {% set groupedSkills = groupedSkills|merge({ (type): skillsForType }) %}
+{% endfor %}
+
 <div class="page">
-
-  <aside class="sidebar">
-
-    {% if cv.profil.picture is defined and cv.profil.picture %}
-      <img src="{{ cv.profil.picture }}" alt="{{ cv.profil.name }}" class="sidebar-photo">
-    {% endif %}
-
-    <div class="sidebar-name">{{ cv.profil.name }}</div>
-    <div class="sidebar-title">{{ cv.profil.title }}</div>
-
-    <div class="s-section s-collapsible s-collapsed">
-      <div class="s-title s-toggle">Contact</div>
-      <div class="s-body">
-      {% if cv.profil.email is defined %}
-        <div class="contact-item private-info"><span class="ci">✉</span><a href="mailto:{{ cv.profil.email }}" style="color:#93c5fd">{{ cv.profil.email }}</a></div>
-      {% endif %}
-      {% if cv.profil.phone is defined %}
-        <div class="contact-item private-info"><span class="ci">☎</span>{{ cv.profil.phone }}</div>
-      {% endif %}
-      {% if cv.profil.location is defined %}
-        <div class="contact-item private-info"><span class="ci">⌂</span>{{ cv.profil.location.city }}, {{ cv.profil.location.countryCode }}</div>
-      {% endif %}
-      {% for link in cv.profil.links|default([]) %}
-        <div class="contact-item"><span class="ci">↗</span><a href="{{ link.url }}" style="color:#93c5fd" target="_blank">{{ link.network }}</a></div>
-      {% endfor %}
-      </div>
-    </div>
-
-    {% if cv.profil.languages is defined and cv.profil.languages|length %}
-      <div class="s-section s-collapsible s-collapsed">
-        <div class="s-title s-toggle">Langues</div>
-        <div class="s-body">
-        {% for lang in cv.profil.languages %}
-          <div class="lang-item">
-            <span>{{ lang.language }}</span>
-            <span class="lang-fluency">{{ lang.fluency }}</span>
-          </div>
-        {% endfor %}
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            {% if cv.profil.picture is defined and cv.profil.picture %}
+                <img src="{{ cv.profil.picture }}" alt="{{ cv.profil.name }}" class="sidebar-photo">
+            {% endif %}
+            <div class="sidebar-name">{{ cv.profil.name }}</div>
+            <div class="sidebar-title">{{ cv.profil.title }}</div>
         </div>
-      </div>
-    {% endif %}
 
-    {% if cv.profil.interests is defined and cv.profil.interests|length %}
-      <div class="s-section s-collapsible s-collapsed">
-        <div class="s-title s-toggle">Centres d'intérêt</div>
-        <div class="s-body">
-        {% for interest in cv.profil.interests %}
-          <div style="margin-bottom:10px">
-            <div style="font-size:.78rem;font-weight:600;color:#e2e8f0;margin-bottom:5px">{{ interest.name }}</div>
-            <div class="tag-list">
-              {% for kw in interest.keywords|default([]) %}
-                <span class="tag">{{ kw }}</span>
-              {% endfor %}
-            </div>
-          </div>
-        {% endfor %}
-        </div>
-      </div>
-    {% endif %}
-
-    {% if cv.techno is defined and cv.techno|length %}
-      <div class="s-section s-collapsible s-collapsed">
-        <div class="s-title s-toggle">Technologies</div>
-        <div class="s-body">
-        {% for group in cv.techno %}
-          <div style="margin-bottom:10px">
-            <div style="font-size:.7rem;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px">{{ group.name }}</div>
-            <div class="tag-list">
-              {% for kw in group.keywords|default([]) %}
-                <span class="tag">{{ kw }}</span>
-              {% endfor %}
-            </div>
-          </div>
-        {% endfor %}
-        </div>
-      </div>
-    {% endif %}
-
-  </aside>
-
-  <main class="main">
-
-    {% if cv.profil.summary is defined and cv.profil.summary %}
-      <div class="section">
-        <div class="section-title">Description</div>
-        <div class="section-body">
-        <p class="summary">{{ cv.profil.summary }}</p>
-        </div>
-      </div>
-    {% endif %}
-
-    {% if cv.history is defined and cv.history|length %}
-      <div class="section">
-        <div class="section-title">Expérience</div>
-        <div class="section-body">
-        {% for item in cv.history %}
-          {% set isEdu = (item.contractType is defined and item.contractType == 'student') %}
-          <div class="t-item t-item--collapsible{% if isEdu %} t-item--edu{% endif %}">
-            <div>
-              <div class="t-header t-toggle" style="cursor:pointer">
-                <div>
-                  <div class="t-position">
-                    {{ item.position is defined ? item.position : '' }}
-                    {% if item.contractType is defined and item.contractType not in ['student', ''] %}
-                      <span class="t-type {{ item.contractType|lower }}">{{ item.contractType }}</span>
-                    {% endif %}
-                    {% if isEdu %}
-                      <span class="t-type student">Formation</span>
-                    {% endif %}
-                  </div>
-                  <div class="t-company">
-                    {% if item.company.website is defined and item.company.website %}
-                      <a href="{{ item.company.website }}" target="_blank" onclick="event.stopPropagation()">{{ item.company.name }}</a>
-                    {% else %}
-                      {{ item.company.name }}
-                    {% endif %}
-                    {% if item.company.description is defined and item.company.description %}
-                      <span class="t-company-desc"> — {{ item.company.description }}</span>
-                    {% endif %}
-                  </div>
-                  <div class="t-date" data-start="{{ item.startDate }}" data-end="{{ item.endDate is defined and item.endDate ? item.endDate : '' }}"></div>
+        <div class="s-section">
+            <div class="s-title">Contact</div>
+            {% if cv.profil.email is defined %}
+                <div class="contact-item private-info">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <a href="mailto:{{ cv.profil.email }}">{{ cv.profil.email }}</a>
                 </div>
-                {% if item.company.logo is defined and item.company.logo and (item.company.logo|slice(0,4) == 'http' or item.company.logo|slice(0,5) == 'data:') %}
-                  <img src="{{ item.company.logo }}" alt="{{ item.company.name }}" class="t-logo">
-                {% else %}
-                  <div class="t-logo-placeholder">DP</div>
-                {% endif %}
-              </div>
-
-              {% if item.courses is defined and item.courses|length %}
-                <div class="t-keywords">
-                  {% for c in item.courses %}<span class="t-kw">{{ c }}</span>{% endfor %}
+            {% endif %}
+            {% if cv.profil.phone is defined %}
+                <div class="contact-item private-info">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.28-2.28a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    {{ cv.profil.phone }}
                 </div>
-              {% endif %}
-
-              {% if item.keywords is defined and item.keywords|length %}
-                <div class="t-keywords" style="margin-bottom: 8px;">
-                  {% for kw in item.keywords %}<span class="t-kw">{{ kw }}</span>{% endfor %}
+            {% endif %}
+            {% if cv.profil.location is defined %}
+                <div class="contact-item private-info">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    {{ cv.profil.location.city }}
                 </div>
-              {% endif %}
+            {% endif %}
+            {% for link in cv.profil.links|default([]) %}
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                    <a href="{{ link.url }}" target="_blank">{{ link.network }}</a>
+                </div>
+            {% endfor %}
+        </div>
 
-              <div class="t-item-body">
-                {% if item.summary is defined and item.summary %}
-                  <div class="t-summary">{{ item.summary }}</div>
-                {% endif %}
 
-                {% if item.highlights is defined and item.highlights|length %}
-                  <ul class="t-highlights">
-                    {% for h in item.highlights %}<li>{{ h }}</li>{% endfor %}
-                  </ul>
-                {% endif %}
-
-                {% if item.references is defined and item.references|length %}
-                  <div class="t-refs-collapsible open">
-                    <div class="t-refs-toggle">Références</div>
-                    <div class="t-refs-body">
-                      {% for ref in item.references %}
-                        <div class="t-ref">
-                          <div class="t-ref-name">{{ ref.name }}</div>
-                          <div class="t-ref-text">{{ ref.reference }}</div>
+        {% if groupedSkills|length %}
+            <div class="s-section">
+                <div class="s-title">Compétences</div>
+                {% for type, skills in groupedSkills %}
+                    <div style="margin-bottom: 15px;">
+                        <div
+                            style="font-size: 0.65rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; margin-bottom: 8px;">{{ type }}</div>
+                        <div class="tag-list">
+                            {% for s in skills %}
+                                <span class="tag color-{{ typeToIndex[type] % 12 }}">{{ s.global }}</span>
+                            {% endfor %}
                         </div>
-                      {% endfor %}
                     </div>
-                  </div>
-                {% endif %}
-              </div>
+                {% endfor %}
             </div>
-          </div>
-        {% endfor %}
-        </div>
-      </div>
-    {% endif %}
+        {% endif %}
+        {% if cv.profil.softSkills is defined and cv.profil.softSkills|length %}
+            <div class="s-section">
+                <div class="s-title">Soft Skills</div>
+                <div class="tag-list">
+                    {% for soft in cv.profil.softSkills %}
+                        <span class="tag">{{ soft }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+        {% if cv.profil.languages is defined and cv.profil.languages|length %}
+            <div class="s-section">
+                <div class="s-title">Langues</div>
+                {% for lang in cv.profil.languages %}
+                    <div class="lang-item">
+                        <span>{{ lang.language }}</span>
+                        <span class="lang-fluency">{{ lang.fluency }}</span>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% if cv.profil.interests is defined and cv.profil.interests|length %}
+            <div class="s-section">
+                <div class="s-title">Intérêts</div>
+                <div class="tag-list">
+                    {% for interest in cv.profil.interests %}
+                        {% for kw in interest.keywords|default([]) %}
+                            <span class="tag">{{ kw }}</span>
+                        {% endfor %}
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+    </aside>
 
-  </main>
+    <main class="main">
+        {% if cv.profil.summary is defined and cv.profil.summary %}
+            <div class="section">
+                <div class="section-title">À propos</div>
+                <p class="summary">{{ cv.profil.summary }}</p>
+            </div>
+        {% endif %}
+
+        {% if cv.history is defined and cv.history|length %}
+            {% set workHistory = cv.history|filter(item => (item.contractType|default('')) != 'student') %}
+            <div class="section">
+                <div class="section-title">Expérience</div>
+                {% for item in workHistory %}
+                    <div class="t-item">
+                        <div class="t-header">
+                            <div>
+                                <div class="t-position">{{ item.position }}</div>
+                                <div class="t-company">
+                                    {{ item.company.name }}
+                                    {% if item.company.description %}<span class="t-company-desc">
+                                        — {{ item.company.description }}</span>{% endif %}
+                                </div>
+                                <div class="t-date" data-start="{{ item.startDate }}"
+                                     data-end="{{ item.endDate|default('') }}"></div>
+                            </div>
+                            {% if item.company.logo %}
+                                <img src="{{ item.company.logo }}" class="t-logo" alt="{{ item.company.name }}">
+                            {% else %}
+                                <div class="t-logo"
+                                     style="display:flex;align-items:center;justify-content:center;background:var(--bg-sidebar);color:var(--text-light);font-weight:800;font-size:1.2rem;">
+                                    DP
+                                </div>
+                            {% endif %}
+                        </div>
+
+                        {% if item.summary is defined and item.summary %}
+                            <div class="t-summary">{{ item.summary }}</div>
+                        {% endif %}
+
+                        {% if item.highlights is defined and item.highlights %}
+                            <ul class="t-highlights">
+                                {% for h in item.highlights %}
+                                    <li>{{ h }}</li>{% endfor %}
+                            </ul>
+                        {% endif %}
+                        {% if item.skills is defined and item.skills %}
+                            <div class="t-keywords">
+                                {% for kw in item.skills %}
+                                    {% if kw.precision is defined and kw.precision %}
+                                        <span
+                                            class="t-kw {% if typeToIndex[kw.type] is defined %}color-{{ typeToIndex[kw.type] % 12 }}{% endif %} {% if kw.important is defined and kw.important %}t-kw--important{% endif %}">
+                      {{ kw.precision }}
+                    </span>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {% if allReferences|length %}
+            <div class="section">
+                <div class="section-title">Références</div>
+                <div>
+                    {% for ref in allReferences %}
+                        <div class="t-ref" style="margin-bottom: 30px;">
+                            <div class="t-ref-text">« {{ ref.reference|nl2br }} »</div>
+                            <div class="t-ref-author">{{ ref.name }}</div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+
+        {% if cv.history is defined and cv.history|length %}
+            {% set eduHistory = cv.history|filter(item => (item.contractType|default('')) == 'student') %}
+            <div class="section">
+                <div class="section-title">Formation</div>
+                {% for item in eduHistory %}
+                    <div class="t-item" style="margin-bottom: 20px;">
+                        <div class="t-header">
+                            <div>
+                                <div class="t-position" style="font-size: 1rem;">{{ item.position }}</div>
+                                <div class="t-company">{{ item.company.name }}</div>
+                                <div class="t-date" data-start="{{ item.startDate }}"
+                                     data-end="{{ item.endDate|default('') }}"></div>
+                            </div>
+                            {% if item.company.logo %}
+                                <img src="{{ item.company.logo }}" class="t-logo" alt="{{ item.company.name }}">
+                            {% else %}
+                                <div class="t-logo"
+                                     style="display:flex;align-items:center;justify-content:center;background:var(--bg-sidebar);color:var(--text-light);font-weight:800;font-size:1.2rem;">
+                                    DP
+                                </div>
+                            {% endif %}
+                        </div>
+
+                        {% if item.summary is defined and item.summary %}
+                            <div class="t-summary" style="margin-top: 10px;">{{ item.summary }}</div>
+                        {% endif %}
+
+                        {% if item.highlights is defined and item.highlights %}
+                            <ul class="t-highlights">
+                                {% for h in item.highlights %}
+                                    <li>{{ h }}</li>{% endfor %}
+                            </ul>
+                        {% endif %}
+                        {% if item.skills is defined and item.skills %}
+                            <div class="t-keywords">
+                                {% for kw in item.skills %}
+                                    {% if kw.precision is defined and kw.precision %}
+                                        <span
+                                            class="t-kw {% if typeToIndex[kw.type] is defined %}color-{{ typeToIndex[kw.type] % 12 }}{% endif %} {% if kw.important is defined and kw.important %}t-kw--important{% endif %}">
+                      {{ kw.precision }}
+                    </span>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </main>
 </div>
 
-<a href="/export" class="print-btn">
-  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-  Télécharger PDF
-</a>
-
 <script>
-  const MONTHS = ['jan.','fév.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
+    const MONTHS = ['Jan.', 'Fév.', 'Mars', 'Avr.', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'];
 
-  function fmtDate(iso) {
-    if (!iso) return 'présent';
-    const [y, m] = iso.split('-');
-    return MONTHS[parseInt(m, 10) - 1] + ' ' + y;
-  }
-
-  function duration(start, end) {
-    const s = new Date(start);
-    const e = end ? new Date(end) : new Date();
-    
-    let months = (e.getFullYear() - s.getFullYear()) * 12 + (e.getMonth() - s.getMonth());
-    if (e.getDate() < s.getDate()) months--;
-
-    if (months < 1) {
-      const diffTime = Math.abs(e - s);
-      const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
-      return diffDays + ' jour' + (diffDays > 1 ? 's' : '');
+    function fmtDate(iso) {
+        if (!iso) return 'Présent';
+        const [y, m, d] = iso.split('-');
+        return MONTHS[parseInt(m, 10) - 1] + ' ' + y;
     }
-    
-    const y = Math.floor(months / 12);
-    const m = months % 12;
-    let res = [];
-    if (y) res.push(y + ' an' + (y > 1 ? 's' : ''));
-    if (m) res.push(m + ' mois');
-    return res.join(' ');
-  }
 
-  document.querySelectorAll('.t-date[data-start]').forEach(el => {
-    const start = el.dataset.start;
-    const end   = el.dataset.end || '';
-    el.innerHTML = fmtDate(start) + ' → ' + fmtDate(end || null)
-      + ' <span class="t-duration">' + duration(start, end || null) + '</span>';
-  });
+    function duration(start, end) {
+        const s = new Date(start);
+        const e = end ? new Date(end) : new Date();
 
-  const params = new URLSearchParams(window.location.search);
+        const diffTime = Math.abs(e - s);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
-  if (params.has('public')) {
-    document.querySelectorAll('.private-info').forEach(el => el.style.display = 'none');
-  }
+        if (diffDays < 30) {
+            return diffDays + ' jour' + (diffDays > 1 ? 's' : '');
+        }
 
-  if (params.has('download')) {
-    document.body.classList.add('show-download');
-  }
+        let m = (e.getFullYear() - s.getFullYear()) * 12 + (e.getMonth() - s.getMonth());
+        // Ajustement si le jour de fin est inférieur au jour de début
+        if (e.getDate() < s.getDate()) m--;
 
-  document.querySelectorAll('.section-title').forEach(title => {
-    title.addEventListener('click', () => {
-      title.closest('.section').classList.toggle('collapsed');
+        if (m < 1) return diffDays + ' jours';
+
+        const y = Math.floor(m / 12);
+        const mm = m % 12;
+        let res = [];
+        if (y) res.push(y + ' an' + (y > 1 ? 's' : ''));
+        if (mm) res.push(mm + ' mois');
+        return res.join(' ');
+    }
+
+    document.querySelectorAll('.t-date[data-start]').forEach(el => {
+        const s = el.dataset.start;
+        const e = el.dataset.end;
+        const durTxt = duration(s, e);
+
+        el.innerHTML = fmtDate(s) + ' — ' + fmtDate(e) +
+            (durTxt ? ' <span class="t-duration">' + durTxt + '</span>' : '');
     });
-  });
-
-  document.querySelectorAll('.t-toggle').forEach(toggle => {
-    toggle.addEventListener('click', () => {
-      toggle.closest('.t-item--collapsible').classList.toggle('open');
-    });
-  });
-
-  document.querySelectorAll('.t-refs-toggle').forEach(toggle => {
-    toggle.addEventListener('click', () => {
-      toggle.closest('.t-refs-collapsible').classList.toggle('open');
-    });
-  });
-
-  document.querySelectorAll('.s-toggle').forEach(toggle => {
-    toggle.addEventListener('click', () => {
-      toggle.closest('.s-collapsible').classList.toggle('s-collapsed');
-    });
-  });
 </script>
 </body>
 </html>
