@@ -1,1 +1,3 @@
 /.claude
+.DS_Store
+generator/exporter/node_modules/

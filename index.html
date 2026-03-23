@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David PIATEK — CV</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --primary: #0f172a; /* Slate 900 */
+            --accent: #2563eb; /* Blue 600 */
+            --accent-soft: #eff6ff;
+            --text-main: #334155; /* Slate 600 */
+            --text-dark: #1e293b; /* Slate 800 */
+            --text-light: #64748b; /* Slate 500 */
+            --border: #e2e8f0; /* Slate 200 */
+            --bg-sidebar: #f8fafc; /* Slate 50 */
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            font-size: 12px;
+            color: var(--text-main);
+            background: var(--white);
+            line-height: 1.4;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3 {
+            color: var(--text-dark);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .page {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            min-height: 100vh;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--white);
+        }
+
+        /* ── Sidebar ── */
+        .sidebar {
+            background: var(--bg-sidebar);
+            padding: 30px 20px;
+            border-right: 1px solid var(--border);
+        }
+
+        .sidebar-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-photo {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 12px;
+            border: 3px solid var(--white);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .sidebar-name {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .sidebar-title {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--white);
+            background: var(--accent);
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-top: 8px;
+        }
+
+        .s-section {
+            margin-bottom: 20px;
+        }
+
+        .s-title {
+            font-size: 0.62rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--text-light);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .s-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+            font-size: 0.78rem;
+        }
+
+        .contact-item svg {
+            width: 14px;
+            height: 14px;
+            color: var(--accent);
+            opacity: 0.8;
+        }
+
+        .contact-item a {
+            color: var(--text-main);
+        }
+
+        .lang-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-size: 0.78rem;
+        }
+
+        .lang-fluency {
+            color: var(--text-light);
+            font-size: 0.7rem;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .tag {
+            background: var(--white);
+            color: var(--text-main);
+            border-radius: 4px;
+            padding: 3px 8px;
+            font-size: 0.7rem;
+            border: 1px solid var(--type-color, var(--border));
+            font-weight: 500;
+        }
+
+        /* ── Main ── */
+        .main {
+            padding: 30px 35px 30px 30px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 2px;
+            background: var(--accent);
+            opacity: 0.25;
+        }
+
+        .summary {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: var(--text-main);
+            font-weight: 400;
+        }
+
+        /* Timeline */
+        .t-item {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .t-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 6px;
+        }
+
+        .t-position {
+            font-weight: 600;
+            font-size: 0.88rem;
+            color: var(--text-dark);
+            margin-bottom: 3px;
+            letter-spacing: 0;
+        }
+
+        .t-company {
+            font-weight: 700;
+            font-size: 0.88rem;
+            color: var(--accent);
+            margin-bottom: 2px;
+        }
+
+        .t-company-desc {
+            font-weight: 500;
+            color: var(--text-dark);
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        .t-date {
+            font-size: 0.75rem;
+            color: var(--text-dark);
+            font-weight: 700;
+            margin-top: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: 0.02em;
+        }
+
+        .t-duration {
+            background: var(--accent);
+            color: var(--white);
+            padding: 1px 8px;
+            border-radius: 20px;
+            font-size: 0.6rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .t-logo {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+            border-radius: 10px;
+            background: var(--white);
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border);
+        }
+
+        .t-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: 8px 0;
+        }
+
+        .t-kw {
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            background: var(--white);
+            padding: 3px 10px;
+            border-radius: 6px;
+            border: 1.5px solid var(--type-color, var(--border));
+            text-transform: uppercase;
+        }
+
+        .t-kw--important {
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+            font-weight: 800;
+        }
+
+        /* Palette de couleurs par type */
+        .color-0 {
+            --type-color: #3b82f6;
+        }
+
+        /* Blue */
+        .color-1 {
+            --type-color: #10b981;
+        }
+
+        /* Emerald */
+        .color-2 {
+            --type-color: #f59e0b;
+        }
+
+        /* Amber */
+        .color-3 {
+            --type-color: #8b5cf6;
+        }
+
+        /* Violet */
+        .color-4 {
+            --type-color: #ef4444;
+        }
+
+        /* Red */
+        .color-5 {
+            --type-color: #06b6d4;
+        }
+
+        /* Cyan */
+        .color-6 {
+            --type-color: #f97316;
+        }
+
+        /* Orange */
+        .color-7 {
+            --type-color: #84cc16;
+        }
+
+        /* Lime */
+        .color-8 {
+            --type-color: #ec4899;
+        }
+
+        /* Pink */
+        .color-9 {
+            --type-color: #6366f1;
+        }
+
+        /* Indigo */
+        .color-10 {
+            --type-color: #14b8a6;
+        }
+
+        /* Teal */
+        .color-11 {
+            --type-color: #f43f5e;
+        }
+
+        /* Rose */
+
+        .t-summary {
+            font-size: 0.82rem;
+            margin-bottom: 8px;
+            color: var(--text-main);
+            line-height: 1.5;
+        }
+
+        .t-highlights {
+            list-style: none;
+        }
+
+        .t-highlights li {
+            font-size: 0.8rem;
+            margin-bottom: 4px;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .t-highlights li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 6px;
+            height: 1px;
+            background: var(--accent);
+        }
+
+        /* References */
+        .t-references {
+            margin-top: 12px;
+            padding-top: 10px;
+            border-top: 1px dashed var(--border);
+        }
+
+        .t-ref {
+            margin-bottom: 12px;
+            padding-left: 14px;
+            border-left: 2px solid var(--accent-soft);
+        }
+
+        .t-ref-text {
+            font-style: italic;
+            font-size: 0.78rem;
+            color: var(--text-light);
+            line-height: 1.5;
+            margin-bottom: 5px;
+        }
+
+        .t-ref-author {
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .skill-group-title {
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+            border-left: 3px solid var(--accent);
+            padding-left: 10px;
+        }
+
+        @media print {
+            .page {
+                max-width: 100%;
+                margin: 0;
+                grid-template-columns: 300px 1fr;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .page {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+            }
+        }
+    </style>
+</head>
+<body>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+<div class="page">
+    <aside class="sidebar">
+        <div class="sidebar-header">
+                            <img src="https://0.gravatar.com/avatar/1c386f5e5ba6b8b9afb242864b4e6e4d7d6db78f081bf16b14111aa30c5dcf31?size=512&amp;d=initials" alt="David PIATEK" class="sidebar-photo">
+                        <div class="sidebar-name">David PIATEK</div>
+            <div class="sidebar-title">BUILDER PHP Symfony</div>
+        </div>
+
+        <div class="s-section">
+            <div class="s-title">Contact</div>
+                            <div class="contact-item private-info">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <a href="mailto:dav.piatek@gmail.com">dav.piatek@gmail.com</a>
+                </div>
+                                        <div class="contact-item private-info">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.28-2.28a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    +33 611212739
+                </div>
+                                        <div class="contact-item private-info">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    Prunay-Cassereau
+                </div>
+                                        <div class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                    <a href="https://github.com/david-piatek" target="_blank">Github</a>
+                </div>
+                            <div class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                    <a href="https://www.linkedin.com/in/david-piatek-519aa275/" target="_blank">Linkedin</a>
+                </div>
+                    </div>
+
+
+                    <div class="s-section">
+                <div class="s-title">Compétences</div>
+                                    <div style="margin-bottom: 15px;">
+                        <div
+                            style="font-size: 0.65rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; margin-bottom: 8px;">Web development</div>
+                        <div class="tag-list">
+                                                            <span class="tag color-0">PHP</span>
+                                                            <span class="tag color-0">Symfony</span>
+                                                            <span class="tag color-0">TypeScript</span>
+                                                            <span class="tag color-0">Golang</span>
+                                                            <span class="tag color-0">ReactJS</span>
+                                                            <span class="tag color-0">NestJS</span>
+                                                            <span class="tag color-0">VueJS</span>
+                                                            <span class="tag color-0">CMS</span>
+                                                    </div>
+                    </div>
+                                    <div style="margin-bottom: 15px;">
+                        <div
+                            style="font-size: 0.65rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; margin-bottom: 8px;">Architecture</div>
+                        <div class="tag-list">
+                                                            <span class="tag color-1">Hexagonal</span>
+                                                            <span class="tag color-1">SOA</span>
+                                                            <span class="tag color-1">CQRS</span>
+                                                            <span class="tag color-1">microservice</span>
+                                                            <span class="tag color-1">Event-driven</span>
+                                                    </div>
+                    </div>
+                                    <div style="margin-bottom: 15px;">
+                        <div
+                            style="font-size: 0.65rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; margin-bottom: 8px;">Best Practices</div>
+                        <div class="tag-list">
+                                                            <span class="tag color-2">TDD</span>
+                                                            <span class="tag color-2">Craftsmanship</span>
+                                                            <span class="tag color-2">Peer Programing</span>
+                                                            <span class="tag color-2">Example mapping</span>
+                                                    </div>
+                    </div>
+                                    <div style="margin-bottom: 15px;">
+                        <div
+                            style="font-size: 0.65rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; margin-bottom: 8px;">Testing</div>
+                        <div class="tag-list">
+                                                            <span class="tag color-3">PHPUNIT</span>
+                                                            <span class="tag color-3">Playwright</span>
+                                                            <span class="tag color-3">infection</span>
+                                                            <span class="tag color-3">php-cs-fixer</span>
+                                                            <span class="tag color-3">phpstan</span>
+                                                            <span class="tag color-3">Cypress</span>
+                                                            <span class="tag color-3">eslint</span>
+                                                            <span class="tag color-3">JEST</span>
+                                                    </div>
+                    </div>
+                                    <div style="margin-bottom: 15px;">
+                        <div
+                            style="font-size: 0.65rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; margin-bottom: 8px;">CI/CD</div>
+                        <div class="tag-list">
+                                                            <span class="tag color-4">ArgoCd</span>
+                                                            <span class="tag color-4">gitlab-ci</span>
+                                                            <span class="tag color-4">github-action</span>
+                                                    </div>
+                    </div>
+                                    <div style="margin-bottom: 15px;">
+                        <div
+                            style="font-size: 0.65rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; margin-bottom: 8px;">Server provisioning</div>
+                        <div class="tag-list">
+                                                            <span class="tag color-5">Terraform</span>
+                                                            <span class="tag color-5">Packer</span>
+                                                            <span class="tag color-5">Ansible</span>
+                                                    </div>
+                    </div>
+                                    <div style="margin-bottom: 15px;">
+                        <div
+                            style="font-size: 0.65rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; margin-bottom: 8px;">AI</div>
+                        <div class="tag-list">
+                                                            <span class="tag color-6">LLM</span>
+                                                            <span class="tag color-6">MCP</span>
+                                                            <span class="tag color-6">N8N</span>
+                                                            <span class="tag color-6">AI</span>
+                                                    </div>
+                    </div>
+                                    <div style="margin-bottom: 15px;">
+                        <div
+                            style="font-size: 0.65rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; margin-bottom: 8px;">Cloud Provider</div>
+                        <div class="tag-list">
+                                                            <span class="tag color-7">Scaleway</span>
+                                                            <span class="tag color-7">Azure</span>
+                                                            <span class="tag color-7">OVH</span>
+                                                            <span class="tag color-7">Digital Ocean</span>
+                                                            <span class="tag color-7">GCP</span>
+                                                    </div>
+                    </div>
+                                    <div style="margin-bottom: 15px;">
+                        <div
+                            style="font-size: 0.65rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; margin-bottom: 8px;">Monitoring</div>
+                        <div class="tag-list">
+                                                            <span class="tag color-8">Dynatrace</span>
+                                                            <span class="tag color-8">OpenSearch</span>
+                                                            <span class="tag color-8">ELK</span>
+                                                            <span class="tag color-8">Sentry</span>
+                                                            <span class="tag color-8">DataDog</span>
+                                                    </div>
+                    </div>
+                                    <div style="margin-bottom: 15px;">
+                        <div
+                            style="font-size: 0.65rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; margin-bottom: 8px;">DevOps</div>
+                        <div class="tag-list">
+                                                            <span class="tag color-9">Docker</span>
+                                                            <span class="tag color-9">Helm</span>
+                                                            <span class="tag color-9">kubernetes</span>
+                                                            <span class="tag color-9">Kustomize</span>
+                                                    </div>
+                    </div>
+                                    <div style="margin-bottom: 15px;">
+                        <div
+                            style="font-size: 0.65rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; margin-bottom: 8px;">Project Management</div>
+                        <div class="tag-list">
+                                                            <span class="tag color-10">SCRUM</span>
+                                                    </div>
+                    </div>
+                                    <div style="margin-bottom: 15px;">
+                        <div
+                            style="font-size: 0.65rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; margin-bottom: 8px;">Mobile</div>
+                        <div class="tag-list">
+                                                            <span class="tag color-11">ReactNative</span>
+                                                    </div>
+                    </div>
+                                    <div style="margin-bottom: 15px;">
+                        <div
+                            style="font-size: 0.65rem; font-weight: 700; color: var(--text-light); text-transform: uppercase; margin-bottom: 8px;">Gestion</div>
+                        <div class="tag-list">
+                                                            <span class="tag color-0">Gestion d&#039;entreprise</span>
+                                                    </div>
+                    </div>
+                            </div>
+                            <div class="s-section">
+                <div class="s-title">Soft Skills</div>
+                <div class="tag-list">
+                                            <span class="tag">Communication</span>
+                                            <span class="tag">Esprit d&#039;équipe</span>
+                                            <span class="tag">Adaptabilité</span>
+                                            <span class="tag">Curiosité</span>
+                                    </div>
+            </div>
+                            <div class="s-section">
+                <div class="s-title">Langues</div>
+                                    <div class="lang-item">
+                        <span>French 🇫🇷</span>
+                        <span class="lang-fluency">Native speaker</span>
+                    </div>
+                                    <div class="lang-item">
+                        <span>English 🇬🇧</span>
+                        <span class="lang-fluency">Intermediate</span>
+                    </div>
+                            </div>
+                            <div class="s-section">
+                <div class="s-title">Intérêts</div>
+                <div class="tag-list">
+                                                                        <span class="tag">Jonglage</span>
+                                                    <span class="tag">Musique</span>
+                                                    <span class="tag">Photo</span>
+                                                                                                <span class="tag">Renovation</span>
+                                                    <span class="tag">Jardinage</span>
+                                                                                                <span class="tag">BMX</span>
+                                                    <span class="tag">Pêche</span>
+                                                            </div>
+            </div>
+            </aside>
+
+    <main class="main">
+                    <div class="section">
+                <div class="section-title">À propos</div>
+                <p class="summary">Passionné de technologie depuis toujours, tour à tour développeur et Tech Lead en start-up et scale-up, j’ai développé une solide compréhension des enjeux QA, DevOps, Data et produit. Je fais le lien entre technique et produit pour délivrer rapidement de la valeur.</p>
+            </div>
+        
+                                <div class="section">
+                <div class="section-title">Expérience</div>
+                                    <div class="t-item">
+                        <div class="t-header">
+                            <div>
+                                <div class="t-position">BUILDER</div>
+                                <div class="t-company">
+                                    Missions freelance
+                                                                    </div>
+                                <div class="t-date" data-start="2026-01-01"
+                                     data-end=""></div>
+                            </div>
+                                                            <div class="t-logo"
+                                     style="display:flex;align-items:center;justify-content:center;background:var(--bg-sidebar);color:var(--text-light);font-weight:800;font-size:1.2rem;">
+                                    DP
+                                </div>
+                                                    </div>
+
+                                                    <div class="t-summary">Missions freelance</div>
+                        
+                                                    <ul class="t-highlights">
+                                                                    <li>Automatisation de processus et amélioration des workflows</li>                                    <li>Optimisation CI/CD et containerisation Docker</li>                                    <li>Création d’un générateur de sites statiques</li>                                    <li>Développement d’un SI de centralisation et gestion de photos multi-supports pour une mairie</li>                            </ul>
+                                                                            <div class="t-keywords">
+                                                                                                            <span
+                                            class="t-kw color-0 ">
+                      PHP 8.5
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-0 ">
+                      Symfony 7.4
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-0 ">
+                      NestJS
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-0 ">
+                      Golang
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-1 ">
+                      Hexagonal
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-2 ">
+                      TDD
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-2 ">
+                      Craftsmanship
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      PHPUNIT
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      Playwright
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-4 ">
+                      ArgoCd
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-4 ">
+                      gitlab-ci
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-5 ">
+                      Terraform
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-6 ">
+                      GPT
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-6 ">
+                      Gemini
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-6 ">
+                      Claude Opus
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-6 ">
+                      MCP n8n
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-6 ">
+                      MCP drive
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-6 ">
+                      N8N
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-7 ">
+                      Scaleway
+                    </span>
+                                                                                                </div>
+                                            </div>
+                                    <div class="t-item">
+                        <div class="t-header">
+                            <div>
+                                <div class="t-position">Papa - Révonateur</div>
+                                <div class="t-company">
+                                    Congé parental
+                                                                    </div>
+                                <div class="t-date" data-start="2025-07-07"
+                                     data-end="2025-12-31"></div>
+                            </div>
+                                                            <img src="https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/09/baby-logos.jpg" class="t-logo" alt="Congé parental">
+                                                    </div>
+
+                                                    <div class="t-summary">Congé parental et restauration de longère</div>
+                        
+                                                    <ul class="t-highlights">
+                                                                    <li>Vieille sur AI</li>                            </ul>
+                                                                            <div class="t-keywords">
+                                                                                                            <span
+                                            class="t-kw color-6 ">
+                      AI
+                    </span>
+                                                                                                </div>
+                                            </div>
+                                    <div class="t-item">
+                        <div class="t-header">
+                            <div>
+                                <div class="t-position">Senior Backend Developer</div>
+                                <div class="t-company">
+                                    OneyTrust
+                                    <span class="t-company-desc">
+                                        — FinTech leader français de la lutte contre la fraude</span>                                </div>
+                                <div class="t-date" data-start="2024-06-08"
+                                     data-end="2025-07-06"></div>
+                            </div>
+                                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRpj9fg1tgOQMCmVYvmVcWV1eusTqDrYAnTA&amp;s" class="t-logo" alt="OneyTrust">
+                                                    </div>
+
+                                                    <div class="t-summary">En tant que freelance ma  mission était de reprendre en main le legacy, pour pouvoir le deployer sur azure</div>
+                        
+                                                    <ul class="t-highlights">
+                                                                    <li>Ajout de fonctionnalités</li>                                    <li>TDD, architecture hexagonal</li>                                    <li>Amélioration de la CI/CD</li>                                    <li>Migration Oracle vers PostgreSQL</li>                                    <li>Migration on-premise vers Azure AKS</li>                            </ul>
+                                                                            <div class="t-keywords">
+                                                                                                            <span
+                                            class="t-kw color-0 ">
+                      PHP 8.2
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-0 ">
+                      Symfony 6.4
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-1 ">
+                      Hexagonal
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-2 ">
+                      TDD
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-2 ">
+                      Peer Programing
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-2 ">
+                      Craftsmanship
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      infection
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      php-cs-fixer
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      phpstan
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      PHPUNIT
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      Playwright
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-4 ">
+                      ArgoCd
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-4 ">
+                      gitlab-ci
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-8 ">
+                      Dynatrace
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-8 ">
+                      OpenSearch
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-9 ">
+                      Docker
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-9 ">
+                      Helm
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-9 ">
+                      kubernetes
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-10 ">
+                      SCRUM
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-6 ">
+                      AI
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-7 ">
+                      Azure
+                    </span>
+                                                                                                </div>
+                                            </div>
+                                    <div class="t-item">
+                        <div class="t-header">
+                            <div>
+                                <div class="t-position">TechLead</div>
+                                <div class="t-company">
+                                    Skaleet
+                                    <span class="t-company-desc">
+                                        — Fintech spécialisée dans le core banking</span>                                </div>
+                                <div class="t-date" data-start="2023-01-11"
+                                     data-end="2024-11-15"></div>
+                            </div>
+                                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOoAAACUCAMAAACqYkXNAAAAZlBMVEX///8AAAD7+/vExMT39/crKytxcXGqqqqCgoKOjo7q6urk5OTU1NRGRkbt7e3Y2NicnJxXV1fMzMwYGBg7OzteXl68vLwyMjKIiIiUlJS0tLR8fHxAQEBnZ2cNDQ3e3t4jIyNPT08vxfTMAAAH6ElEQVR4nO2aCXurqhaGQREnRMQZ5///Jw+DJibduzu5zU5Pz13v06c1C1Q+wDWYIgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPDDWfxPSb97fC8kXoNPKNV3j++FRPhTwu8e3wsBqSDVQTjx3j3OF/Cs1CTsI0rpEIfskLs0Gkkeul1u+rLnJor4+hz19VjwnNS028q9pRxrwa1RaCe+TslDt+u1W18H/tQQeaZPmr8eC56SKsebxrns7fDNcf2Y1Nj0pY/1PeDVbx+lp3hGqmx/2f4flMqpNa3FROlUVLM5Nvb/oNTcWiplB5pIQQPcmMOfKHUt7tmaU9fmTjxvYut2/7ZUYqW+1i0V6QfOvjK0nfLzIOzvG6kksewdWNh3QyfUcpxxKzVVcdfFwr8JVJ4U2trv5/C4i1Z7A23suud89++l1p93VbZT/8F+lppvlaa1S0/6rLWhaV7bovkoNaWtFTEHlbgKDbPAeAFctrURm966wq9E1yekumcVx/cze5K6lNfpULdP/XQvVZWn1m1f6LQ+Gcvwu6TuHlhvdMFSfs14rlIX1y6u5rVtq/Wk9SrVPflrNbqVL6yIxCqd23E/KURJ0baz66l3S/DcU/4/S0XsmkGUk7iU7RepzI1JHOaK9koypjrrV2zte5GaWC20yRcZFnazkKN5E3LJm8FcbGSIMd8ubJwzzVdy7+G8i5yJnLi9NJvOm6kW6Y1UPzAHweGiw+6SFzdWKz1LFeagcx3STB+3TO8bY6yYNXq2q/COYPN1D5yf3q5Ip7SjFyb/tneizs8SLk5xlbvJb8NjdpLTNNlhF/wk1UxLe+wLtWsJ3aZ1eMe+flVc/Qg/J7ofbsBlv12bS3lInUI7INydO3up2XQJcS4oW65Sid1F0m5Kljf7EltnoJyRLWbqZvY3pZLsM6lGAGf97mpw4O1S592fjuzSL8zW0rKutvEsNXHnHFgrR+6ZPhux/61SLbwrjw79eU/jo0JjJb7jLJXdN+p9kaD1o/VfIPVInoar1NY5Lec/UneVqp40dXUv1cboNjsxRhyZLVuejVkl/6ZU77dSyU3ykB9udZdaKXdmZZ2N9bDlIDnxPMK7e6nW18YsP5F6yPi8zD8bc/I6qX4v7gl+J9WfwpNYFtys6qi9sTwWGnk2Xm+7i2UfVhWZv9El900458Rdqbwk2dzgfU+9WuO17o8AkdjtOh/PamYjlYvS+pDY604u3iQ2R7iVas4u5X6tftNFlI5S9gk+fHhuSiuTB3N7+p/ym5dKdUltu0WK5X7nctOZHMHGrlBqHUuAdk2V1SJdGLqVajdA6YqA3mZZ+pjYi0Z2glxqpt0yIm4CBfoij0slv2o39z9J3adDL0xjt/dMQxuX5g9SvT2hLqbdNdjdvDvmdiqc/17tXPnX+w1vkYpyev9uabZ3PkvldgUCPcLu1I8O9ynEsS0vTLY89cKbEFW62yfXfDR6j1Q9vV1xHkpxKmHq3WFJu5o6B+TxJUoOiw1MY75PgHuRmg7XMLp2uwsgartevz7y3vwyLW+Tal5v93Rry7kc6y7c3y34vUbt3tRrzCeRu4lpy3UcFEfSGI37PvclTVdX67qOdexf8+VF0Ewb220Ir8VpKqZR28bsKw/s019keMnCpJR5en1L4mnQzSf3meieLOcX482B7ZCafNdE1DOJTYIX/tGYL6964fKQ1J8LSAWpPxo1RJ8wyD9f4cfgkU/5iV8ZA8AvWVTTqPs3sYlNjJBsHvsHgR+CwEFWucJ71+uZYsw66Y5evoHSVuJSJOSdfp/wfmH9g1N4s88IsdIFaenlSgiJkkYq/cdIlYrrn7xhoU6LiRQitoU6C0XD9V4QKkXMZ/qPL3w9OdpMUCNMI+IqR8T39ceQ6Q+pvmzqNcw3bY3UJyeo8VN9Qz9vbOO7pOrqE4eemPqiTH080hJzhlUzT5yOeYc3qmu5pox6PJj1rqphjWUddC3lkS5McaGrwISNgxhDiae4ZjqPx5TIMhYlLVop9Vw2WCW4Gge9SaqMxzgkePKLeFoH3Ot99abgF+JJUBzr2qMvsJK4J/rWOS7aKkF0W2Lsc1rloWkyu3zCC5H+gKWnsOqwn5a1LuZkNA9di3289fbxFqvf41wLZtu0S+W4WMw7pTBQE6aNvqzo9QGt82l6k0cwGxgVq5y2Xs+2G5eWGrSYIZppqRz1LVNVlkWmIC2wecdIMUE5DiPMSTsgv/SnVvRCeHnUBuZ1S9rSLUr1BPIpMw+DlRrb+3Fc11FWYxJlnVhpPtOg+XSAr5Q6KDEHPo61gKvUMNlmNGRLhxMUV82wRV1opPa4z+u6m6OUlrIzUqnnz01YhsnQ+1Ha2O+ePIH1TM2VDHG/4M2fjNT9TdqIB12UT2SeEoEnr8D1u/5nV1VjVW2MdG0QZYplPvIztlQNUqMSNBUZR2LK+5ZOeDT+WK/bJpGo1kwh0XIyxZ7cfNS1a8VkFQSFC1Mr5SjdgjbiaGgrWvh83Atw1YYobpk+eR2KQU/s+zLyo6pOiAk35tBzYcB9sm3pNkg2Fjb0cPtlHDFFvDnR2/sQa+b2rYvX09V+25fw6+9L7b7fAnFtTuM6uwa0fwOkGeo6fthRkiFSj7maZej+dbUHSZMnAr73cF8oPQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID/R/4B+dqFnZSuCzAAAAAASUVORK5CYII=" class="t-logo" alt="Skaleet">
+                                                    </div>
+
+                                                    <div class="t-summary">En tant que TechLead je manageais ma Squad. En collaboration avec le Product Owner et le Test Manager nous definitions les specs et je m’assurais de la faisabilité technique</div>
+                        
+                                                    <ul class="t-highlights">
+                                                                    <li>Management</li>                                    <li>Amélioration de CI/CD</li>                                    <li>Rédaction de spécifications</li>                                    <li>Réalisation de POC</li>                                    <li>Architecture</li>                                    <li>Support niveau 3</li>                            </ul>
+                                                                            <div class="t-keywords">
+                                                                                                            <span
+                                            class="t-kw color-0 ">
+                      PHP 8.0
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-1 ">
+                      SOA
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-2 ">
+                      TDD
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-2 ">
+                      Peer Programing
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-2 ">
+                      Example mapping
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-2 ">
+                      Craftsmanship
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      php-cs-fixer
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      phpstan
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      PHPUNIT
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      Playwright
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-4 ">
+                      ArgoCd
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-4 ">
+                      gitlab-ci
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-8 ">
+                      ELK
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-9 ">
+                      Docker
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-9 ">
+                      Helm
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-9 ">
+                      kubernetes
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-10 ">
+                      SCRUM
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-7 ">
+                      OVH
+                    </span>
+                                                                                                </div>
+                                            </div>
+                                    <div class="t-item">
+                        <div class="t-header">
+                            <div>
+                                <div class="t-position">TechLead</div>
+                                <div class="t-company">
+                                    Pharmanity
+                                    <span class="t-company-desc">
+                                        — HealthTech Leader en Transactions de Pharmacies</span>                                </div>
+                                <div class="t-date" data-start="2021-01-05"
+                                     data-end="2022-06-20"></div>
+                            </div>
+                                                            <img src="https://pbs.twimg.com/profile_images/1650779261546971139/5iKVt3VX_400x400.jpg" class="t-logo" alt="Pharmanity">
+                                                    </div>
+
+                                                    <div class="t-summary">Ma mission initiale était de maintenir la version existante en ajoutant de nouvelles fonctionnalités. J&#039;ai pu ensuite m&#039;occuper du recrutement de la nouvelle équipe en vue d&#039;une refonte sur laquelle j&#039;ai pu mettre  en place l&#039;infrastructure et l&#039;architecture</div>
+                        
+                                                    <ul class="t-highlights">
+                                                                    <li>Reconstituer la stack après incendie ovh</li>                                    <li>Mise en œuvre du Plan de Reprise d&#039;Activité</li>                                    <li>Création d&#039;une usine à application mobile</li>                                    <li>Mise en œuvre CI/CD </li>                                    <li>Mise en œuvre de la nouvelle architecture microservice en CQRS</li>                                    <li>Management d&#039;une équipe SCRUM</li>                            </ul>
+                                                                            <div class="t-keywords">
+                                                                                                            <span
+                                            class="t-kw color-0 ">
+                      PHP 7
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-0 ">
+                      Symfony
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-0 ">
+                      TypeScript
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-0 ">
+                      ReactJS
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-0 ">
+                      Golang
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-1 ">
+                      CQRS
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-1 ">
+                      microservice
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-2 ">
+                      Peer Programing
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-2 ">
+                      Example mapping
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-2 ">
+                      Craftsmanship
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      php-cs-fixer
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      phpstan
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      PHPUNIT
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      Playwright
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-4 ">
+                      ArgoCd
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-4 ">
+                      github-action
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-4 ">
+                      gitlab-ci
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-8 ">
+                      Sentry
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-9 ">
+                      Docker
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-9 ">
+                      kubernetes
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-9 ">
+                      Kustomize
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-5 ">
+                      Terraform
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-5 ">
+                      Packer
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-5 ">
+                      Ansible
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-11 ">
+                      ReactNative
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-10 ">
+                      SCRUM
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-7 ">
+                      Azure
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-7 ">
+                      OVH
+                    </span>
+                                                                                                </div>
+                                            </div>
+                                    <div class="t-item">
+                        <div class="t-header">
+                            <div>
+                                <div class="t-position">CTO</div>
+                                <div class="t-company">
+                                    Drawsheep
+                                    <span class="t-company-desc">
+                                        — CRM/ERP à destination des TPE/PME</span>                                </div>
+                                <div class="t-date" data-start="2019-06-01"
+                                     data-end="2021-03-10"></div>
+                            </div>
+                                                            <img src="https://web.archive.org/web/20220112100952im_/http://drawsheep.com/favicon.png" class="t-logo" alt="Drawsheep">
+                                                    </div>
+
+                                                    <div class="t-summary">Définition de l&#039;orientation produit et mise en œuvre de l&#039;architecture / DevOps pour la création d&#039;un erp/crm à destination des TPE</div>
+                        
+                                                    <ul class="t-highlights">
+                                                                    <li>Création des différents usecases</li>                                    <li>mise en œuvre d&#039;une architecture scalable, résiliente</li>                                    <li>mise en œuvre d&#039;une usine à site</li>                                    <li>CI/CD </li>                                    <li>Gestion du cluster Kubernetes</li>                            </ul>
+                                                                            <div class="t-keywords">
+                                                                                                            <span
+                                            class="t-kw color-0 ">
+                      NestJS
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-0 ">
+                      ReactJS
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-1 ">
+                      Event-driven
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-1 ">
+                      CQRS
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      Cypress
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      eslint
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      JEST
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-4 ">
+                      ArgoCd
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-4 ">
+                      github-action
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-9 ">
+                      Docker
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-9 ">
+                      kubernetes
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-9 ">
+                      Kustomize
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-5 ">
+                      Terraform
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-10 ">
+                      SCRUM
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-7 ">
+                      Digital Ocean
+                    </span>
+                                                                                                </div>
+                                            </div>
+                                    <div class="t-item">
+                        <div class="t-header">
+                            <div>
+                                <div class="t-position">Senior Backend Developer</div>
+                                <div class="t-company">
+                                    Prestashop
+                                    <span class="t-company-desc">
+                                        — Un des leaders mondiaux des solutions e-commerce</span>                                </div>
+                                <div class="t-date" data-start="2019-01-09"
+                                     data-end="2020-12-20"></div>
+                            </div>
+                                                            <img src="https://www.ceicom-solutions.fr/wp-content/uploads/2021/06/Prestashop-logo.png" class="t-logo" alt="Prestashop">
+                                                    </div>
+
+                                                    <div class="t-summary">Mettre prestashop en SaaS en verrouillant certaines fonctionnalités pour des questions de sécurité et de performances. Migrer les clients sur leurs propres serveurs à l&#039;arrêt  de l&#039;offre SaaS. Collaborer à la mise en œuvre du nouveau système de monétisation de prestashop.</div>
+                        
+                                                    <ul class="t-highlights">
+                                                                    <li>Déploiement d&#039;une image docker sur Kubernetes</li>                                    <li>Script adaptable à n&#039;importe quel hébergeur pour migration des clients</li>                                    <li>Collaboration à des projets open source</li>                                    <li>Mise en œuvre des environnements de developpement</li>                            </ul>
+                                                                            <div class="t-keywords">
+                                                                                                            <span
+                                            class="t-kw color-0 ">
+                      PHP 5.5
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-0 ">
+                      Symfony
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-0 ">
+                      NestJS
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-1 ">
+                      Event-driven
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      Cypress
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      PHPUNIT
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-4 ">
+                      github-action
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-8 ">
+                      DataDog
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-9 ">
+                      Docker
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-9 ">
+                      kubernetes
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-9 ">
+                      Kustomize
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-5 ">
+                      Terraform
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-10 ">
+                      SCRUM
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-7 ">
+                      GCP
+                    </span>
+                                                                                                </div>
+                                            </div>
+                                    <div class="t-item">
+                        <div class="t-header">
+                            <div>
+                                <div class="t-position">Lead Developer</div>
+                                <div class="t-company">
+                                    Foxnot
+                                    <span class="t-company-desc">
+                                        — LegalTech spécialisée dans la digitalisation du notariat</span>                                </div>
+                                <div class="t-date" data-start="2016-11-20"
+                                     data-end="2018-12-01"></div>
+                            </div>
+                                                            <img src="https://media.licdn.com/dms/image/v2/C4E0BAQEPxfKEF1Pfrg/company-logo_200_200/company-logo_200_200/0/1652345474571/foxnot_logo?e=2147483647&amp;v=beta&amp;t=Z_KPvpTDG9Pgd65emr33d4gucznjfd1CVZgd1w9v5Lg" class="t-logo" alt="Foxnot">
+                                                    </div>
+
+                                                    <div class="t-summary">Au sein d&#039;une startup en lancement j&#039;ai du créer l&#039;équipe en veillant à la transmission des connaissances des prestataires de services. En collaboration avec le produit et l&#039;infrastructure nous avons du trouver des solutions out of box pour permettre des communications entre le site et le logiciel des notaires</div>
+                        
+                                                    <ul class="t-highlights">
+                                                                    <li>Mise en œuvre CI/CD</li>                                    <li>Management d&#039;équipe</li>                                    <li>Interfaçage entre une box et le site web</li>                                    <li>Instauration des bonnes pratiques</li>                                    <li>Gestion de l’infrastructure</li>                            </ul>
+                                                                            <div class="t-keywords">
+                                                                                                            <span
+                                            class="t-kw color-0 ">
+                      PHP
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-0 ">
+                      Symfony
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-0 ">
+                      VueJS
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      Cypress
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      php-cs-fixer
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-3 ">
+                      PHPUNIT
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-4 ">
+                      gitlab-ci
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-8 ">
+                      Sentry
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-10 ">
+                      SCRUM
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-7 ">
+                      OVH
+                    </span>
+                                                                                                </div>
+                                            </div>
+                                    <div class="t-item">
+                        <div class="t-header">
+                            <div>
+                                <div class="t-position">Developer fullstack</div>
+                                <div class="t-company">
+                                    La centrale pharma
+                                    <span class="t-company-desc">
+                                        — HealthTech centralisant les achats pharmaceutiques et grossiste-répartiteur</span>                                </div>
+                                <div class="t-date" data-start="2013-06-30"
+                                     data-end="2016-04-30"></div>
+                            </div>
+                                                            <img src="https://www.sagittapharma.com//uploads/groupings/logo/fichier-1-6904d1ef8f717442592604.png" class="t-logo" alt="La centrale pharma">
+                                                    </div>
+
+                                                    <div class="t-summary">En tant que développeur fullstack j&#039;ai pu travailler sur différentes technologies PHP (Joomla, Symfony), créer des web services (REST et SOAP).</div>
+                        
+                                                    <ul class="t-highlights">
+                                                                    <li>Implémentation de PharmaML (protocol propre aux grossistes en pharmacies</li>                                    <li>Mise en œuvre d&#039;un outil d&#039;analyses statistiques</li>                                    <li>Connexion à une solution d&#039;e-learning en SOAP</li>                                    <li>Maintien du back en PHP</li>                            </ul>
+                                                                            <div class="t-keywords">
+                                                                                                            <span
+                                            class="t-kw color-0 ">
+                      Joomla
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-0 ">
+                      Symfony 2.5
+                    </span>
+                                                                                                </div>
+                                            </div>
+                                    <div class="t-item">
+                        <div class="t-header">
+                            <div>
+                                <div class="t-position">Gérant / Photographe</div>
+                                <div class="t-company">
+                                    David Piatek
+                                                                    </div>
+                                <div class="t-date" data-start="2011-06-01"
+                                     data-end="2013-08-05"></div>
+                            </div>
+                                                            <div class="t-logo"
+                                     style="display:flex;align-items:center;justify-content:center;background:var(--bg-sidebar);color:var(--text-light);font-weight:800;font-size:1.2rem;">
+                                    DP
+                                </div>
+                                                    </div>
+
+                                                    <div class="t-summary">Gestion de l&#039;entreprise, prise de vue, Développement de photographie</div>
+                        
+                                                    <ul class="t-highlights">
+                                                                    <li>Gestion de l&#039;entreprise</li>                                    <li>Recherche de prestataire</li>                                    <li>Prise de vue</li>                            </ul>
+                                                                            <div class="t-keywords">
+                                                                                                            <span
+                                            class="t-kw color-0 ">
+                      Gestion d&#039;entreprise
+                    </span>
+                                                                                                </div>
+                                            </div>
+                            </div>
+        
+                    <div class="section">
+                <div class="section-title">Références</div>
+                <div>
+                                            <div class="t-ref" style="margin-bottom: 30px;">
+                            <div class="t-ref-text">« J&#039;ai eu le plaisir de manager David en tant que développeur &amp; DevOps freelance et DevOps et le recommande vivement.<br />
+David possède une excellente maîtrise des pratiques DevOps. Il a joué un rôle clé dans l&#039;amélioration de notre CI/CD et nous a grandement aidés dans notre projet de cloudification et de migration vers Kubernetes. Ses compétences techniques solides nous ont permis de moderniser efficacement notre infrastructure.<br />
+Au niveau relationnel, David se distingue par sa patience et sa capacité à expliquer clairement les concepts techniques complexes. Sa communication fluide et son tempérament calme font de lui un collaborateur apprécié des équipes. Il sait créer du consensus et facilite les prises de décision collectives. »</div>
+                            <div class="t-ref-author">Guillaume Beauventre - CTO - OneyTrust</div>
+                        </div>
+                                            <div class="t-ref" style="margin-bottom: 30px;">
+                            <div class="t-ref-text">« L&#039;expertise autour du développement logiciel de David est indéniable : connaissance du PHP, mais aussi et surtout des pratiques du software Craftsmanship. Ajouté à cela il possède aussi de solides connaissances sur des outils d&#039;infrastructure : CI/CD, Docker, Kubernetes, ...<br />
+<br />
+David est aussi quelqu&#039;un de très agréable, investi dans son travail et apprécié de ses collègues.<br />
+Il ne reste pas bloqué devant les problèmes, il cherche &amp; trouve des solutions.<br />
+<br />
+J&#039;ai adoré l&#039;avoir dans mon équipe. »</div>
+                            <div class="t-ref-author">Paul Jay - CTO - Skaleet</div>
+                        </div>
+                                            <div class="t-ref" style="margin-bottom: 30px;">
+                            <div class="t-ref-text">« Hors du commun ! David est un ovni dans le boulot, c&#039;est énorme !! Sur un plan humain il est un manager surdoué ! Un vrai plaisir de faire évoluer une solution, une boîte avec lui ! »</div>
+                            <div class="t-ref-author">Dominique Bazin - Directeur de l&#039;innovation - Foxnot</div>
+                        </div>
+                                    </div>
+            </div>
+        
+                                <div class="section">
+                <div class="section-title">Formation</div>
+                                    <div class="t-item" style="margin-bottom: 20px;">
+                        <div class="t-header">
+                            <div>
+                                <div class="t-position" style="font-size: 1rem;">Formation DevOps</div>
+                                <div class="t-company">Enix</div>
+                                <div class="t-date" data-start="2024-10-06"
+                                     data-end="2024-10-11"></div>
+                            </div>
+                                                            <img src="https://enix.io/svg/logos/logo.svg" class="t-logo" alt="Enix">
+                                                    </div>
+
+                        
+                                                                            <div class="t-keywords">
+                                                                                                            <span
+                                            class="t-kw color-9 ">
+                      Docker
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-9 ">
+                      Helm
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-9 ">
+                      kubernetes
+                    </span>
+                                                                                                </div>
+                                            </div>
+                                    <div class="t-item" style="margin-bottom: 20px;">
+                        <div class="t-header">
+                            <div>
+                                <div class="t-position" style="font-size: 1rem;">Formation Symfony</div>
+                                <div class="t-company">SensioLabs</div>
+                                <div class="t-date" data-start="2014-09-01"
+                                     data-end="2014-09-05"></div>
+                            </div>
+                                                            <img src="https://logovtor.com/wp-content/uploads/2020/03/sensiolabs-logo-vector.png" class="t-logo" alt="SensioLabs">
+                                                    </div>
+
+                        
+                                                                            <div class="t-keywords">
+                                                                                                            <span
+                                            class="t-kw color-0 ">
+                      Symfony
+                    </span>
+                                                                                                </div>
+                                            </div>
+                                    <div class="t-item" style="margin-bottom: 20px;">
+                        <div class="t-header">
+                            <div>
+                                <div class="t-position" style="font-size: 1rem;">Titre Professional CDA (Concepteur Développeur d&#039;Applications)</div>
+                                <div class="t-company">Cefim</div>
+                                <div class="t-date" data-start="2013-09-01"
+                                     data-end="2014-09-05"></div>
+                            </div>
+                                                            <img src="https://www.ledigitalpme.fr/assets/components/phpthumbof/cache/20190725-040750_migx_ack.8018dfd5b3a6e4c8df59313d582b0a10.png" class="t-logo" alt="Cefim">
+                                                    </div>
+
+                        
+                                                    <ul class="t-highlights">
+                                                                    <li>Gestion de projet</li>                                    <li>Maquettage d&#039;application</li>                                    <li>Java</li>                                    <li>Android</li>                                    <li>MySQL</li>                            </ul>
+                                                                            <div class="t-keywords">
+                                                                                                            <span
+                                            class="t-kw color-0 ">
+                      Java
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw color-11 ">
+                      Android
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw  ">
+                      Gestion de projet
+                    </span>
+                                                                                                </div>
+                                            </div>
+                                    <div class="t-item" style="margin-bottom: 20px;">
+                        <div class="t-header">
+                            <div>
+                                <div class="t-position" style="font-size: 1rem;">Titre Professional IMM (Infographiste Multi-Média)</div>
+                                <div class="t-company">Cefim</div>
+                                <div class="t-date" data-start="2012-09-01"
+                                     data-end="2013-06-01"></div>
+                            </div>
+                                                            <img src="https://www.ledigitalpme.fr/assets/components/phpthumbof/cache/20190725-040750_migx_ack.8018dfd5b3a6e4c8df59313d582b0a10.png" class="t-logo" alt="Cefim">
+                                                    </div>
+
+                        
+                                                    <ul class="t-highlights">
+                                                                    <li>Photoshop</li>                                    <li>Illustrator</li>                                    <li>HTML/CSS</li>                                    <li>Wordpress</li>                            </ul>
+                                                                            <div class="t-keywords">
+                                                                                                            <span
+                                            class="t-kw color-0 ">
+                      WordPress
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw  ">
+                      Illustrator
+                    </span>
+                                                                                                                                                <span
+                                            class="t-kw  ">
+                      PhotoShop
+                    </span>
+                                                                                                </div>
+                                            </div>
+                            </div>
+            </main>
+</div>
+
+<script>
+    const MONTHS = ['Jan.', 'Fév.', 'Mars', 'Avr.', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'];
+
+    function fmtDate(iso) {
+        if (!iso) return 'Présent';
+        const [y, m, d] = iso.split('-');
+        return MONTHS[parseInt(m, 10) - 1] + ' ' + y;
+    }
+
+    function duration(start, end) {
+        const s = new Date(start);
+        const e = end ? new Date(end) : new Date();
+
+        const diffTime = Math.abs(e - s);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+        if (diffDays < 30) {
+            return diffDays + ' jour' + (diffDays > 1 ? 's' : '');
+        }
+
+        let m = (e.getFullYear() - s.getFullYear()) * 12 + (e.getMonth() - s.getMonth());
+        // Ajustement si le jour de fin est inférieur au jour de début
+        if (e.getDate() < s.getDate()) m--;
+
+        if (m < 1) return diffDays + ' jours';
+
+        const y = Math.floor(m / 12);
+        const mm = m % 12;
+        let res = [];
+        if (y) res.push(y + ' an' + (y > 1 ? 's' : ''));
+        if (mm) res.push(mm + ' mois');
+        return res.join(' ');
+    }
+
+    document.querySelectorAll('.t-date[data-start]').forEach(el => {
+        const s = el.dataset.start;
+        const e = el.dataset.end;
+        const durTxt = duration(s, e);
+
+        el.innerHTML = fmtDate(s) + ' — ' + fmtDate(e) +
+            (durTxt ? ' <span class="t-duration">' + durTxt + '</span>' : '');
+    });
+</script>
+</body>
+</html>
