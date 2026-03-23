@@ -13,9 +13,9 @@ services:
 
   exporter:
     image: mcr.microsoft.com/playwright:v1.50.0-jammy
-    command: node /script/server.js
+    command: sh -c "npm install --prefix /script --omit=dev && node /script/server.js"
     environment:
-      NODE_PATH: /usr/lib/node_modules
+      PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
     volumes:
       - ../exporter:/script
     networks:

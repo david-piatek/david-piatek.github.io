@@ -5,11 +5,12 @@ const CV_URL = process.env.CV_URL ?? 'http://cv:8000';
 const PORT   = 3000;
 
 async function exportPdf() {
-  const browser = await chromium.launch();
+  const browser = await chromium.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
   const page    = await browser.newPage();
 
   await page.emulateMedia({ media: 'print' });
-  await page.goto(CV_URL, { waitUntil: 'networkidle' });
+  await page.goto(CV_URL, { waitUntil: 'domcontentloaded' });
+  await page.evaluate(() => document.fonts.ready);
 
   const pdf = await page.pdf({
     format: 'A4',

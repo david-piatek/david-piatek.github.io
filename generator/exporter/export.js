@@ -7,7 +7,7 @@ const RETRIES = 15;
 async function waitForCv(page) {
   for (let i = 0; i < RETRIES; i++) {
     try {
-      await page.goto(URL, { waitUntil: 'networkidle', timeout: 4000 });
+      await page.goto(URL, { waitUntil: 'domcontentloaded', timeout: 4000 });
       return;
     } catch {
       if (i === RETRIES - 1) throw new Error(`CV unreachable at ${URL}`);
@@ -18,10 +18,11 @@ async function waitForCv(page) {
 }
 
 (async () => {
-  const browser = await chromium.launch();
+  const browser = await chromium.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
   const page    = await browser.newPage();
 
   await waitForCv(page);
+  await page.evaluate(() => document.fonts.ready);
 
   await page.pdf({
     path: OUTPUT,
