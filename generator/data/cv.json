@@ -2,10 +2,10 @@
     "profil": {
         "picture": "https://0.gravatar.com/avatar/1c386f5e5ba6b8b9afb242864b4e6e4d7d6db78f081bf16b14111aa30c5dcf31?size=512&d=initials",
         "name": "David PIATEK",
-        "title": "BUILDER PHP Symfony",
+        "title": "Builder – Product & Platform",
         "email": "dav.piatek@gmail.com",
         "phone": "+33 611212739",
-        "summary": "Passionné de technologie depuis toujours, tour à tour développeur et Tech Lead en start-up et scale-up, j’ai développé une solide compréhension des enjeux QA, DevOps, Data et produit. Je fais le lien entre technique et produit pour délivrer rapidement de la valeur.",
+        "summary": "Tech Lead orienté produit, je conçois des plateformes robustes et accélère la delivery de valeur métier, du code à l'infrastructure.",
         "location": {
             "address": "3 Glatigny",
             "postalCode": "41310",
@@ -73,39 +73,69 @@
                 "website": null,
                 "description": null
             },
-            "position": "BUILDER",
+            "position": "Product Engineer - Platform Engineer",
             "contractType": "Freelance",
             "startDate": "2026-01-01",
-            "summary": "Missions freelance",
+            "summary": "Missions freelance orientées produit, automatisation et delivery.",
             "highlights": [
-                "Automatisation de processus et amélioration des workflows",
-                "Optimisation CI/CD et containerisation Docker",
-                "Création d’un générateur de sites statiques",
-                "Développement d’un SI de centralisation et gestion de photos multi-supports pour une mairie"
+                "Automatisation de workflows métier via N8N et MCP, supprimant les tâches manuelles récurrentes",
+                "Pipeline CI/CD complet : build, test et deploy conteneurisé sur Scaleway",
+                "Création d’un générateur de sites statiques en Symfony + Twig, utilisé en production",
+                "SI photo pour une mairie, centralisation et gestion multi-supports"
             ],
             "skills": [
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "PHP",
                     "precision": "PHP 8.5",
                     "important": false
                 },
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "Symfony",
                     "precision": "Symfony 7.4",
                     "important": false
                 },
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "TypeScript",
                     "precision": "NestJS",
                     "important": false
                 },
                 {
-                    "type": "Web development",
-                    "global": "Golang",
-                    "precision": "Golang",
+                    "type": "Development",
+                    "global": "Go",
+                    "precision": "Go",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "PostgreSQL",
+                    "precision": "PostgreSQL",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "PHPUnit",
+                    "precision": "PHPUnit",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "Playwright",
+                    "precision": "Playwright",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "TDD",
+                    "precision": "TDD",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "Craftsmanship",
+                    "precision": "Craftsmanship",
                     "important": false
                 },
                 {
@@ -115,45 +145,27 @@
                     "important": false
                 },
                 {
-                    "type": "Best Practices",
-                    "global": "TDD",
-                    "precision": "TDD",
+                    "type": "Platform",
+                    "global": "ArgoCD",
+                    "precision": "ArgoCD",
                     "important": false
                 },
                 {
-                    "type": "Best Practices",
-                    "global": "Craftsmanship",
-                    "precision": "Craftsmanship",
+                    "type": "Platform",
+                    "global": "GitLab CI",
+                    "precision": "GitLab CI",
                     "important": false
                 },
                 {
-                    "type": "Testing",
-                    "global": "PHPUNIT",
-                    "precision": "PHPUNIT",
-                    "important": false
-                },
-                {
-                    "type": "Testing",
-                    "global": "Playwright",
-                    "precision": "Playwright",
-                    "important": false
-                },
-                {
-                    "type": "CI/CD",
-                    "global": "ArgoCd",
-                    "precision": "ArgoCd",
-                    "important": false
-                },
-                {
-                    "type": "CI/CD",
-                    "global": "gitlab-ci",
-                    "precision": "gitlab-ci",
-                    "important": false
-                },
-                {
-                    "type": "Server provisioning",
+                    "type": "Platform",
                     "global": "Terraform",
                     "precision": "Terraform",
+                    "important": false
+                },
+                {
+                    "type": "Platform",
+                    "global": "Scaleway",
+                    "precision": "Scaleway",
                     "important": false
                 },
                 {
@@ -177,25 +189,13 @@
                 {
                     "type": "AI",
                     "global": "MCP",
-                    "precision": "MCP n8n",
+                    "precision": "MCP",
                     "important": false
                 },
                 {
                     "type": "AI",
-                    "global": "MCP",
-                    "precision": "MCP drive",
-                    "important": false
-                },
-                {
-                    "type": "AI",
-                    "global": "N8N",
-                    "precision": "N8N",
-                    "important": false
-                },
-                {
-                    "type": "Cloud Provider",
-                    "global": "Scaleway",
-                    "precision": "Scaleway",
+                    "global": "n8n",
+                    "precision": "n8n",
                     "important": false
                 }
             ]
@@ -207,13 +207,13 @@
                 "website": null,
                 "description": null
             },
-            "position": "Papa - Révonateur",
+            "position": "Papa - Rénovateur",
             "contractType": "Conge",
             "startDate": "2025-07-07",
             "endDate": "2025-12-31",
             "summary": "Congé parental et restauration de longère",
             "highlights": [
-                "Vieille sur AI"
+                "Veille sur l'AI"
             ],
             "skills": [
                 {
@@ -235,13 +235,12 @@
             "contractType": "Freelance",
             "startDate": "2024-06-08",
             "endDate": "2025-07-06",
-            "summary": "En tant que freelance ma  mission était de reprendre en main le legacy, pour pouvoir le deployer sur azure",
+            "summary": "Reprise et modernisation d'un legacy critique en vue de sa migration vers Azure.",
             "highlights": [
-                "Ajout de fonctionnalités",
-                "TDD, architecture hexagonal",
-                "Amélioration de la CI/CD",
-                "Migration Oracle vers PostgreSQL",
-                "Migration on-premise vers Azure AKS"
+                "Livraison de features métier anti-fraude en TDD et architecture hexagonale",
+                "Refonte de la CI/CD GitLab, accélérant les cycles de livraison",
+                "Migration Oracle → PostgreSQL avec coupure maîtrisée de 20 min",
+                "Migration on-premise → Azure AKS : conteneurisation complète de la plateforme"
             ],
             "references": [
                 {
@@ -251,15 +250,87 @@
             ],
             "skills": [
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "PHP",
                     "precision": "PHP 8.2",
                     "important": false
                 },
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "Symfony",
                     "precision": "Symfony 6.4",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "Oracle",
+                    "precision": "Oracle",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "EPAS",
+                    "precision": "EPAS",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "PostgreSQL",
+                    "precision": "PostgreSQL",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "Beanstalkd",
+                    "precision": "Beanstalkd",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "Infection",
+                    "precision": "Infection",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "PHP CS Fixer",
+                    "precision": "PHP CS Fixer",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "PHPStan",
+                    "precision": "PHPStan",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "PHPUnit",
+                    "precision": "PHPUnit",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "Playwright",
+                    "precision": "Playwright",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "TDD",
+                    "precision": "TDD",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "Peer Programming",
+                    "precision": "Peer Programming",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "Craftsmanship",
+                    "precision": "Craftsmanship",
                     "important": false
                 },
                 {
@@ -269,111 +340,63 @@
                     "important": false
                 },
                 {
-                    "type": "Best Practices",
-                    "global": "TDD",
-                    "precision": "TDD",
+                    "type": "Platform",
+                    "global": "ArgoCD",
+                    "precision": "ArgoCD",
                     "important": false
                 },
                 {
-                    "type": "Best Practices",
-                    "global": "Peer Programing",
-                    "precision": "Peer Programing",
+                    "type": "Platform",
+                    "global": "GitLab CI",
+                    "precision": "GitLab CI",
                     "important": false
                 },
                 {
-                    "type": "Best Practices",
-                    "global": "Craftsmanship",
-                    "precision": "Craftsmanship",
-                    "important": false
-                },
-                {
-                    "type": "Testing",
-                    "global": "infection",
-                    "precision": "infection",
-                    "important": false
-                },
-                {
-                    "type": "Testing",
-                    "global": "php-cs-fixer",
-                    "precision": "php-cs-fixer",
-                    "important": false
-                },
-                {
-                    "type": "Testing",
-                    "global": "phpstan",
-                    "precision": "phpstan",
-                    "important": false
-                },
-                {
-                    "type": "Testing",
-                    "global": "PHPUNIT",
-                    "precision": "PHPUNIT",
-                    "important": false
-                },
-                {
-                    "type": "Testing",
-                    "global": "Playwright",
-                    "precision": "Playwright",
-                    "important": false
-                },
-                {
-                    "type": "CI/CD",
-                    "global": "ArgoCd",
-                    "precision": "ArgoCd",
-                    "important": false
-                },
-                {
-                    "type": "CI/CD",
-                    "global": "gitlab-ci",
-                    "precision": "gitlab-ci",
-                    "important": false
-                },
-                {
-                    "type": "Monitoring",
+                    "type": "Platform",
                     "global": "Dynatrace",
                     "precision": "Dynatrace",
                     "important": false
                 },
                 {
-                    "type": "Monitoring",
+                    "type": "Platform",
                     "global": "OpenSearch",
                     "precision": "OpenSearch",
                     "important": false
                 },
                 {
-                    "type": "DevOps",
+                    "type": "Platform",
                     "global": "Docker",
                     "precision": "Docker",
                     "important": false
                 },
                 {
-                    "type": "DevOps",
+                    "type": "Platform",
                     "global": "Helm",
                     "precision": "Helm",
                     "important": false
                 },
                 {
-                    "type": "DevOps",
-                    "global": "kubernetes",
-                    "precision": "kubernetes",
+                    "type": "Platform",
+                    "global": "Kubernetes",
+                    "precision": "Kubernetes",
+                    "important": false
+                },
+                {
+                    "type": "Platform",
+                    "global": "Azure",
+                    "precision": "Azure",
+                    "important": false
+                },
+                {
+                    "type": "AI",
+                    "global": "Machine Learning",
+                    "precision": "Scoring fraude",
                     "important": false
                 },
                 {
                     "type": "Project Management",
                     "global": "SCRUM",
                     "precision": "SCRUM",
-                    "important": false
-                },
-                {
-                    "type": "AI",
-                    "global": "AI",
-                    "precision": "AI",
-                    "important": false
-                },
-                {
-                    "type": "Cloud Provider",
-                    "global": "Azure",
-                    "precision": "Azure",
                     "important": false
                 }
             ]
@@ -391,21 +414,21 @@
             "endDate": "2024-10-11",
             "skills": [
                 {
-                    "type": "DevOps",
+                    "type": "Platform",
                     "global": "Docker",
                     "precision": "Docker",
                     "important": false
                 },
                 {
-                    "type": "DevOps",
+                    "type": "Platform",
                     "global": "Helm",
                     "precision": "Helm",
                     "important": false
                 },
                 {
-                    "type": "DevOps",
-                    "global": "kubernetes",
-                    "precision": "kubernetes",
+                    "type": "Platform",
+                    "global": "Kubernetes",
+                    "precision": "Kubernetes",
                     "important": false
                 }
             ]
@@ -417,18 +440,17 @@
                 "website": "https://skaleet.com/en",
                 "description": "Fintech spécialisée dans le core banking"
             },
-            "position": "TechLead",
+            "position": "Tech Lead",
             "contractType": "CDI",
             "startDate": "2023-01-11",
             "endDate": "2024-11-15",
-            "summary": "En tant que TechLead je manageais ma Squad. En collaboration avec le Product Owner et le Test Manager nous definitions les specs et je m’assurais de la faisabilité technique",
+            "summary": "Pilotage technique d'une squad core banking, de la spécification à la faisabilité technique.",
             "highlights": [
-                "Management",
-                "Amélioration de CI/CD",
-                "Rédaction de spécifications",
-                "Réalisation de POC",
-                "Architecture",
-                "Support niveau 3"
+                "Management d'une squad de 5 développeurs + 1 QA",
+                "Co-rédaction des spécifications avec PO et Test Manager, garant de la faisabilité technique",
+                "POC techniques validant les choix d'architecture avant implémentation",
+                "Définition et évolution de l'architecture SOA du core banking",
+                "Support N3 : diagnostic et résolution d'incidents critiques en production"
             ],
             "references": [
                 {
@@ -438,9 +460,75 @@
             ],
             "skills": [
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "PHP",
                     "precision": "PHP 8.0",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "Redis",
+                    "precision": "Redis",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "MariaDB",
+                    "precision": "MariaDB",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "RabbitMQ",
+                    "precision": "RabbitMQ",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "PHP CS Fixer",
+                    "precision": "PHP CS Fixer",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "PHPStan",
+                    "precision": "PHPStan",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "PHPUnit",
+                    "precision": "PHPUnit",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "Playwright",
+                    "precision": "Playwright",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "TDD",
+                    "precision": "TDD",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "Peer Programming",
+                    "precision": "Peer Programming",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "Example mapping",
+                    "precision": "Example mapping",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "Craftsmanship",
+                    "precision": "Craftsmanship",
                     "important": false
                 },
                 {
@@ -450,99 +538,69 @@
                     "important": false
                 },
                 {
-                    "type": "Best Practices",
-                    "global": "TDD",
-                    "precision": "TDD",
+                    "type": "Platform",
+                    "global": "ArgoCD",
+                    "precision": "ArgoCD",
                     "important": false
                 },
                 {
-                    "type": "Best Practices",
-                    "global": "Peer Programing",
-                    "precision": "Peer Programing",
+                    "type": "Platform",
+                    "global": "GitLab CI",
+                    "precision": "GitLab CI",
                     "important": false
                 },
                 {
-                    "type": "Best Practices",
-                    "global": "Example mapping",
-                    "precision": "Example mapping",
+                    "type": "Platform",
+                    "global": "Jenkins",
+                    "precision": "Jenkins",
                     "important": false
                 },
                 {
-                    "type": "Best Practices",
-                    "global": "Craftsmanship",
-                    "precision": "Craftsmanship",
-                    "important": false
-                },
-                {
-                    "type": "Testing",
-                    "global": "php-cs-fixer",
-                    "precision": "php-cs-fixer",
-                    "important": false
-                },
-                {
-                    "type": "Testing",
-                    "global": "phpstan",
-                    "precision": "phpstan",
-                    "important": false
-                },
-                {
-                    "type": "Testing",
-                    "global": "PHPUNIT",
-                    "precision": "PHPUNIT",
-                    "important": false
-                },
-                {
-                    "type": "Testing",
-                    "global": "Playwright",
-                    "precision": "Playwright",
-                    "important": false
-                },
-                {
-                    "type": "CI/CD",
-                    "global": "ArgoCd",
-                    "precision": "ArgoCd",
-                    "important": false
-                },
-                {
-                    "type": "CI/CD",
-                    "global": "gitlab-ci",
-                    "precision": "gitlab-ci",
-                    "important": false
-                },
-                {
-                    "type": "Monitoring",
+                    "type": "Platform",
                     "global": "ELK",
                     "precision": "ELK",
                     "important": false
                 },
                 {
-                    "type": "DevOps",
+                    "type": "Platform",
                     "global": "Docker",
                     "precision": "Docker",
                     "important": false
                 },
                 {
-                    "type": "DevOps",
+                    "type": "Platform",
                     "global": "Helm",
                     "precision": "Helm",
                     "important": false
                 },
                 {
-                    "type": "DevOps",
-                    "global": "kubernetes",
-                    "precision": "kubernetes",
+                    "type": "Platform",
+                    "global": "Kubernetes",
+                    "precision": "Kubernetes",
+                    "important": false
+                },
+                {
+                    "type": "Platform",
+                    "global": "Ansible",
+                    "precision": "Ansible",
+                    "important": false
+                },
+                {
+                    "type": "Platform",
+                    "global": "OVH",
+                    "precision": "OVH",
+                    "important": false
+                },
+                {
+                    "type": "AI",
+                    "global": "n8n",
+                    "precision": "n8n",
                     "important": false
                 },
                 {
                     "type": "Project Management",
                     "global": "SCRUM",
                     "precision": "SCRUM",
-                    "important": false
-                },
-                {
-                    "type": "Cloud Provider",
-                    "global": "OVH",
-                    "precision": "OVH",
                     "important": false
                 }
             ]
@@ -554,48 +612,132 @@
                 "website": "https://www.pharmanity.com/",
                 "description": "HealthTech Leader en Transactions de Pharmacies"
             },
-            "position": "TechLead",
+            "position": "Tech Lead",
             "contractType": "CDI",
             "startDate": "2021-01-05",
             "endDate": "2022-06-20",
-            "summary": "Ma mission initiale était de maintenir la version existante en ajoutant de nouvelles fonctionnalités. J'ai pu ensuite m'occuper du recrutement de la nouvelle équipe en vue d'une refonte sur laquelle j'ai pu mettre  en place l'infrastructure et l'architecture",
+            "summary": "Maintenance de l'existant, puis recrutement et refonte de la plateforme après l'incendie OVH.",
             "highlights": [
-                "Reconstituer la stack après incendie ovh",
-                "Mise en œuvre du Plan de Reprise d'Activité",
-                "Création d'une usine à application mobile",
-                "Mise en œuvre CI/CD ",
-                "Mise en œuvre de la nouvelle architecture microservice en CQRS",
-                "Management d'une équipe SCRUM"
+                "Stack reconstruite après l'incendie OVH de mars 2021, reprise d'activité en quelques jours",
+                "Plan de Reprise d'Activité opérationnel avec bascule multi-cloud Azure + OVH",
+                "Factory d'applications mobiles React Native déployées sur iOS et Android",
+                "Mise en place complète de la CI/CD : GitHub Actions + GitLab CI + ArgoCD",
+                "Refonte en architecture CQRS / microservices depuis un monolithe PHP",
+                "Recrutement et management de 7 développeurs (4 internes + 3 ESN)"
             ],
             "skills": [
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "PHP",
                     "precision": "PHP 7",
                     "important": false
                 },
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "Symfony",
                     "precision": "Symfony",
                     "important": false
                 },
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "TypeScript",
                     "precision": "TypeScript",
                     "important": false
                 },
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "ReactJS",
                     "precision": "ReactJS",
                     "important": false
                 },
                 {
-                    "type": "Web development",
-                    "global": "Golang",
-                    "precision": "Golang",
+                    "type": "Development",
+                    "global": "Go",
+                    "precision": "Go",
+                    "important": false
+                },
+                {
+                    "type": "Development",
+                    "global": "ReactNative",
+                    "precision": "ReactNative",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "Redis",
+                    "precision": "Redis",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "MariaDB",
+                    "precision": "MariaDB",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "PostgreSQL",
+                    "precision": "PostgreSQL",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "KurrentDB",
+                    "precision": "KurrentDB",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "Elasticsearch",
+                    "precision": "Elasticsearch",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "RabbitMQ",
+                    "precision": "RabbitMQ",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "PHP CS Fixer",
+                    "precision": "PHP CS Fixer",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "PHPStan",
+                    "precision": "PHPStan",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "PHPUnit",
+                    "precision": "PHPUnit",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "Playwright",
+                    "precision": "Playwright",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "Peer Programming",
+                    "precision": "Peer Programming",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "Example mapping",
+                    "precision": "Example mapping",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "Craftsmanship",
+                    "precision": "Craftsmanship",
                     "important": false
                 },
                 {
@@ -606,134 +748,98 @@
                 },
                 {
                     "type": "Architecture",
-                    "global": "microservice",
-                    "precision": "microservice",
+                    "global": "Microservices",
+                    "precision": "Microservices",
                     "important": false
                 },
                 {
-                    "type": "Best Practices",
-                    "global": "Peer Programing",
-                    "precision": "Peer Programing",
+                    "type": "Platform",
+                    "global": "ArgoCD",
+                    "precision": "ArgoCD",
                     "important": false
                 },
                 {
-                    "type": "Best Practices",
-                    "global": "Example mapping",
-                    "precision": "Example mapping",
+                    "type": "Platform",
+                    "global": "GitHub Actions",
+                    "precision": "GitHub Actions",
                     "important": false
                 },
                 {
-                    "type": "Best Practices",
-                    "global": "Craftsmanship",
-                    "precision": "Craftsmanship",
+                    "type": "Platform",
+                    "global": "GitLab CI",
+                    "precision": "GitLab CI",
                     "important": false
                 },
                 {
-                    "type": "Testing",
-                    "global": "php-cs-fixer",
-                    "precision": "php-cs-fixer",
+                    "type": "Platform",
+                    "global": "A/B Testing",
+                    "precision": "A/B Testing",
                     "important": false
                 },
                 {
-                    "type": "Testing",
-                    "global": "phpstan",
-                    "precision": "phpstan",
-                    "important": false
-                },
-                {
-                    "type": "Testing",
-                    "global": "PHPUNIT",
-                    "precision": "PHPUNIT",
-                    "important": false
-                },
-                {
-                    "type": "Testing",
-                    "global": "Playwright",
-                    "precision": "Playwright",
-                    "important": false
-                },
-                {
-                    "type": "CI/CD",
-                    "global": "ArgoCd",
-                    "precision": "ArgoCd",
-                    "important": false
-                },
-                {
-                    "type": "CI/CD",
-                    "global": "github-action",
-                    "precision": "github-action",
-                    "important": false
-                },
-                {
-                    "type": "CI/CD",
-                    "global": "gitlab-ci",
-                    "precision": "gitlab-ci",
-                    "important": false
-                },
-                {
-                    "type": "Monitoring",
+                    "type": "Platform",
                     "global": "Sentry",
                     "precision": "Sentry",
                     "important": false
                 },
                 {
-                    "type": "DevOps",
+                    "type": "Platform",
+                    "global": "NewRelic",
+                    "precision": "NewRelic",
+                    "important": false
+                },
+                {
+                    "type": "Platform",
                     "global": "Docker",
                     "precision": "Docker",
                     "important": false
                 },
                 {
-                    "type": "DevOps",
-                    "global": "kubernetes",
-                    "precision": "kubernetes",
+                    "type": "Platform",
+                    "global": "Kubernetes",
+                    "precision": "Kubernetes",
                     "important": false
                 },
                 {
-                    "type": "DevOps",
+                    "type": "Platform",
                     "global": "Kustomize",
                     "precision": "Kustomize",
                     "important": false
                 },
                 {
-                    "type": "Server provisioning",
+                    "type": "Platform",
                     "global": "Terraform",
                     "precision": "Terraform",
                     "important": false
                 },
                 {
-                    "type": "Server provisioning",
+                    "type": "Platform",
                     "global": "Packer",
                     "precision": "Packer",
                     "important": false
                 },
                 {
-                    "type": "Server provisioning",
+                    "type": "Platform",
                     "global": "Ansible",
                     "precision": "Ansible",
                     "important": false
                 },
                 {
-                    "type": "Mobile",
-                    "global": "ReactNative",
-                    "precision": "ReactNative",
+                    "type": "Platform",
+                    "global": "Azure",
+                    "precision": "Azure",
+                    "important": false
+                },
+                {
+                    "type": "Platform",
+                    "global": "OVH",
+                    "precision": "OVH",
                     "important": false
                 },
                 {
                     "type": "Project Management",
                     "global": "SCRUM",
                     "precision": "SCRUM",
-                    "important": false
-                },
-                {
-                    "type": "Cloud Provider",
-                    "global": "Azure",
-                    "precision": "Azure",
-                    "important": false
-                },
-                {
-                    "type": "Cloud Provider",
-                    "global": "OVH",
-                    "precision": "OVH",
                     "important": false
                 }
             ]
@@ -749,31 +855,61 @@
             "contractType": "Founder",
             "startDate": "2019-06-01",
             "endDate": "2021-03-10",
-            "summary": "Définition de l'orientation produit et mise en œuvre de l'architecture / DevOps pour la création d'un erp/crm à destination des TPE",
+            "summary": "Définition du produit et mise en place de l'architecture pour un ERP/CRM destiné aux TPE.",
             "highlights": [
-                "Création des différents usecases",
-                "mise en œuvre d'une architecture scalable, résiliente",
-                "mise en œuvre d'une usine à site",
-                "CI/CD ",
-                "Gestion du cluster Kubernetes"
+                "Conception des use cases métier CRM/ERP pour TPE/PME",
+                "Architecture event-driven CQRS, scalable et résiliente sur Kubernetes",
+                "Site factory multi-tenant avec déploiement automatisé par client",
+                "Pipeline CI/CD GitHub Actions + ArgoCD en déploiement continu",
+                "Administration et scaling du cluster Kubernetes sur Digital Ocean"
             ],
             "skills": [
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "NestJS",
                     "precision": "NestJS",
                     "important": false
                 },
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "ReactJS",
                     "precision": "ReactJS",
                     "important": false
                 },
                 {
+                    "type": "Data",
+                    "global": "PostgreSQL",
+                    "precision": "PostgreSQL",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "RabbitMQ",
+                    "precision": "RabbitMQ",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "Cypress",
+                    "precision": "Cypress",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "eslint",
+                    "precision": "eslint",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
+                    "global": "JEST",
+                    "precision": "JEST",
+                    "important": false
+                },
+                {
                     "type": "Architecture",
-                    "global": "Event-driven",
-                    "precision": "Event-driven",
+                    "global": "Event-Driven",
+                    "precision": "Event-Driven",
                     "important": false
                 },
                 {
@@ -783,69 +919,57 @@
                     "important": false
                 },
                 {
-                    "type": "Testing",
-                    "global": "Cypress",
-                    "precision": "Cypress",
+                    "type": "Platform",
+                    "global": "ArgoCD",
+                    "precision": "ArgoCD",
                     "important": false
                 },
                 {
-                    "type": "Testing",
-                    "global": "eslint",
-                    "precision": "eslint",
+                    "type": "Platform",
+                    "global": "GitHub Actions",
+                    "precision": "GitHub Actions",
                     "important": false
                 },
                 {
-                    "type": "Testing",
-                    "global": "JEST",
-                    "precision": "JEST",
+                    "type": "Platform",
+                    "global": "A/B Testing",
+                    "precision": "A/B Testing",
                     "important": false
                 },
                 {
-                    "type": "CI/CD",
-                    "global": "ArgoCd",
-                    "precision": "ArgoCd",
-                    "important": false
-                },
-                {
-                    "type": "CI/CD",
-                    "global": "github-action",
-                    "precision": "github-action",
-                    "important": false
-                },
-                {
-                    "type": "DevOps",
+                    "type": "Platform",
                     "global": "Docker",
                     "precision": "Docker",
                     "important": false
                 },
                 {
-                    "type": "DevOps",
-                    "global": "kubernetes",
-                    "precision": "kubernetes",
+                    "type": "Platform",
+                    "global": "Kubernetes",
+                    "precision": "Kubernetes",
                     "important": false
                 },
                 {
-                    "type": "DevOps",
+                    "type": "Platform",
                     "global": "Kustomize",
                     "precision": "Kustomize",
                     "important": false
                 },
                 {
-                    "type": "Server provisioning",
+                    "type": "Platform",
                     "global": "Terraform",
                     "precision": "Terraform",
+                    "important": false
+                },
+                {
+                    "type": "Platform",
+                    "global": "DigitalOcean",
+                    "precision": "DigitalOcean",
                     "important": false
                 },
                 {
                     "type": "Project Management",
                     "global": "SCRUM",
                     "precision": "SCRUM",
-                    "important": false
-                },
-                {
-                    "type": "Cloud Provider",
-                    "global": "Digital Ocean",
-                    "precision": "Digital Ocean",
                     "important": false
                 }
             ]
@@ -861,96 +985,138 @@
             "contractType": "CDI",
             "startDate": "2019-01-09",
             "endDate": "2020-12-20",
-            "summary": "Mettre prestashop en SaaS en verrouillant certaines fonctionnalités pour des questions de sécurité et de performances. Migrer les clients sur leurs propres serveurs à l'arrêt  de l'offre SaaS. Collaborer à la mise en œuvre du nouveau système de monétisation de prestashop.",
+            "summary": "Contribution à la stratégie SaaS de PrestaShop, puis migration des clients après l'arrêt de l'offre.",
             "highlights": [
-                "Déploiement d'une image docker sur Kubernetes",
-                "Script adaptable à n'importe quel hébergeur pour migration des clients",
-                "Collaboration à des projets open source",
-                "Mise en œuvre des environnements de developpement"
+                "Conteneurisation de PrestaShop : image Docker déployée sur Kubernetes / GCP",
+                "Script de migration clients adaptable à tout hébergeur, utilisé en production",
+                "Contributions au projet open source PrestaShop",
+                "Standardisation des environnements de développement Docker pour l'équipe"
             ],
             "skills": [
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "PHP",
                     "precision": "PHP 5.5",
                     "important": false
                 },
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "Symfony",
                     "precision": "Symfony",
                     "important": false
                 },
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "NestJS",
                     "precision": "NestJS",
                     "important": false
                 },
                 {
-                    "type": "Architecture",
-                    "global": "Event-driven",
-                    "precision": "Event-driven",
+                    "type": "Data",
+                    "global": "MySQL",
+                    "precision": "MySQL",
                     "important": false
                 },
                 {
-                    "type": "Testing",
+                    "type": "Data",
+                    "global": "KurrentDB",
+                    "precision": "KurrentDB",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "Elasticsearch",
+                    "precision": "Elasticsearch",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "PubSub",
+                    "precision": "PubSub",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "Redis Bull",
+                    "precision": "Redis Bull",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
                     "global": "Cypress",
                     "precision": "Cypress",
                     "important": false
                 },
                 {
-                    "type": "Testing",
-                    "global": "PHPUNIT",
-                    "precision": "PHPUNIT",
+                    "type": "Quality",
+                    "global": "PHPUnit",
+                    "precision": "PHPUnit",
                     "important": false
                 },
                 {
-                    "type": "CI/CD",
-                    "global": "github-action",
-                    "precision": "github-action",
+                    "type": "Architecture",
+                    "global": "Event-Driven",
+                    "precision": "Event-Driven",
                     "important": false
                 },
                 {
-                    "type": "Monitoring",
-                    "global": "DataDog",
-                    "precision": "DataDog",
+                    "type": "Platform",
+                    "global": "GitHub Actions",
+                    "precision": "GitHub Actions",
                     "important": false
                 },
                 {
-                    "type": "DevOps",
+                    "type": "Platform",
+                    "global": "A/B Testing",
+                    "precision": "A/B Testing",
+                    "important": false
+                },
+                {
+                    "type": "Platform",
+                    "global": "Canary Release",
+                    "precision": "Canary Release",
+                    "important": false
+                },
+                {
+                    "type": "Platform",
+                    "global": "Datadog",
+                    "precision": "Datadog",
+                    "important": false
+                },
+                {
+                    "type": "Platform",
                     "global": "Docker",
                     "precision": "Docker",
                     "important": false
                 },
                 {
-                    "type": "DevOps",
-                    "global": "kubernetes",
-                    "precision": "kubernetes",
+                    "type": "Platform",
+                    "global": "Kubernetes",
+                    "precision": "Kubernetes",
                     "important": false
                 },
                 {
-                    "type": "DevOps",
+                    "type": "Platform",
                     "global": "Kustomize",
                     "precision": "Kustomize",
                     "important": false
                 },
                 {
-                    "type": "Server provisioning",
+                    "type": "Platform",
                     "global": "Terraform",
                     "precision": "Terraform",
+                    "important": false
+                },
+                {
+                    "type": "Platform",
+                    "global": "GCP",
+                    "precision": "GCP",
                     "important": false
                 },
                 {
                     "type": "Project Management",
                     "global": "SCRUM",
                     "precision": "SCRUM",
-                    "important": false
-                },
-                {
-                    "type": "Cloud Provider",
-                    "global": "GCP",
-                    "precision": "GCP",
                     "important": false
                 }
             ]
@@ -966,73 +1132,97 @@
             "contractType": "CDI",
             "startDate": "2016-11-20",
             "endDate": "2018-12-01",
-            "summary": "Au sein d'une startup en lancement j'ai du créer l'équipe en veillant à la transmission des connaissances des prestataires de services. En collaboration avec le produit et l'infrastructure nous avons du trouver des solutions out of box pour permettre des communications entre le site et le logiciel des notaires",
+            "summary": "Structuration de l'équipe technique et mise en place de solutions d'interfaçage entre web et logiciel notarial.",
             "highlights": [
-                "Mise en œuvre CI/CD",
-                "Management d'équipe",
-                "Interfaçage entre une box et le site web",
-                "Instauration des bonnes pratiques",
-                "Gestion de l’infrastructure"
+                "Mise en place de la CI/CD GitLab from scratch pour la startup",
+                "Management de 2 squads (5 devs PHP/JS + 2 devs C#), recrutement et transmission des connaissances des prestataires",
+                "Interfaçage innovant entre le logiciel notarial (box locale) et la plateforme web",
+                "Instauration des pratiques Craft : tests unitaires, code review, intégration continue",
+                "Gestion de l’infrastructure de production OVH"
             ],
             "skills": [
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "PHP",
                     "precision": "PHP",
                     "important": false
                 },
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "Symfony",
                     "precision": "Symfony",
                     "important": false
                 },
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "VueJS",
                     "precision": "VueJS",
                     "important": false
                 },
                 {
-                    "type": "Testing",
+                    "type": "Data",
+                    "global": "MySQL",
+                    "precision": "MySQL",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "Redis",
+                    "precision": "Redis",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "RabbitMQ",
+                    "precision": "RabbitMQ",
+                    "important": false
+                },
+                {
+                    "type": "Quality",
                     "global": "Cypress",
                     "precision": "Cypress",
                     "important": false
                 },
                 {
-                    "type": "Testing",
-                    "global": "php-cs-fixer",
-                    "precision": "php-cs-fixer",
+                    "type": "Quality",
+                    "global": "PHP CS Fixer",
+                    "precision": "PHP CS Fixer",
                     "important": false
                 },
                 {
-                    "type": "Testing",
-                    "global": "PHPUNIT",
-                    "precision": "PHPUNIT",
+                    "type": "Quality",
+                    "global": "PHPUnit",
+                    "precision": "PHPUnit",
                     "important": false
                 },
                 {
-                    "type": "CI/CD",
-                    "global": "gitlab-ci",
-                    "precision": "gitlab-ci",
+                    "type": "Architecture",
+                    "global": "Monolithic",
+                    "precision": "Monolithic",
                     "important": false
                 },
                 {
-                    "type": "Monitoring",
+                    "type": "Platform",
+                    "global": "GitLab CI",
+                    "precision": "GitLab CI",
+                    "important": false
+                },
+                {
+                    "type": "Platform",
                     "global": "Sentry",
                     "precision": "Sentry",
+                    "important": false
+                },
+                {
+                    "type": "Platform",
+                    "global": "OVH",
+                    "precision": "OVH",
                     "important": false
                 },
                 {
                     "type": "Project Management",
                     "global": "SCRUM",
                     "precision": "SCRUM",
-                    "important": false
-                },
-                {
-                    "type": "Cloud Provider",
-                    "global": "OVH",
-                    "precision": "OVH",
                     "important": false
                 }
             ],
@@ -1056,7 +1246,7 @@
             "endDate": "2014-09-05",
             "skills": [
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "Symfony",
                     "precision": "Symfony",
                     "important": false
@@ -1070,28 +1260,40 @@
                 "website": "https://www.lacentralepharma.com/",
                 "description": "HealthTech centralisant les achats pharmaceutiques et grossiste-répartiteur"
             },
-            "position": "Developer fullstack",
+            "position": "Full Stack Developer",
             "contractType": "CDI",
             "startDate": "2013-06-30",
             "endDate": "2016-04-30",
-            "summary": "En tant que développeur fullstack j'ai pu travailler sur différentes technologies PHP (Joomla, Symfony), créer des web services (REST et SOAP).",
+            "summary": "Développement d'outils métier PHP et intégration de services REST et SOAP pour le secteur pharmaceutique.",
             "highlights": [
-                "Implémentation de PharmaML (protocol propre aux grossistes en pharmacies",
+                "Implémentation de PharmaML (protocole propre aux grossistes en pharmacie)",
                 "Mise en œuvre d'un outil d'analyses statistiques",
                 "Connexion à une solution d'e-learning en SOAP",
                 "Maintien du back en PHP"
             ],
             "skills": [
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "CMS",
                     "precision": "Joomla",
                     "important": false
                 },
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "Symfony",
                     "precision": "Symfony 2.5",
+                    "important": false
+                },
+                {
+                    "type": "Data",
+                    "global": "MySQL",
+                    "precision": "MySQL",
+                    "important": false
+                },
+                {
+                    "type": "Architecture",
+                    "global": "Monolithic",
+                    "precision": "Monolithic",
                     "important": false
                 }
             ]
@@ -1116,19 +1318,19 @@
             ],
             "skills": [
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "Java",
                     "precision": "Java",
                     "important": false
                 },
                 {
-                    "type": "Mobile",
+                    "type": "Development",
                     "global": "Android",
                     "precision": "Android",
                     "important": false
                 },
                 {
-                    "type": "Divers",
+                    "type": "Project Management",
                     "global": "Gestion de projet",
                     "precision": "Gestion de projet",
                     "important": false
@@ -1154,7 +1356,7 @@
             ],
             "skills": [
                 {
-                    "type": "Web development",
+                    "type": "Development",
                     "global": "CMS",
                     "precision": "WordPress",
                     "important": false
@@ -1167,8 +1369,8 @@
                 },
                 {
                     "type": "Infographie",
-                    "global": "PhotoShop",
-                    "precision": "PhotoShop",
+                    "global": "Photoshop",
+                    "precision": "Photoshop",
                     "important": false
                 }
             ]
@@ -1184,7 +1386,7 @@
             "contractType": "Founder",
             "startDate": "2011-06-01",
             "endDate": "2013-08-05",
-            "summary": "Gestion de l'entreprise, prise de vue, Développement de photographie",
+            "summary": "Gestion de l'activité, prise de vue et post-production photographique.",
             "highlights": [
                 "Gestion de l'entreprise",
                 "Recherche de prestataire",
