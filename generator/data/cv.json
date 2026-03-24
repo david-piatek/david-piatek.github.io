@@ -99,6 +99,12 @@
                 {
                     "type": "Development",
                     "global": "TypeScript",
+                    "precision": "TypeScript",
+                    "important": false
+                },
+                {
+                    "type": "Development",
+                    "global": "NestJS",
                     "precision": "NestJS",
                     "important": false
                 },
@@ -128,16 +134,17 @@
                 },
                 {
                     "type": "Engineering Practices",
-                    "global": "TDD",
-                    "precision": "TDD",
-                    "important": false
-                },
-                {
-                    "type": "Engineering Practices",
                     "global": "Craftsmanship",
                     "precision": "Craftsmanship",
                     "important": false
                 },
+                {
+                    "type": "Engineering Practices",
+                    "global": "TDD",
+                    "precision": "TDD",
+                    "important": false
+                },
+
                 {
                     "type": "Architecture",
                     "global": "Hexagonal",
@@ -507,18 +514,14 @@
                     "precision": "Playwright",
                     "important": false
                 },
-                {
-                    "type": "Testing",
-                    "global": "Example mapping",
-                    "precision": "Example mapping",
-                    "important": false
-                },
+
                 {
                     "type": "Engineering Practices",
                     "global": "TDD",
                     "precision": "TDD",
                     "important": false
                 },
+
                 {
                     "type": "Engineering Practices",
                     "global": "Peer Programming",
@@ -529,6 +532,12 @@
                     "type": "Engineering Practices",
                     "global": "Craftsmanship",
                     "precision": "Craftsmanship",
+                    "important": false
+                },
+                {
+                    "type": "Engineering Practices",
+                    "global": "Example mapping",
+                    "precision": "Example mapping",
                     "important": false
                 },
                 {
@@ -723,7 +732,7 @@
                     "important": false
                 },
                 {
-                    "type": "Testing",
+                    "type": "Engineering Practices",
                     "global": "Example mapping",
                     "precision": "Example mapping",
                     "important": false
