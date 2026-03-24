@@ -109,31 +109,31 @@
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "PostgreSQL",
                     "precision": "PostgreSQL",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "PHPUnit",
                     "precision": "PHPUnit",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "Playwright",
                     "precision": "Playwright",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Engineering Practices",
                     "global": "TDD",
                     "precision": "TDD",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Engineering Practices",
                     "global": "Craftsmanship",
                     "precision": "Craftsmanship",
                     "important": false
@@ -145,25 +145,25 @@
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "ArgoCD",
                     "precision": "ArgoCD",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "GitLab CI",
                     "precision": "GitLab CI",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "IaC",
                     "global": "Terraform",
                     "precision": "Terraform",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Cloud",
                     "global": "Scaleway",
                     "precision": "Scaleway",
                     "important": false
@@ -262,73 +262,73 @@
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "Oracle",
                     "precision": "Oracle",
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "EPAS",
                     "precision": "EPAS",
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "PostgreSQL",
                     "precision": "PostgreSQL",
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Messaging",
                     "global": "Beanstalkd",
                     "precision": "Beanstalkd",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "Infection",
                     "precision": "Infection",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "PHP CS Fixer",
                     "precision": "PHP CS Fixer",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "PHPStan",
                     "precision": "PHPStan",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "PHPUnit",
                     "precision": "PHPUnit",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "Playwright",
                     "precision": "Playwright",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Engineering Practices",
                     "global": "TDD",
                     "precision": "TDD",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Engineering Practices",
                     "global": "Peer Programming",
                     "precision": "Peer Programming",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Engineering Practices",
                     "global": "Craftsmanship",
                     "precision": "Craftsmanship",
                     "important": false
@@ -340,49 +340,49 @@
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "ArgoCD",
                     "precision": "ArgoCD",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "GitLab CI",
                     "precision": "GitLab CI",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Observability",
                     "global": "Dynatrace",
                     "precision": "Dynatrace",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Observability",
                     "global": "OpenSearch",
                     "precision": "OpenSearch",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Docker",
                     "precision": "Docker",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Helm",
                     "precision": "Helm",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Kubernetes",
                     "precision": "Kubernetes",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Cloud",
                     "global": "Azure",
                     "precision": "Azure",
                     "important": false
@@ -414,19 +414,19 @@
             "endDate": "2024-10-11",
             "skills": [
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Docker",
                     "precision": "Docker",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Helm",
                     "precision": "Helm",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Kubernetes",
                     "precision": "Kubernetes",
                     "important": false
@@ -466,67 +466,67 @@
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "Redis",
                     "precision": "Redis",
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "MariaDB",
                     "precision": "MariaDB",
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Messaging",
                     "global": "RabbitMQ",
                     "precision": "RabbitMQ",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "PHP CS Fixer",
                     "precision": "PHP CS Fixer",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "PHPStan",
                     "precision": "PHPStan",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "PHPUnit",
                     "precision": "PHPUnit",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "Playwright",
                     "precision": "Playwright",
                     "important": false
                 },
                 {
-                    "type": "Quality",
-                    "global": "TDD",
-                    "precision": "TDD",
-                    "important": false
-                },
-                {
-                    "type": "Quality",
-                    "global": "Peer Programming",
-                    "precision": "Peer Programming",
-                    "important": false
-                },
-                {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "Example mapping",
                     "precision": "Example mapping",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Engineering Practices",
+                    "global": "TDD",
+                    "precision": "TDD",
+                    "important": false
+                },
+                {
+                    "type": "Engineering Practices",
+                    "global": "Peer Programming",
+                    "precision": "Peer Programming",
+                    "important": false
+                },
+                {
+                    "type": "Engineering Practices",
                     "global": "Craftsmanship",
                     "precision": "Craftsmanship",
                     "important": false
@@ -538,55 +538,55 @@
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "ArgoCD",
                     "precision": "ArgoCD",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "GitLab CI",
                     "precision": "GitLab CI",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "Jenkins",
                     "precision": "Jenkins",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Observability",
                     "global": "ELK",
                     "precision": "ELK",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Docker",
                     "precision": "Docker",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Helm",
                     "precision": "Helm",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Kubernetes",
                     "precision": "Kubernetes",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "IaC",
                     "global": "Ansible",
                     "precision": "Ansible",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Cloud",
                     "global": "OVH",
                     "precision": "OVH",
                     "important": false
@@ -663,79 +663,79 @@
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "Redis",
                     "precision": "Redis",
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "MariaDB",
                     "precision": "MariaDB",
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "PostgreSQL",
                     "precision": "PostgreSQL",
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "KurrentDB",
                     "precision": "KurrentDB",
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "Elasticsearch",
                     "precision": "Elasticsearch",
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Messaging",
                     "global": "RabbitMQ",
                     "precision": "RabbitMQ",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "PHP CS Fixer",
                     "precision": "PHP CS Fixer",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "PHPStan",
                     "precision": "PHPStan",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "PHPUnit",
                     "precision": "PHPUnit",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "Playwright",
                     "precision": "Playwright",
                     "important": false
                 },
                 {
-                    "type": "Quality",
-                    "global": "Peer Programming",
-                    "precision": "Peer Programming",
-                    "important": false
-                },
-                {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "Example mapping",
                     "precision": "Example mapping",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Engineering Practices",
+                    "global": "Peer Programming",
+                    "precision": "Peer Programming",
+                    "important": false
+                },
+                {
+                    "type": "Engineering Practices",
                     "global": "Craftsmanship",
                     "precision": "Craftsmanship",
                     "important": false
@@ -753,85 +753,85 @@
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "ArgoCD",
                     "precision": "ArgoCD",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "GitHub Actions",
                     "precision": "GitHub Actions",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "GitLab CI",
                     "precision": "GitLab CI",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "A/B Testing",
                     "precision": "A/B Testing",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Observability",
                     "global": "Sentry",
                     "precision": "Sentry",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Observability",
                     "global": "NewRelic",
                     "precision": "NewRelic",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Docker",
                     "precision": "Docker",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Kubernetes",
                     "precision": "Kubernetes",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Kustomize",
                     "precision": "Kustomize",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "IaC",
                     "global": "Terraform",
                     "precision": "Terraform",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "IaC",
                     "global": "Packer",
                     "precision": "Packer",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "IaC",
                     "global": "Ansible",
                     "precision": "Ansible",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Cloud",
                     "global": "Azure",
                     "precision": "Azure",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Cloud",
                     "global": "OVH",
                     "precision": "OVH",
                     "important": false
@@ -877,31 +877,31 @@
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "PostgreSQL",
                     "precision": "PostgreSQL",
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Messaging",
                     "global": "RabbitMQ",
                     "precision": "RabbitMQ",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "Cypress",
                     "precision": "Cypress",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "eslint",
                     "precision": "eslint",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "JEST",
                     "precision": "JEST",
                     "important": false
@@ -919,49 +919,49 @@
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "ArgoCD",
                     "precision": "ArgoCD",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "GitHub Actions",
                     "precision": "GitHub Actions",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "A/B Testing",
                     "precision": "A/B Testing",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Docker",
                     "precision": "Docker",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Kubernetes",
                     "precision": "Kubernetes",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Kustomize",
                     "precision": "Kustomize",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "IaC",
                     "global": "Terraform",
                     "precision": "Terraform",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Cloud",
                     "global": "DigitalOcean",
                     "precision": "DigitalOcean",
                     "important": false
@@ -1012,43 +1012,43 @@
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "MySQL",
                     "precision": "MySQL",
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "KurrentDB",
                     "precision": "KurrentDB",
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "Elasticsearch",
                     "precision": "Elasticsearch",
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Messaging",
                     "global": "PubSub",
                     "precision": "PubSub",
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Messaging",
                     "global": "Redis Bull",
                     "precision": "Redis Bull",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "Cypress",
                     "precision": "Cypress",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "PHPUnit",
                     "precision": "PHPUnit",
                     "important": false
@@ -1060,55 +1060,55 @@
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "GitHub Actions",
                     "precision": "GitHub Actions",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "A/B Testing",
                     "precision": "A/B Testing",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "Canary Release",
                     "precision": "Canary Release",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Observability",
                     "global": "Datadog",
                     "precision": "Datadog",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Docker",
                     "precision": "Docker",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Kubernetes",
                     "precision": "Kubernetes",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Containerization",
                     "global": "Kustomize",
                     "precision": "Kustomize",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "IaC",
                     "global": "Terraform",
                     "precision": "Terraform",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Cloud",
                     "global": "GCP",
                     "precision": "GCP",
                     "important": false
@@ -1160,37 +1160,37 @@
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "MySQL",
                     "precision": "MySQL",
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "Redis",
                     "precision": "Redis",
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Messaging",
                     "global": "RabbitMQ",
                     "precision": "RabbitMQ",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "Cypress",
                     "precision": "Cypress",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "PHP CS Fixer",
                     "precision": "PHP CS Fixer",
                     "important": false
                 },
                 {
-                    "type": "Quality",
+                    "type": "Testing",
                     "global": "PHPUnit",
                     "precision": "PHPUnit",
                     "important": false
@@ -1202,19 +1202,19 @@
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "CI/CD",
                     "global": "GitLab CI",
                     "precision": "GitLab CI",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Observability",
                     "global": "Sentry",
                     "precision": "Sentry",
                     "important": false
                 },
                 {
-                    "type": "Platform",
+                    "type": "Cloud",
                     "global": "OVH",
                     "precision": "OVH",
                     "important": false
@@ -1285,7 +1285,7 @@
                     "important": false
                 },
                 {
-                    "type": "Data",
+                    "type": "Database",
                     "global": "MySQL",
                     "precision": "MySQL",
                     "important": false

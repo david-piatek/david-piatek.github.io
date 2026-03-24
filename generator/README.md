@@ -1,4 +1,4 @@
-# david-piatek.github.io
+# CV Generator
 
 ## Requirements
 
@@ -7,10 +7,7 @@
 
 ## Description
 
-use github.io
-here generate cv html + pdf
-
-Here's my resume.
+Generates the CV as HTML and PDF from `data/cv.json` using Symfony and Twig.
 
 ## Install
 
@@ -20,7 +17,7 @@ task init
 
 ## Usage
 
-To have all possible actions with the documentation, [just do it](https://media.lesechos.com/api/v1/images/view/5f7f115dd286c25b4d4f4d6b/par_defaut/image.jpg):
+List all available tasks:
 
 ```bash
 task

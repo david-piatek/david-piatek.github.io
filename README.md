@@ -2,12 +2,12 @@
 
 ## Description
 
-Here's my resume.
+My personal resume, hosted on GitHub Pages.
 
 ## Usage
 
-* index.html is expose
-* [devtools](./process/README.md)
+* `index.html` is the published page
+* See [generator](./generator/README.md) for build instructions
 
 ## Contact me
 
