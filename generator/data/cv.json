@@ -5,7 +5,7 @@
         "title": "Builder – Product & Platform",
         "email": "dav.piatek@gmail.com",
         "phone": "+33 611212739",
-        "summary": "Tech Lead orienté produit, je conçois des plateformes robustes et accélère la delivery de valeur métier, du code à l'infrastructure.",
+        "summary": "Tech Lead orienté produit, je conçois des plateformes robustes et accélère le delivery de valeur métier, du code à l'infrastructure.",
         "location": {
             "address": "3 Glatigny",
             "postalCode": "41310",
@@ -26,12 +26,12 @@
         ],
         "languages": [
             {
-                "language": "French 🇫🇷",
-                "fluency": "Native speaker"
+                "language": "Français 🇫🇷",
+                "fluency": "Langue maternelle"
             },
             {
-                "language": "English 🇬🇧",
-                "fluency": "Intermediate"
+                "language": "Anglais 🇬🇧",
+                "fluency": "Intermédiaire"
             }
         ],
         "interests": [
@@ -144,7 +144,6 @@
                     "precision": "TDD",
                     "important": false
                 },
-
                 {
                     "type": "Architecture",
                     "global": "Hexagonal",
@@ -514,14 +513,12 @@
                     "precision": "Playwright",
                     "important": false
                 },
-
                 {
                     "type": "Engineering Practices",
                     "global": "TDD",
                     "precision": "TDD",
                     "important": false
                 },
-
                 {
                     "type": "Engineering Practices",
                     "global": "Peer Programming",
