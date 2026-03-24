@@ -245,7 +245,7 @@
             "highlights": [
                 "Livraison de features métier anti-fraude en TDD et architecture hexagonale",
                 "Refonte de la CI/CD GitLab, accélérant les cycles de livraison",
-                "Migration Oracle → PostgreSQL avec coupure maîtrisée de 20 min",
+                "Migration Oracle → PostgreSQL",
                 "Migration on-premise → Azure AKS : conteneurisation complète de la plateforme"
             ],
             "references": [
@@ -622,7 +622,8 @@
             "contractType": "CDI",
             "startDate": "2021-01-05",
             "endDate": "2022-06-20",
-            "summary": "Maintenance de l'existant, puis recrutement et refonte de la plateforme après l'incendie OVH.",
+            "summary": "Maintenance de l'existant, puis recrutement.",
+            "summary": "Maintenance de l'existant, puis recrutement.",
             "highlights": [
                 "Stack reconstruite après l'incendie OVH de mars 2021, reprise d'activité en quelques jours",
                 "Plan de Reprise d'Activité opérationnel avec bascule multi-cloud Azure + OVH",
@@ -867,7 +868,7 @@
                 "Architecture event-driven CQRS, scalable et résiliente sur Kubernetes",
                 "Site factory multi-tenant avec déploiement automatisé par client",
                 "Pipeline CI/CD GitHub Actions + ArgoCD en déploiement continu",
-                "Administration et scaling du cluster Kubernetes sur Digital Ocean"
+                "Administration et scaling du cluster"
             ],
             "skills": [
                 {
