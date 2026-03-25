@@ -21,7 +21,7 @@
             {
                 "network": "Linkedin",
                 "username": "david-piatek-519aa275",
-                "url": "https://www.linkedin.com/in/david-piatek-519aa275/"
+                "url": "https://www.linkedin.com/in/david-piatek-519aa275"
             }
         ],
         "languages": [
@@ -622,7 +622,6 @@
             "contractType": "CDI",
             "startDate": "2021-01-05",
             "endDate": "2022-06-20",
-            "summary": "Maintenance de l'existant, puis recrutement.",
             "summary": "Maintenance de l'existant, puis recrutement.",
             "highlights": [
                 "Stack reconstruite après l'incendie OVH de mars 2021, reprise d'activité en quelques jours",
